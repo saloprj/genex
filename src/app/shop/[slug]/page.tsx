@@ -1,0 +1,147 @@
+export const dynamic = 'force-dynamic'
+
+import { notFound } from 'next/navigation'
+import Image from 'next/image'
+import Link from 'next/link'
+import { ArrowLeft, FlaskConical, FileText, Shield } from 'lucide-react'
+import { prisma } from '@/lib/prisma'
+import { Badge } from '@/components/ui/Badge'
+import { Disclaimer } from '@/components/layout/Disclaimer'
+import { AddToCartButton } from '@/components/shop/AddToCartButton'
+import { formatPrice } from '@/lib/utils'
+import type { Metadata } from 'next'
+
+interface ProductPageProps {
+  params: Promise<{ slug: string }>
+}
+
+export async function generateMetadata({ params }: ProductPageProps): Promise<Metadata> {
+  const { slug } = await params
+  const product = await prisma.product.findUnique({ where: { slug } })
+  if (!product) return { title: 'Product Not Found' }
+  return {
+    title: product.name,
+    description: product.description,
+  }
+}
+
+export default async function ProductPage({ params }: ProductPageProps) {
+  const { slug } = await params
+  const product = await prisma.product.findUnique({ where: { slug } })
+
+  if (!product) notFound()
+
+  return (
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      {/* Breadcrumb */}
+      <div className="flex items-center gap-2 text-sm text-brand-muted mb-6">
+        <Link href="/shop" className="hover:text-brand-teal transition-colors flex items-center gap-1">
+          <ArrowLeft className="w-4 h-4" />
+          Research Compound Catalogue
+        </Link>
+        <span>/</span>
+        <span className="text-brand-text">{product.name}</span>
+      </div>
+
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+        {/* Image */}
+        <div className="relative aspect-square bg-brand-surface border border-brand-border rounded-lg overflow-hidden">
+          {product.image ? (
+            <Image
+              src={product.image}
+              alt={product.name}
+              fill
+              className="object-cover"
+              priority
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
+          ) : (
+            <div className="w-full h-full flex items-center justify-center">
+              <div className="w-24 h-24 rounded-full bg-brand-teal/10 flex items-center justify-center">
+                <span className="text-4xl font-bold text-brand-teal">
+                  {product.name.charAt(0)}
+                </span>
+              </div>
+            </div>
+          )}
+        </div>
+
+        {/* Details */}
+        <div className="space-y-6">
+          <div>
+            <div className="flex items-center gap-3 mb-2">
+              <Badge variant="teal">{product.category}</Badge>
+              {product.inStock ? (
+                <Badge variant="teal">In Stock</Badge>
+              ) : (
+                <Badge variant="orange">Out of Stock</Badge>
+              )}
+            </div>
+            <h1 className="text-3xl font-bold mb-1">{product.name}</h1>
+            {product.dosage && (
+              <div className="flex items-center gap-2 text-sm text-brand-muted">
+                <FlaskConical className="w-4 h-4" />
+                <span>{product.dosage}</span>
+              </div>
+            )}
+          </div>
+
+          <p className="text-2xl font-bold font-mono text-brand-teal">
+            {formatPrice(product.price)}
+          </p>
+
+          <AddToCartButton product={product} />
+
+          {/* Description */}
+          <div className="border-t border-brand-border pt-6">
+            <h2 className="text-lg font-semibold mb-3">Research Details</h2>
+            <p className="text-brand-muted text-sm leading-relaxed">
+              {product.description}
+            </p>
+          </div>
+
+          {product.researchFocus && (
+            <div className="border-t border-brand-border pt-6">
+              <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
+                <FlaskConical className="w-5 h-5 text-brand-teal" />
+                Research Focus
+              </h2>
+              <p className="text-brand-muted text-sm leading-relaxed">
+                {product.researchFocus}
+              </p>
+            </div>
+          )}
+
+          {/* Info cards */}
+          <div className="grid grid-cols-2 gap-4">
+            <div className="bg-brand-surface border border-brand-border rounded-lg p-4">
+              <div className="flex items-center gap-2 mb-2">
+                <FileText className="w-4 h-4 text-brand-teal" />
+                <span className="text-sm font-medium">COA Available</span>
+              </div>
+              <p className="text-xs text-brand-subtle">
+                Certificates of Analysis available for each batch.
+              </p>
+            </div>
+            <div className="bg-brand-surface border border-brand-border rounded-lg p-4">
+              <div className="flex items-center gap-2 mb-2">
+                <Shield className="w-4 h-4 text-brand-teal" />
+                <span className="text-sm font-medium">Research Only</span>
+              </div>
+              <p className="text-xs text-brand-subtle">
+                For research and educational purposes only.
+              </p>
+            </div>
+          </div>
+
+          {/* Product Code */}
+          <div className="text-xs text-brand-subtle">
+            Product Code: <span className="font-mono">{product.productCode}</span>
+          </div>
+
+          <Disclaimer />
+        </div>
+      </div>
+    </div>
+  )
+}

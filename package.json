@@ -1,0 +1,51 @@
+{
+  "name": "genex",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:migrate": "prisma migrate dev",
+    "db:seed": "npx tsx prisma/seed.ts",
+    "db:studio": "prisma studio",
+    "postinstall": "prisma generate"
+  },
+  "dependencies": {
+    "@eslint/eslintrc": "^3.3.4",
+    "@prisma/client": "^5.22.0",
+    "@react-email/components": "^1.0.8",
+    "@stripe/react-stripe-js": "^5.6.0",
+    "@stripe/stripe-js": "^8.8.0",
+    "@supabase/ssr": "^0.8.0",
+    "@supabase/supabase-js": "^2.97.0",
+    "@tailwindcss/postcss": "^4.2.1",
+    "@types/node": "^25.3.0",
+    "@types/react": "^19.2.14",
+    "@upstash/ratelimit": "^2.0.8",
+    "@upstash/redis": "^1.36.2",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.34.3",
+    "lucide-react": "^0.575.0",
+    "next": "^14.2.35",
+    "postcss": "^8.5.6",
+    "prisma": "^5.22.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "resend": "^6.9.2",
+    "stripe": "^20.3.1",
+    "tailwind-merge": "^3.5.0",
+    "tailwindcss": "^4.2.1",
+    "typescript": "^5.9.3",
+    "zod": "^4.3.6",
+    "zustand": "^5.0.11"
+  },
+  "devDependencies": {
+    "@types/react-dom": "^19.2.3",
+    "eslint": "^9.39.3",
+    "eslint-config-next": "^16.1.6"
+  }
+}

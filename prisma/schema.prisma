@@ -1,0 +1,81 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model Product {
+  id            String      @id @default(cuid())
+  name          String
+  slug          String      @unique
+  description   String
+  category      String
+  price         Decimal     @db.Decimal(10, 2)
+  dosage        String?
+  image         String?
+  researchFocus String?
+  productCode   String      @unique
+  inStock       Boolean     @default(true)
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+  orderItems    OrderItem[]
+
+  @@index([category])
+  @@index([inStock])
+}
+
+enum OrderStatus {
+  PENDING
+  PAID
+  PROCESSING
+  SHIPPED
+  DELIVERED
+  CANCELLED
+  REFUNDED
+}
+
+enum PaymentMethod {
+  STRIPE
+  CRYPTO
+}
+
+model Order {
+  id                  String        @id @default(cuid())
+  userId              String
+  status              OrderStatus   @default(PENDING)
+  paymentMethod       PaymentMethod
+  paymentId           String?
+  subtotal            Decimal       @db.Decimal(10, 2)
+  total               Decimal       @db.Decimal(10, 2)
+  shippingName        String
+  shippingEmail       String
+  shippingAddress1    String
+  shippingAddress2    String?
+  shippingCity        String
+  shippingState       String?
+  shippingPostalCode  String
+  shippingCountry     String
+  createdAt           DateTime      @default(now())
+  updatedAt           DateTime      @updatedAt
+  items               OrderItem[]
+
+  @@index([userId])
+  @@index([status])
+}
+
+model OrderItem {
+  id          String  @id @default(cuid())
+  orderId     String
+  productId   String
+  productName String
+  quantity    Int
+  priceAtTime Decimal @db.Decimal(10, 2)
+  order       Order   @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  product     Product @relation(fields: [productId], references: [id])
+
+  @@index([orderId])
+}
