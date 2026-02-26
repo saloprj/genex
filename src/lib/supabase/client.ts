@@ -17,7 +17,7 @@ export function createClient() {
       auth: {
         getUser: async () => ({ data: { user: devUser }, error: null }),
         getSession: async () => ({ data: { session: { user: devUser } }, error: null }),
-        onAuthStateChange: (_event: string, callback: (event: string, session: any) => void) => {
+        onAuthStateChange: (callback: (event: string, session: any) => void) => {
           callback('SIGNED_IN', { user: devUser })
           return { data: { subscription: { unsubscribe: () => {} } } }
         },
