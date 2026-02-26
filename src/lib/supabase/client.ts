@@ -5,13 +5,23 @@ export function createClient() {
   const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
 
   if (!url || !key) {
-    // Return a mock client for build time / missing config
+    // Dev bypass: return mock client with fake user when Supabase not configured
+    const devUser = {
+      id: 'dev-user',
+      email: 'dev@genexlabs.com',
+      aud: 'authenticated',
+      role: 'authenticated',
+      created_at: new Date().toISOString(),
+    }
     return {
       auth: {
-        getUser: async () => ({ data: { user: null }, error: null }),
-        getSession: async () => ({ data: { session: null }, error: null }),
-        onAuthStateChange: () => ({ data: { subscription: { unsubscribe: () => {} } } }),
-        signInWithOtp: async () => ({ error: new Error('Supabase not configured') }),
+        getUser: async () => ({ data: { user: devUser }, error: null }),
+        getSession: async () => ({ data: { session: { user: devUser } }, error: null }),
+        onAuthStateChange: (_event: string, callback: (event: string, session: any) => void) => {
+          callback('SIGNED_IN', { user: devUser })
+          return { data: { subscription: { unsubscribe: () => {} } } }
+        },
+        signInWithOtp: async () => ({ error: new Error('Supabase not configured — using dev mode') }),
         signOut: async () => ({ error: null }),
       },
     } as unknown as ReturnType<typeof createBrowserClient>

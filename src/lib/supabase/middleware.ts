@@ -8,7 +8,15 @@ export async function updateSession(request: NextRequest) {
   const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
 
   if (!url || !key) {
-    return { user: null, supabaseResponse }
+    // Dev bypass: allow access when Supabase is not configured
+    const devUser = {
+      id: 'dev-user',
+      email: 'dev@genexlabs.com',
+      aud: 'authenticated',
+      role: 'authenticated',
+      created_at: new Date().toISOString(),
+    }
+    return { user: devUser as any, supabaseResponse }
   }
 
   const supabase = createServerClient(url, key, {
