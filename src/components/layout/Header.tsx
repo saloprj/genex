@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { Menu, X, ShoppingCart, User, LogOut } from 'lucide-react'
 import { useState } from 'react'
@@ -30,12 +31,14 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href={user ? '/shop' : '/'} className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full bg-brand-teal/20 border border-brand-teal/40 flex items-center justify-center">
-              <span className="text-brand-teal font-bold text-sm">G</span>
-            </div>
-            <span className="font-bold text-lg tracking-tight">
-              GENE X<span className="text-brand-muted font-normal ml-1">LABS</span>
-            </span>
+            <Image
+              src="/logo.png"
+              alt="Gene X Labs"
+              width={140}
+              height={40}
+              className="h-9 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop Nav */}
