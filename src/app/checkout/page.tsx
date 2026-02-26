@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import { CreditCard, Bitcoin, Loader2 } from 'lucide-react'
 import { Header } from '@/components/layout/Header'
@@ -32,7 +32,7 @@ export default function CheckoutPage() {
 
   const [shipping, setShipping] = useState({
     name: '',
-    email: user?.email || '',
+    email: '',
     address1: '',
     address2: '',
     city: '',
@@ -40,6 +40,16 @@ export default function CheckoutPage() {
     postalCode: '',
     country: 'United Kingdom',
   })
+
+  // Auto-fill email from authenticated user
+  useEffect(() => {
+    if (user?.email && !shipping.email) {
+      setShipping((prev) => ({ ...prev, email: user.email! }))
+    }
+    if (user?.user_metadata?.full_name && !shipping.name) {
+      setShipping((prev) => ({ ...prev, name: user.user_metadata.full_name }))
+    }
+  }, [user]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const updateField = (field: string, value: string) => {
     setShipping((prev) => ({ ...prev, [field]: value }))
@@ -151,13 +161,20 @@ export default function CheckoutPage() {
                   onChange={(e) => updateField('name', e.target.value)}
                   required
                 />
-                <Input
-                  label="Email *"
-                  type="email"
-                  value={shipping.email}
-                  onChange={(e) => updateField('email', e.target.value)}
-                  required
-                />
+                <div>
+                  <Input
+                    label="Email *"
+                    type="email"
+                    value={shipping.email}
+                    onChange={(e) => updateField('email', e.target.value)}
+                    required
+                    readOnly={!!user?.email}
+                    className={user?.email ? 'opacity-60 cursor-not-allowed' : ''}
+                  />
+                  {user?.email && (
+                    <p className="text-xs text-brand-subtle mt-1">From your account</p>
+                  )}
+                </div>
                 <div className="sm:col-span-2">
                   <Input
                     label="Address Line 1 *"
