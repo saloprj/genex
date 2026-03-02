@@ -6,10 +6,18 @@ export async function createClient() {
   const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
 
   if (!url || !key) {
+    // Dev bypass: return fake admin user when Supabase not configured
+    const devUser = {
+      id: 'dev-user',
+      email: 'dev@genexlabs.com',
+      aud: 'authenticated',
+      role: 'authenticated',
+      created_at: new Date().toISOString(),
+    }
     return {
       auth: {
-        getUser: async () => ({ data: { user: null }, error: null }),
-        getSession: async () => ({ data: { session: null }, error: null }),
+        getUser: async () => ({ data: { user: devUser }, error: null }),
+        getSession: async () => ({ data: { session: { user: devUser } }, error: null }),
       },
     } as unknown as ReturnType<typeof createServerClient>
   }
