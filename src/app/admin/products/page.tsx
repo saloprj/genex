@@ -1,20 +1,18 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { Loader2, Save, Plus, X } from 'lucide-react'
+import { Loader2 } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
-import { Input } from '@/components/ui/Input'
 import { Badge } from '@/components/ui/Badge'
 import { formatPrice } from '@/lib/utils'
 import { toast } from '@/components/ui/Toast'
+import { ProductEditModal } from '@/components/admin/ProductEditModal'
 import type { Product } from '@/types'
 
 export default function AdminProductsPage() {
   const [products, setProducts] = useState<Product[]>([])
   const [loading, setLoading] = useState(true)
-  const [editingId, setEditingId] = useState<string | null>(null)
-  const [editData, setEditData] = useState<Partial<Product>>({})
-  const [saving, setSaving] = useState(false)
+  const [editingProduct, setEditingProduct] = useState<Product | null>(null)
 
   const fetchProducts = async () => {
     try {
@@ -33,34 +31,6 @@ export default function AdminProductsPage() {
   useEffect(() => {
     fetchProducts()
   }, [])
-
-  const startEdit = (product: Product) => {
-    setEditingId(product.id)
-    setEditData({
-      price: product.price,
-      inStock: product.inStock,
-      description: product.description,
-    })
-  }
-
-  const saveEdit = async (productId: string) => {
-    setSaving(true)
-    try {
-      const res = await fetch(`/api/products`, {
-        method: 'PATCH',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ id: productId, ...editData }),
-      })
-      if (!res.ok) throw new Error()
-      toast('Product updated', 'success')
-      setEditingId(null)
-      fetchProducts()
-    } catch {
-      toast('Failed to update product', 'error')
-    } finally {
-      setSaving(false)
-    }
-  }
 
   const toggleStock = async (product: Product) => {
     try {
@@ -109,16 +79,6 @@ export default function AdminProductsPage() {
               <tr key={product.id} className="border-b border-brand-border/50 hover:bg-brand-dark/30">
                 <td className="py-3 px-2">
                   <div className="font-medium">{product.name}</div>
-                  {editingId === product.id && (
-                    <textarea
-                      value={editData.description as string}
-                      onChange={(e) =>
-                        setEditData({ ...editData, description: e.target.value })
-                      }
-                      className="mt-2 w-full px-2 py-1 bg-brand-dark border border-brand-border rounded text-xs resize-none"
-                      rows={2}
-                    />
-                  )}
                 </td>
                 <td className="py-3 px-2 font-mono text-xs text-brand-muted">
                   {product.productCode}
@@ -127,19 +87,7 @@ export default function AdminProductsPage() {
                   <Badge variant="outline">{product.category}</Badge>
                 </td>
                 <td className="py-3 px-2 text-right">
-                  {editingId === product.id ? (
-                    <input
-                      type="number"
-                      step="0.01"
-                      value={editData.price as unknown as string}
-                      onChange={(e) =>
-                        setEditData({ ...editData, price: parseFloat(e.target.value) as unknown as Product['price'] })
-                      }
-                      className="w-24 px-2 py-1 bg-brand-dark border border-brand-border rounded text-sm text-right font-mono"
-                    />
-                  ) : (
-                    <span className="font-mono">{formatPrice(product.price)}</span>
-                  )}
+                  <span className="font-mono">{formatPrice(product.price)}</span>
                 </td>
                 <td className="py-3 px-2 text-center">
                   <button
@@ -154,38 +102,30 @@ export default function AdminProductsPage() {
                   </button>
                 </td>
                 <td className="py-3 px-2 text-right">
-                  {editingId === product.id ? (
-                    <div className="flex items-center justify-end gap-2">
-                      <Button
-                        size="sm"
-                        onClick={() => saveEdit(product.id)}
-                        loading={saving}
-                      >
-                        <Save className="w-3.5 h-3.5" />
-                      </Button>
-                      <Button
-                        size="sm"
-                        variant="ghost"
-                        onClick={() => setEditingId(null)}
-                      >
-                        <X className="w-3.5 h-3.5" />
-                      </Button>
-                    </div>
-                  ) : (
-                    <Button
-                      size="sm"
-                      variant="ghost"
-                      onClick={() => startEdit(product)}
-                    >
-                      Edit
-                    </Button>
-                  )}
+                  <Button
+                    size="sm"
+                    variant="ghost"
+                    onClick={() => setEditingProduct(product)}
+                  >
+                    Edit
+                  </Button>
                 </td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
+
+      {editingProduct && (
+        <ProductEditModal
+          product={editingProduct}
+          onClose={() => setEditingProduct(null)}
+          onSaved={() => {
+            setEditingProduct(null)
+            fetchProducts()
+          }}
+        />
+      )}
     </div>
   )
 }
