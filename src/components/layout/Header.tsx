@@ -28,15 +28,15 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 bg-brand-dark/80 backdrop-blur-md border-b border-brand-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <Link href={user ? '/shop' : '/'} className="flex items-center gap-2">
             <Image
               src="/logo.png"
               alt="Gene X Labs"
-              width={140}
-              height={40}
-              className="h-12 w-auto"
+              width={280}
+              height={80}
+              className="h-24 w-auto"
               priority
             />
           </Link>
