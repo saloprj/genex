@@ -2,8 +2,8 @@
 
 @theme {
   --color-brand-dark: #0a0a0f;
-  --color-brand-surface: #12121a;
-  --color-brand-border: #1e1e2e;
+  --color-brand-surface: rgba(18, 18, 26, 0.82);
+  --color-brand-border: rgba(30, 30, 46, 0.9);
   --color-brand-teal: #14b8a6;
   --color-brand-teal-dark: #0d9488;
   --color-brand-orange: #f97316;
@@ -22,6 +22,13 @@ html {
 
 body {
   background-color: var(--color-brand-dark);
+  background-image:
+    linear-gradient(rgba(10, 10, 15, 0.72) 0%, rgba(10, 10, 15, 0.55) 40%, rgba(10, 10, 15, 0.72) 100%),
+    url('/bg-galaxy.png');
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   color: var(--color-brand-text);
   font-family: var(--font-sans);
 }
@@ -58,8 +65,7 @@ body {
 /* Hero background */
 .hero-bg {
   background: radial-gradient(ellipse at 50% 0%, rgba(20, 184, 166, 0.15) 0%, transparent 60%),
-              radial-gradient(ellipse at 80% 50%, rgba(249, 115, 22, 0.08) 0%, transparent 50%),
-              var(--color-brand-dark);
+              radial-gradient(ellipse at 80% 50%, rgba(249, 115, 22, 0.08) 0%, transparent 50%);
 }
 
 /* Scrollbar */
