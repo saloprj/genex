@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
-import { CreditCard, Bitcoin, Loader2 } from 'lucide-react'
+import { CreditCard, Bitcoin, Loader2, FlaskConical } from 'lucide-react'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { DisclaimerBanner } from '@/components/layout/Disclaimer'
@@ -14,7 +14,9 @@ import { formatPrice } from '@/lib/utils'
 import { cn } from '@/lib/utils'
 import { toast } from '@/components/ui/Toast'
 
-type PaymentMethod = 'STRIPE' | 'CRYPTO'
+type PaymentMethod = 'STRIPE' | 'CRYPTO' | 'STUB'
+
+const isDevMode = !process.env.NEXT_PUBLIC_SUPABASE_URL
 
 const COUNTRIES = [
   'United Kingdom', 'United States', 'Australia', 'Canada', 'Germany',
@@ -83,7 +85,7 @@ export default function CheckoutPage() {
             priceAtTime: item.price,
           })),
           shipping,
-          paymentMethod,
+          paymentMethod: paymentMethod === 'STUB' ? 'STRIPE' : paymentMethod,
         }),
       })
 
@@ -96,9 +98,11 @@ export default function CheckoutPage() {
 
       // 2. Create payment session
       const paymentEndpoint =
-        paymentMethod === 'STRIPE'
-          ? '/api/checkout/stripe'
-          : '/api/checkout/crypto'
+        paymentMethod === 'STUB'
+          ? '/api/checkout/stub'
+          : paymentMethod === 'STRIPE'
+            ? '/api/checkout/stripe'
+            : '/api/checkout/crypto'
 
       const paymentRes = await fetch(paymentEndpoint, {
         method: 'POST',
@@ -260,6 +264,26 @@ export default function CheckoutPage() {
                     <div className="text-xs text-brand-subtle">BTC, ETH, USDC</div>
                   </div>
                 </button>
+                {isDevMode && (
+                  <button
+                    onClick={() => setPaymentMethod('STUB')}
+                    className={cn(
+                      'col-span-2 flex items-center gap-3 p-4 rounded-lg border transition-all',
+                      paymentMethod === 'STUB'
+                        ? 'border-orange-500 bg-orange-500/5'
+                        : 'border-dashed border-brand-border hover:border-orange-500/50'
+                    )}
+                  >
+                    <FlaskConical className={cn('w-6 h-6', paymentMethod === 'STUB' ? 'text-orange-400' : 'text-brand-muted')} />
+                    <div className="text-left">
+                      <div className="font-medium text-sm">
+                        Test Payment
+                        <span className="text-xs text-orange-400 ml-2">[DEV ONLY]</span>
+                      </div>
+                      <div className="text-xs text-brand-subtle">Skip payment gateway — marks order as PAID instantly</div>
+                    </div>
+                  </button>
+                )}
               </div>
             </section>
 
