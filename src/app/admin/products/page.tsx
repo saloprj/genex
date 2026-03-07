@@ -7,12 +7,12 @@ import { Badge } from '@/components/ui/Badge'
 import { formatPrice } from '@/lib/utils'
 import { toast } from '@/components/ui/Toast'
 import { ProductEditModal } from '@/components/admin/ProductEditModal'
-import type { Product } from '@/types'
+import type { ProductWithVariants } from '@/types'
 
 export default function AdminProductsPage() {
-  const [products, setProducts] = useState<Product[]>([])
+  const [products, setProducts] = useState<ProductWithVariants[]>([])
   const [loading, setLoading] = useState(true)
-  const [editingProduct, setEditingProduct] = useState<Product | null>(null)
+  const [editingProduct, setEditingProduct] = useState<ProductWithVariants | null>(null)
 
   const fetchProducts = async () => {
     try {
@@ -32,7 +32,7 @@ export default function AdminProductsPage() {
     fetchProducts()
   }, [])
 
-  const toggleStock = async (product: Product) => {
+  const toggleStock = async (product: ProductWithVariants) => {
     try {
       const res = await fetch(`/api/products`, {
         method: 'PATCH',

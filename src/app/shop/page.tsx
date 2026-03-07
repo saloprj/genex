@@ -32,6 +32,7 @@ async function ProductsSection({ searchParams }: { searchParams: { category?: st
       }),
     },
     orderBy: { name: 'asc' },
+    include: { variants: { orderBy: { sortOrder: 'asc' } } },
   })
 
   return <ProductGrid products={products} />

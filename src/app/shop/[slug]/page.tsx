@@ -7,8 +7,7 @@ import { ArrowLeft, FlaskConical, FileText, Shield } from 'lucide-react'
 import { prisma } from '@/lib/prisma'
 import { Badge } from '@/components/ui/Badge'
 import { Disclaimer } from '@/components/layout/Disclaimer'
-import { AddToCartButton } from '@/components/shop/AddToCartButton'
-import { formatPrice } from '@/lib/utils'
+import { ProductPurchaseSection } from '@/components/shop/ProductPurchaseSection'
 import type { Metadata } from 'next'
 
 interface ProductPageProps {
@@ -27,7 +26,10 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
 
 export default async function ProductPage({ params }: ProductPageProps) {
   const { slug } = await params
-  const product = await prisma.product.findUnique({ where: { slug } })
+  const product = await prisma.product.findUnique({
+    where: { slug },
+    include: { variants: { orderBy: { sortOrder: 'asc' } } },
+  })
 
   if (!product) notFound()
 
@@ -86,11 +88,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
             )}
           </div>
 
-          <p className="text-2xl font-bold font-mono text-brand-teal">
-            {formatPrice(product.price)}
-          </p>
-
-          <AddToCartButton product={product} />
+          <ProductPurchaseSection product={product} />
 
           {/* Description */}
           <div className="border-t border-brand-border pt-6">

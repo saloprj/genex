@@ -10,6 +10,8 @@ const createOrderSchema = z.object({
       productName: z.string(),
       quantity: z.number().int().positive(),
       priceAtTime: z.number().positive(),
+      variantId: z.string().optional(),
+      variantLabel: z.string().optional(),
     })
   ),
   shipping: z.object({
@@ -72,6 +74,8 @@ export async function POST(request: NextRequest) {
             productName: item.productName,
             quantity: item.quantity,
             priceAtTime: item.priceAtTime,
+            variantId: item.variantId,
+            variantLabel: item.variantLabel,
           })),
         },
       },

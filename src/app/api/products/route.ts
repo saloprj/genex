@@ -20,6 +20,7 @@ export async function GET(request: NextRequest) {
       }),
     },
     orderBy: { name: 'asc' },
+    include: { variants: { orderBy: { sortOrder: 'asc' } } },
   })
 
   return NextResponse.json({ products })
@@ -38,7 +39,7 @@ export async function PATCH(request: NextRequest) {
     return NextResponse.json({ error: 'Forbidden' }, { status: 403 })
   }
 
-  const { id, name, description, price, dosage, category, researchFocus, image, inStock } = await request.json()
+  const { id, name, description, price, dosage, category, researchFocus, image, inStock, variants } = await request.json()
   if (!id) {
     return NextResponse.json({ error: 'Product ID required' }, { status: 400 })
   }
@@ -76,6 +77,21 @@ export async function PATCH(request: NextRequest) {
     where: { id },
     data,
   })
+
+  // When variants key is present, replace all variants
+  if (variants !== undefined) {
+    await prisma.productVariant.deleteMany({ where: { productId: id } })
+    if (Array.isArray(variants) && variants.length > 0) {
+      await prisma.productVariant.createMany({
+        data: variants.map((v: { label: string; price: number; sortOrder?: number }, i: number) => ({
+          productId: id,
+          label: v.label,
+          price: v.price,
+          sortOrder: v.sortOrder ?? i,
+        })),
+      })
+    }
+  }
 
   return NextResponse.json({ product })
 }

@@ -79,10 +79,12 @@ export default function CheckoutPage() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           items: items.map((item) => ({
-            productId: item.id,
+            productId: item.productId,
             productName: item.name,
             quantity: item.quantity,
             priceAtTime: item.price,
+            variantId: item.variantId,
+            variantLabel: item.variantLabel,
           })),
           shipping,
           paymentMethod: paymentMethod === 'STUB' ? 'STRIPE' : paymentMethod,

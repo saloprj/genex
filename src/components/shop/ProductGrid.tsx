@@ -1,10 +1,10 @@
 'use client'
 
 import { ProductCard } from './ProductCard'
-import type { Product } from '@/types'
+import type { ProductWithVariants } from '@/types'
 
 interface ProductGridProps {
-  products: Product[]
+  products: ProductWithVariants[]
 }
 
 export function ProductGrid({ products }: ProductGridProps) {

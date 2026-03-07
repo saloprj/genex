@@ -79,6 +79,9 @@ export default function CartPage() {
                     <p className="text-xs text-brand-subtle mt-0.5">
                       {item.productCode}
                     </p>
+                    {item.variantLabel && (
+                      <p className="text-xs text-brand-subtle mt-0.5">{item.variantLabel}</p>
+                    )}
                     <p className="text-sm font-mono text-brand-teal mt-1">
                       {formatPrice(item.price)}
                     </p>

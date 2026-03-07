@@ -2,15 +2,22 @@
 
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
+import { X } from 'lucide-react'
 import { Modal } from '@/components/ui/Modal'
 import { Button } from '@/components/ui/Button'
 import { Input } from '@/components/ui/Input'
 import { toast } from '@/components/ui/Toast'
 import { CATEGORIES } from '@/lib/constants'
-import type { Product } from '@/types'
+import type { ProductWithVariants } from '@/types'
+
+interface VariantRow {
+  id?: string
+  label: string
+  price: string
+}
 
 interface ProductEditModalProps {
-  product: Product
+  product: ProductWithVariants
   onClose: () => void
   onSaved: () => void
 }
@@ -27,6 +34,9 @@ export function ProductEditModal({ product, onClose, onSaved }: ProductEditModal
   const [imagePreview, setImagePreview] = useState<string | null>(null)
   const [imageError, setImageError] = useState('')
   const [saving, setSaving] = useState(false)
+  const [variants, setVariants] = useState<VariantRow[]>(
+    product.variants.map((v) => ({ id: v.id, label: v.label, price: String(v.price) }))
+  )
 
   // Clean up object URL on unmount
   useEffect(() => {
@@ -54,6 +64,18 @@ export function ProductEditModal({ product, onClose, onSaved }: ProductEditModal
     setImagePreview(URL.createObjectURL(file))
   }
 
+  const addVariant = () => {
+    setVariants((prev) => [...prev, { label: '', price: '' }])
+  }
+
+  const removeVariant = (index: number) => {
+    setVariants((prev) => prev.filter((_, i) => i !== index))
+  }
+
+  const updateVariant = (index: number, field: 'label' | 'price', value: string) => {
+    setVariants((prev) => prev.map((v, i) => i === index ? { ...v, [field]: value } : v))
+  }
+
   const handleSave = async () => {
     const priceNum = parseFloat(price)
     if (isNaN(priceNum) || priceNum <= 0) {
@@ -67,6 +89,18 @@ export function ProductEditModal({ product, onClose, onSaved }: ProductEditModal
     if (!description.trim()) {
       toast('Description is required', 'error')
       return
+    }
+
+    // Validate variants
+    for (const v of variants) {
+      if (!v.label.trim()) {
+        toast('Variant label cannot be empty', 'error')
+        return
+      }
+      if (!v.price || !(parseFloat(v.price) > 0)) {
+        toast(`Variant "${v.label}" must have a valid price`, 'error')
+        return
+      }
     }
 
     setSaving(true)
@@ -105,6 +139,11 @@ export function ProductEditModal({ product, onClose, onSaved }: ProductEditModal
           researchFocus: researchFocus.trim() || null,
           image: imagePath,
           inStock,
+          variants: variants.map((v, i) => ({
+            label: v.label.trim(),
+            price: parseFloat(v.price),
+            sortOrder: i,
+          })),
         }),
       })
 
@@ -235,6 +274,68 @@ export function ProductEditModal({ product, onClose, onSaved }: ProductEditModal
             rows={3}
             className="w-full px-3 py-2 bg-brand-surface border border-brand-border rounded-md text-brand-text placeholder:text-brand-subtle focus:outline-none focus:ring-2 focus:ring-brand-teal focus:border-transparent resize-none"
           />
+        </div>
+
+        {/* Variants */}
+        <div>
+          <div className="flex items-center justify-between mb-2">
+            <label className="text-sm font-medium text-brand-muted">Variants</label>
+            <button
+              type="button"
+              onClick={addVariant}
+              className="text-xs text-brand-teal hover:text-brand-teal/80 font-medium"
+            >
+              + Add Variant
+            </button>
+          </div>
+          {variants.length > 0 && (
+            <div className="border border-brand-border rounded-md overflow-hidden">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b border-brand-border bg-brand-dark">
+                    <th className="text-left px-3 py-2 text-brand-muted font-medium">Label (e.g. 5mg*10vials)</th>
+                    <th className="text-left px-3 py-2 text-brand-muted font-medium w-28">Price</th>
+                    <th className="w-10" />
+                  </tr>
+                </thead>
+                <tbody>
+                  {variants.map((variant, i) => (
+                    <tr key={i} className="border-b border-brand-border/50 last:border-0">
+                      <td className="px-3 py-2">
+                        <input
+                          type="text"
+                          value={variant.label}
+                          onChange={(e) => updateVariant(i, 'label', e.target.value)}
+                          placeholder="e.g. 5mg*10vials"
+                          className="w-full bg-transparent text-brand-text placeholder:text-brand-subtle focus:outline-none"
+                        />
+                      </td>
+                      <td className="px-3 py-2">
+                        <input
+                          type="number"
+                          value={variant.price}
+                          onChange={(e) => updateVariant(i, 'price', e.target.value)}
+                          placeholder="0.00"
+                          step="0.01"
+                          min="0.01"
+                          className="w-full bg-transparent text-brand-text placeholder:text-brand-subtle focus:outline-none"
+                        />
+                      </td>
+                      <td className="px-2 py-2 text-center">
+                        <button
+                          type="button"
+                          onClick={() => removeVariant(i)}
+                          className="text-brand-subtle hover:text-red-400 transition-colors"
+                        >
+                          <X className="w-4 h-4" />
+                        </button>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
         </div>
 
         {/* Actions */}

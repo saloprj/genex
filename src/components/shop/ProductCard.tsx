@@ -9,19 +9,21 @@ import { Card } from '@/components/ui/Card'
 import { useCartStore } from '@/store/cart'
 import { formatPrice } from '@/lib/utils'
 import { toast } from '@/components/ui/Toast'
-import type { Product } from '@/types'
+import type { ProductWithVariants } from '@/types'
 
 interface ProductCardProps {
-  product: Product
+  product: ProductWithVariants
 }
 
 export function ProductCard({ product }: ProductCardProps) {
   const addItem = useCartStore((s) => s.addItem)
+  const hasVariants = product.variants.length > 0
 
   const handleAddToCart = (e: React.MouseEvent) => {
     e.preventDefault()
     addItem({
       id: product.id,
+      productId: product.id,
       name: product.name,
       slug: product.slug,
       price: Number(product.price),
@@ -30,6 +32,10 @@ export function ProductCard({ product }: ProductCardProps) {
     })
     toast(`${product.name} added to cart`, 'success')
   }
+
+  const minVariantPrice = hasVariants
+    ? Math.min(...product.variants.map((v) => Number(v.price)))
+    : null
 
   return (
     <Link href={`/shop/${product.slug}`}>
@@ -67,10 +73,15 @@ export function ProductCard({ product }: ProductCardProps) {
             <p className="text-xs text-brand-subtle mb-2">{product.dosage}</p>
           )}
           <div className="mt-auto flex items-center justify-between pt-3">
-            <span className="text-lg font-bold font-mono text-brand-teal">
-              {formatPrice(product.price)}
-            </span>
-            {product.inStock && (
+            <div>
+              <span className="text-lg font-bold font-mono text-brand-teal">
+                {hasVariants ? `From ${formatPrice(minVariantPrice!)}` : formatPrice(product.price)}
+              </span>
+              {hasVariants && (
+                <p className="text-xs text-brand-muted mt-0.5">View Options →</p>
+              )}
+            </div>
+            {!hasVariants && product.inStock && (
               <Button
                 size="sm"
                 onClick={handleAddToCart}
