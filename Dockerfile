@@ -1,7 +1,8 @@
 FROM node:20-alpine AS deps
-RUN apk add --no-cache libc6-compat
+RUN apk add --no-cache libc6-compat openssl openssl-dev
 WORKDIR /app
 COPY package.json package-lock.json ./
+COPY prisma ./prisma
 RUN npm ci
 
 FROM node:20-alpine AS builder
@@ -14,6 +15,7 @@ RUN npx prisma generate
 RUN npm run build
 
 FROM node:20-alpine AS runner
+RUN apk add --no-cache openssl openssl-dev
 WORKDIR /app
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
