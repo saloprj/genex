@@ -1,0 +1,63 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    container_name: genexpep-postgres
+    environment:
+      POSTGRES_USER: genexpep
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: genexpep
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U genexpep']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - internal
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: genexpep-web
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: postgresql://genexpep:${POSTGRES_PASSWORD}@postgres:5432/genexpep
+      DIRECT_URL: postgresql://genexpep:${POSTGRES_PASSWORD}@postgres:5432/genexpep
+      NEXT_PUBLIC_SUPABASE_URL: ${NEXT_PUBLIC_SUPABASE_URL}
+      NEXT_PUBLIC_SUPABASE_ANON_KEY: ${NEXT_PUBLIC_SUPABASE_ANON_KEY}
+      STRIPE_SECRET_KEY: ${STRIPE_SECRET_KEY}
+      STRIPE_WEBHOOK_SECRET: ${STRIPE_WEBHOOK_SECRET}
+      NEXT_PUBLIC_APP_URL: https://genexpep.com
+      ADMIN_EMAILS: ${ADMIN_EMAILS}
+      COINBASE_COMMERCE_API_KEY: ${COINBASE_COMMERCE_API_KEY:-}
+      COINBASE_COMMERCE_WEBHOOK_SECRET: ${COINBASE_COMMERCE_WEBHOOK_SECRET:-}
+      RESEND_API_KEY: ${RESEND_API_KEY:-}
+      EMAIL_FROM: ${EMAIL_FROM:-noreply@genexpep.com}
+      UPSTASH_REDIS_REST_URL: ${UPSTASH_REDIS_REST_URL:-}
+      UPSTASH_REDIS_REST_TOKEN: ${UPSTASH_REDIS_REST_TOKEN:-}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ['CMD-SHELL', 'wget -qO- http://localhost:3000/ || exit 1']
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 40s
+    networks:
+      - internal
+      - pms_internal
+
+volumes:
+  pgdata:
+
+networks:
+  internal:
+    driver: bridge
+  pms_internal:
+    external: true

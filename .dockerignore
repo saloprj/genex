@@ -1,0 +1,11 @@
+.git
+.gitignore
+.env*
+node_modules
+.next
+*.png
+*.jpg
+*.jpeg
+*.gif
+.playwright-mcp
+README.md
