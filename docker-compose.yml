@@ -25,6 +25,8 @@ services:
       dockerfile: Dockerfile
     container_name: genexpep-web
     restart: unless-stopped
+    ports:
+      - "3012:3000"
     environment:
       DATABASE_URL: postgresql://genexpep:${POSTGRES_PASSWORD}@postgres:5432/genexpep
       DIRECT_URL: postgresql://genexpep:${POSTGRES_PASSWORD}@postgres:5432/genexpep
