@@ -27,7 +27,7 @@ export function EmailCaptureForm({ showName = false }: EmailCaptureFormProps) {
       const { error } = await supabase.auth.signInWithOtp({
         email,
         options: {
-          emailRedirectTo: `${window.location.origin}/verify`,
+          emailRedirectTo: `${window.location.origin}/auth/callback`,
           data: name ? { full_name: name } : undefined,
         },
       })
