@@ -14,6 +14,7 @@ interface EmailCaptureFormProps {
 type Step = 'email' | 'code'
 
 const RESEND_COOLDOWN = 60
+const OTP_LENGTH = 8
 
 export function EmailCaptureForm({ showName = false }: EmailCaptureFormProps) {
   const router = useRouter()
@@ -26,7 +27,7 @@ export function EmailCaptureForm({ showName = false }: EmailCaptureFormProps) {
   const [loading, setLoading] = useState(false)
 
   // code step state
-  const [digits, setDigits] = useState<string[]>(Array(6).fill(''))
+  const [digits, setDigits] = useState<string[]>(Array(OTP_LENGTH).fill(''))
   const [verifying, setVerifying] = useState(false)
   const [codeError, setCodeError] = useState('')
   const [resendCooldown, setResendCooldown] = useState(0)
@@ -87,7 +88,7 @@ export function EmailCaptureForm({ showName = false }: EmailCaptureFormProps) {
   }
 
   function clearInputs() {
-    setDigits(Array(6).fill(''))
+    setDigits(Array(OTP_LENGTH).fill(''))
     setTimeout(() => inputRefs.current[0]?.focus(), 50)
   }
 
@@ -117,13 +118,13 @@ export function EmailCaptureForm({ showName = false }: EmailCaptureFormProps) {
     setDigits(newDigits)
     setCodeError('')
 
-    if (digit && index < 5) {
+    if (digit && index < OTP_LENGTH - 1) {
       inputRefs.current[index + 1]?.focus()
     }
 
-    if (digit && index === 5) {
-      const token = [...digits.slice(0, 5), digit].join('')
-      if (token.length === 6) verify(token)
+    if (digit && index === OTP_LENGTH - 1) {
+      const token = [...digits.slice(0, OTP_LENGTH - 1), digit].join('')
+      if (token.length === OTP_LENGTH) verify(token)
     }
   }
 
@@ -135,13 +136,13 @@ export function EmailCaptureForm({ showName = false }: EmailCaptureFormProps) {
 
   function handlePaste(e: React.ClipboardEvent<HTMLInputElement>) {
     e.preventDefault()
-    const pasted = e.clipboardData.getData('text').replace(/\D/g, '').slice(0, 6)
+    const pasted = e.clipboardData.getData('text').replace(/\D/g, '').slice(0, OTP_LENGTH)
     if (!pasted) return
-    const newDigits = [...Array(6).fill('')]
+    const newDigits = [...Array(OTP_LENGTH).fill('')]
     for (let i = 0; i < pasted.length; i++) newDigits[i] = pasted[i]
     setDigits(newDigits)
     setCodeError('')
-    if (pasted.length === 6) {
+    if (pasted.length === OTP_LENGTH) {
       verify(pasted)
     } else {
       inputRefs.current[pasted.length]?.focus()
@@ -234,7 +235,7 @@ export function EmailCaptureForm({ showName = false }: EmailCaptureFormProps) {
             onKeyDown={(e) => handleDigitKeyDown(i, e)}
             onPaste={handlePaste}
             disabled={verifying}
-            className="w-10 h-12 text-center text-lg font-bold rounded border border-brand-border bg-brand-surface text-brand-text focus:outline-none focus:ring-2 focus:ring-brand-teal focus:border-transparent disabled:opacity-50"
+            className="w-9 h-11 text-center text-base font-bold rounded border border-brand-border bg-brand-surface text-brand-text focus:outline-none focus:ring-2 focus:ring-brand-teal focus:border-transparent disabled:opacity-50"
           />
         ))}
       </div>
@@ -252,9 +253,9 @@ export function EmailCaptureForm({ showName = false }: EmailCaptureFormProps) {
           type="button"
           variant="secondary"
           loading={verifying}
-          disabled={digits.join('').length < 6}
+          disabled={digits.join('').length < OTP_LENGTH}
           onClick={() => verify(digits.join(''))}
-          className="w-full"
+          className="w-full max-w-sm mx-auto block"
         >
           Verify
         </Button>
@@ -282,7 +283,7 @@ export function EmailCaptureForm({ showName = false }: EmailCaptureFormProps) {
       <div className="text-center">
         <button
           type="button"
-          onClick={() => { setStep('email'); setCodeError(''); setResendError(''); setDigits(Array(6).fill('')) }}
+          onClick={() => { setStep('email'); setCodeError(''); setResendError(''); setDigits(Array(OTP_LENGTH).fill('')) }}
           className="text-xs text-brand-subtle hover:text-brand-muted"
         >
           ← Use a different email
