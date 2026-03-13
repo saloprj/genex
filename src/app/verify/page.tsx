@@ -13,15 +13,27 @@ export default function VerifyPage() {
     const handleVerification = async () => {
       const supabase = createClient()
 
-      // The URL hash contains the tokens from the magic link
-      const { error } = await supabase.auth.getSession()
+      const params = new URLSearchParams(window.location.search)
+      const errorCode = params.get('error_code')
+      const code = params.get('code')
 
-      if (error) {
-        setError(error.message)
+      if (errorCode) {
+        if (errorCode === 'otp_expired') {
+          setError('This link has expired. Please request a new one.')
+        } else {
+          setError(params.get('error_description') || 'Verification failed.')
+        }
         return
       }
 
-      // Check if user is now authenticated
+      if (code) {
+        const { error } = await supabase.auth.exchangeCodeForSession(code)
+        if (error) {
+          setError(error.message)
+          return
+        }
+      }
+
       const { data: { user } } = await supabase.auth.getUser()
 
       if (user) {
