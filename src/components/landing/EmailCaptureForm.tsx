@@ -1,6 +1,7 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
+import { useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/Button'
 import { Input } from '@/components/ui/Input'
 import { createClient } from '@/lib/supabase/client'
@@ -10,101 +11,283 @@ interface EmailCaptureFormProps {
   showName?: boolean
 }
 
+type Step = 'email' | 'code'
+
+const RESEND_COOLDOWN = 60
+
 export function EmailCaptureForm({ showName = false }: EmailCaptureFormProps) {
+  const router = useRouter()
+  const [step, setStep] = useState<Step>('email')
+
+  // email step state
   const [email, setEmail] = useState('')
   const [name, setName] = useState('')
   const [termsAccepted, setTermsAccepted] = useState(false)
   const [loading, setLoading] = useState(false)
-  const [sent, setSent] = useState(false)
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  // code step state
+  const [digits, setDigits] = useState<string[]>(Array(6).fill(''))
+  const [verifying, setVerifying] = useState(false)
+  const [codeError, setCodeError] = useState('')
+  const [resendCooldown, setResendCooldown] = useState(0)
+  const [resendError, setResendError] = useState('')
+
+  const inputRefs = useRef<HTMLInputElement[]>([])
+  const cooldownRef = useRef<ReturnType<typeof setInterval> | null>(null)
+
+  useEffect(() => {
+    return () => {
+      if (cooldownRef.current) clearInterval(cooldownRef.current)
+    }
+  }, [])
+
+  function startCooldown() {
+    setResendCooldown(RESEND_COOLDOWN)
+    cooldownRef.current = setInterval(() => {
+      setResendCooldown((prev) => {
+        if (prev <= 1) {
+          clearInterval(cooldownRef.current!)
+          return 0
+        }
+        return prev - 1
+      })
+    }, 1000)
+  }
+
+  async function sendOtp(emailAddr: string) {
+    const supabase = createClient()
+    const { error } = await supabase.auth.signInWithOtp({
+      email: emailAddr,
+      options: {
+        data: name ? { full_name: name } : undefined,
+        // No emailRedirectTo → Supabase sends 6-digit OTP
+      },
+    })
+    return error
+  }
+
+  const handleEmailSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     if (!email || !termsAccepted) return
 
     setLoading(true)
-    try {
-      const supabase = createClient()
-      const { error } = await supabase.auth.signInWithOtp({
-        email,
-        options: {
-          emailRedirectTo: `${window.location.origin}/auth/callback`,
-          data: name ? { full_name: name } : undefined,
-        },
-      })
+    const error = await sendOtp(email)
+    setLoading(false)
 
-      if (error) throw error
-
-      setSent(true)
-      toast('Magic link sent! Check your email.', 'success')
-    } catch (err) {
-      toast(
-        err instanceof Error ? err.message : 'Failed to send magic link',
-        'error'
-      )
-    } finally {
-      setLoading(false)
+    if (error) {
+      const msg = /rate.?limit|too many/i.test(error.message)
+        ? 'Too many attempts — wait a few minutes before trying again'
+        : error.message
+      toast(msg, 'error')
+    } else {
+      setStep('code')
+      startCooldown()
+      setTimeout(() => inputRefs.current[0]?.focus(), 50)
     }
   }
 
-  if (sent) {
+  function clearInputs() {
+    setDigits(Array(6).fill(''))
+    setTimeout(() => inputRefs.current[0]?.focus(), 50)
+  }
+
+  async function verify(token: string) {
+    setVerifying(true)
+    setCodeError('')
+    const supabase = createClient()
+    const { error } = await supabase.auth.verifyOtp({ email, token, type: 'email' })
+    if (error) {
+      const msg = /expired/i.test(error.message)
+        ? 'Code expired — request a new one below'
+        : 'Invalid code — check and try again'
+      setCodeError(msg)
+      clearInputs()
+      setVerifying(false)
+    } else {
+      const next = new URLSearchParams(window.location.search).get('next')
+      const safePath = next?.startsWith('/') ? next : '/shop'
+      router.push(safePath)
+    }
+  }
+
+  function handleDigitChange(index: number, value: string) {
+    const digit = value.replace(/\D/g, '').slice(-1)
+    const newDigits = [...digits]
+    newDigits[index] = digit
+    setDigits(newDigits)
+    setCodeError('')
+
+    if (digit && index < 5) {
+      inputRefs.current[index + 1]?.focus()
+    }
+
+    if (digit && index === 5) {
+      const token = [...digits.slice(0, 5), digit].join('')
+      if (token.length === 6) verify(token)
+    }
+  }
+
+  function handleDigitKeyDown(index: number, e: React.KeyboardEvent<HTMLInputElement>) {
+    if (e.key === 'Backspace' && !digits[index] && index > 0) {
+      inputRefs.current[index - 1]?.focus()
+    }
+  }
+
+  function handlePaste(e: React.ClipboardEvent<HTMLInputElement>) {
+    e.preventDefault()
+    const pasted = e.clipboardData.getData('text').replace(/\D/g, '').slice(0, 6)
+    if (!pasted) return
+    const newDigits = [...Array(6).fill('')]
+    for (let i = 0; i < pasted.length; i++) newDigits[i] = pasted[i]
+    setDigits(newDigits)
+    setCodeError('')
+    if (pasted.length === 6) {
+      verify(pasted)
+    } else {
+      inputRefs.current[pasted.length]?.focus()
+    }
+  }
+
+  async function handleResend() {
+    if (resendCooldown > 0) return
+    setResendError('')
+    const error = await sendOtp(email)
+    if (error) {
+      if (/rate.?limit|too many/i.test(error.message)) {
+        setResendError('Too many attempts — wait a few minutes before trying again')
+      } else {
+        setResendError(error.message)
+      }
+    } else {
+      startCooldown()
+      clearInputs()
+      toast('New code sent!', 'success')
+    }
+  }
+
+  // --- Email step ---
+  if (step === 'email') {
     return (
-      <div className="text-center py-4">
-        <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-brand-teal/20 mb-3">
-          <svg className="w-6 h-6 text-brand-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-          </svg>
+      <form onSubmit={handleEmailSubmit} className="space-y-3 w-full max-w-md">
+        {showName && (
+          <Input
+            type="text"
+            placeholder="Your name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+        )}
+        <div className="flex gap-2">
+          <Input
+            type="email"
+            placeholder="Enter your email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <Button
+            type="submit"
+            variant="secondary"
+            loading={loading}
+            disabled={!termsAccepted}
+            className="shrink-0"
+          >
+            {showName ? 'Request Access' : 'Get Started'}
+          </Button>
         </div>
-        <h3 className="text-lg font-semibold mb-1">Check your email</h3>
-        <p className="text-sm text-brand-muted">
-          We sent a magic link to <strong>{email}</strong>
-        </p>
-        <p className="text-xs text-brand-subtle mt-2">
-          Click the link in your email to access the research catalogue.
-        </p>
-      </div>
+        <label className="flex items-start gap-2 cursor-pointer">
+          <input
+            type="checkbox"
+            checked={termsAccepted}
+            onChange={(e) => setTermsAccepted(e.target.checked)}
+            className="mt-1 rounded border-brand-border bg-brand-surface text-brand-teal focus:ring-brand-teal"
+          />
+          <span className="text-xs text-brand-subtle">
+            I understand this content is for educational and research purposes only.
+            Not for human consumption.
+          </span>
+        </label>
+      </form>
     )
   }
 
+  // --- Code step ---
   return (
-    <form onSubmit={handleSubmit} className="space-y-3 w-full max-w-md">
-      {showName && (
-        <Input
-          type="text"
-          placeholder="Your name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
+    <div className="space-y-4 w-full max-w-md">
+      <div className="text-center">
+        <p className="text-sm text-brand-muted">
+          Enter the 6-digit code sent to <strong className="text-brand-text">{email}</strong>
+        </p>
+      </div>
+
+      <div className="flex gap-2 justify-center">
+        {digits.map((digit, i) => (
+          <input
+            key={i}
+            ref={(el) => { if (el) inputRefs.current[i] = el }}
+            type="text"
+            inputMode="numeric"
+            pattern="[0-9]*"
+            maxLength={1}
+            value={digit}
+            onChange={(e) => handleDigitChange(i, e.target.value)}
+            onKeyDown={(e) => handleDigitKeyDown(i, e)}
+            onPaste={handlePaste}
+            disabled={verifying}
+            className="w-10 h-12 text-center text-lg font-bold rounded border border-brand-border bg-brand-surface text-brand-text focus:outline-none focus:ring-2 focus:ring-brand-teal focus:border-transparent disabled:opacity-50"
+          />
+        ))}
+      </div>
+
+      {verifying && (
+        <p className="text-center text-sm text-brand-muted animate-pulse">Verifying…</p>
       )}
-      <div className="flex gap-2">
-        <Input
-          type="email"
-          placeholder="Enter your email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
+
+      {codeError && (
+        <p className="text-center text-sm text-red-400">{codeError}</p>
+      )}
+
+      <div className="flex justify-center">
         <Button
-          type="submit"
+          type="button"
           variant="secondary"
-          loading={loading}
-          disabled={!termsAccepted}
-          className="shrink-0"
+          loading={verifying}
+          disabled={digits.join('').length < 6}
+          onClick={() => verify(digits.join(''))}
+          className="w-full"
         >
-          {showName ? 'Request Access' : 'Get Started'}
+          Verify
         </Button>
       </div>
-      <label className="flex items-start gap-2 cursor-pointer">
-        <input
-          type="checkbox"
-          checked={termsAccepted}
-          onChange={(e) => setTermsAccepted(e.target.checked)}
-          className="mt-1 rounded border-brand-border bg-brand-surface text-brand-teal focus:ring-brand-teal"
-        />
-        <span className="text-xs text-brand-subtle">
-          I understand this content is for educational and research purposes only.
-          Not for human consumption.
-        </span>
-      </label>
-    </form>
+
+      <div className="text-center space-y-1">
+        {resendError && (
+          <p className="text-xs text-red-400">{resendError}</p>
+        )}
+        {resendCooldown > 0 ? (
+          <p className="text-xs text-brand-subtle">
+            Resend code in 0:{String(resendCooldown).padStart(2, '0')}
+          </p>
+        ) : (
+          <button
+            type="button"
+            onClick={handleResend}
+            className="text-xs text-brand-teal hover:underline"
+          >
+            Resend code
+          </button>
+        )}
+      </div>
+
+      <div className="text-center">
+        <button
+          type="button"
+          onClick={() => { setStep('email'); setCodeError(''); setResendError(''); setDigits(Array(6).fill('')) }}
+          className="text-xs text-brand-subtle hover:text-brand-muted"
+        >
+          ← Use a different email
+        </button>
+      </div>
+    </div>
   )
 }
