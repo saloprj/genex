@@ -217,7 +217,7 @@ export function EmailCaptureForm({ showName = false }: EmailCaptureFormProps) {
     <div className="space-y-4 w-full max-w-md">
       <div className="text-center">
         <p className="text-sm text-brand-muted">
-          Enter the 6-digit code sent to <strong className="text-brand-text">{email}</strong>
+          Enter the code sent to <strong className="text-brand-text">{email}</strong>
         </p>
       </div>
 
