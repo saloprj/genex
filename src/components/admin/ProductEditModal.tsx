@@ -41,6 +41,8 @@ export function ProductEditModal({ product, onClose, onSaved }: ProductEditModal
   const [imageError, setImageError] = useState('')
   const [saving, setSaving] = useState(false)
   const [categories, setCategories] = useState<CategoryOption[]>([])
+  const [additionalImages, setAdditionalImages] = useState<string[]>(product.images ?? [])
+  const [addImgUploading, setAddImgUploading] = useState(false)
   const [variants, setVariants] = useState<VariantRow[]>(
     product.variants.map((v) => ({ id: v.id, label: v.label, price: String(v.price) }))
   )
@@ -154,6 +156,7 @@ export function ProductEditModal({ product, onClose, onSaved }: ProductEditModal
           category,
           researchFocus: researchFocus.trim() || null,
           image: imagePath,
+          images: additionalImages,
           inStock,
           variants: variants.map((v, i) => ({
             label: v.label.trim(),
@@ -216,6 +219,63 @@ export function ProductEditModal({ product, onClose, onSaved }: ProductEditModal
             </label>
             <p className="text-xs text-brand-subtle">PNG, JPG, or WebP. Max 5MB.</p>
             {imageError && <p className="text-xs text-red-400">{imageError}</p>}
+          </div>
+        </div>
+
+        {/* Additional Images */}
+        <div>
+          <label className="block text-sm font-medium text-brand-muted mb-2">Additional Images</label>
+          <div className="flex flex-wrap gap-2 items-start">
+            {additionalImages.map((src, i) => (
+              <div key={i} className="relative w-20 h-20 flex-shrink-0 rounded-md border border-brand-border overflow-hidden group">
+                <Image
+                  src={src}
+                  alt={`Additional ${i + 1}`}
+                  width={80}
+                  height={80}
+                  className="object-cover w-full h-full"
+                />
+                <button
+                  type="button"
+                  onClick={() => setAdditionalImages((prev) => prev.filter((_, idx) => idx !== i))}
+                  className="absolute top-0.5 right-0.5 bg-black/60 rounded-full p-0.5 opacity-0 group-hover:opacity-100 transition-opacity"
+                >
+                  <X className="w-3 h-3 text-white" />
+                </button>
+              </div>
+            ))}
+            <label className="w-20 h-20 flex-shrink-0 rounded-md border border-dashed border-brand-border flex items-center justify-center cursor-pointer hover:border-brand-teal transition-colors">
+              {addImgUploading ? (
+                <span className="text-xs text-brand-muted">...</span>
+              ) : (
+                <span className="text-2xl text-brand-muted leading-none">+</span>
+              )}
+              <input
+                type="file"
+                accept=".png,.jpg,.jpeg,.webp"
+                className="sr-only"
+                disabled={addImgUploading}
+                onChange={async (e) => {
+                  const file = e.target.files?.[0]
+                  e.target.value = ''
+                  if (!file) return
+                  setAddImgUploading(true)
+                  try {
+                    const fd = new FormData()
+                    fd.append('file', file)
+                    fd.append('slug', product.slug)
+                    const res = await fetch('/api/upload', { method: 'POST', body: fd })
+                    if (!res.ok) throw new Error('Upload failed')
+                    const { path } = await res.json()
+                    setAdditionalImages((prev) => [...prev, path])
+                  } catch {
+                    toast('Image upload failed', 'error')
+                  } finally {
+                    setAddImgUploading(false)
+                  }
+                }}
+              />
+            </label>
           </div>
         </div>
 

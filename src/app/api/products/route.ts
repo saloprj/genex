@@ -39,7 +39,7 @@ export async function PATCH(request: NextRequest) {
     return NextResponse.json({ error: 'Forbidden' }, { status: 403 })
   }
 
-  const { id, name, description, price, dosage, category, researchFocus, image, inStock, variants } = await request.json()
+  const { id, name, description, price, dosage, category, researchFocus, image, images, inStock, variants } = await request.json()
   if (!id) {
     return NextResponse.json({ error: 'Product ID required' }, { status: 400 })
   }
@@ -52,6 +52,7 @@ export async function PATCH(request: NextRequest) {
   if (category !== undefined) data.category = category
   if (researchFocus !== undefined) data.researchFocus = researchFocus
   if (image !== undefined) data.image = image
+  if (images !== undefined) data.images = images
   if (inStock !== undefined) data.inStock = inStock
 
   if (price !== undefined) {

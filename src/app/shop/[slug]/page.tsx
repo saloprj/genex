@@ -1,13 +1,13 @@
 export const dynamic = 'force-dynamic'
 
 import { notFound } from 'next/navigation'
-import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft, FlaskConical, FileText, Shield } from 'lucide-react'
 import { prisma } from '@/lib/prisma'
 import { Badge } from '@/components/ui/Badge'
 import { Disclaimer } from '@/components/layout/Disclaimer'
 import { ProductPurchaseSection } from '@/components/shop/ProductPurchaseSection'
+import { ProductImageGallery } from '@/components/shop/ProductImageGallery'
 import type { Metadata } from 'next'
 
 interface ProductPageProps {
@@ -46,27 +46,11 @@ export default async function ProductPage({ params }: ProductPageProps) {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-        {/* Image */}
-        <div className="relative aspect-square bg-brand-surface border border-brand-border rounded-lg overflow-hidden">
-          {product.image ? (
-            <Image
-              src={product.image}
-              alt={product.name}
-              fill
-              className="object-cover"
-              priority
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
-          ) : (
-            <div className="w-full h-full flex items-center justify-center">
-              <div className="w-24 h-24 rounded-full bg-brand-teal/10 flex items-center justify-center">
-                <span className="text-4xl font-bold text-brand-teal">
-                  {product.name.charAt(0)}
-                </span>
-              </div>
-            </div>
-          )}
-        </div>
+        {/* Image gallery */}
+        <ProductImageGallery
+          images={[product.image, ...product.images].filter(Boolean) as string[]}
+          name={product.name}
+        />
 
         {/* Details */}
         <div className="space-y-6">

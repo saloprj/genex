@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState, useRef } from 'react'
 import { ShoppingCart } from 'lucide-react'
 import { Badge } from '@/components/ui/Badge'
 import { Button } from '@/components/ui/Button'
@@ -18,6 +19,21 @@ interface ProductCardProps {
 export function ProductCard({ product }: ProductCardProps) {
   const addItem = useCartStore((s) => s.addItem)
   const hasVariants = product.variants.length > 0
+  const allImages = [product.image, ...(product.images ?? [])].filter(Boolean) as string[]
+  const [activeIdx, setActiveIdx] = useState(0)
+  const intervalRef = useRef<ReturnType<typeof setInterval> | undefined>(undefined)
+
+  const handleMouseEnter = () => {
+    if (allImages.length <= 1) return
+    intervalRef.current = setInterval(() => {
+      setActiveIdx((prev) => (prev + 1) % allImages.length)
+    }, 1000)
+  }
+
+  const handleMouseLeave = () => {
+    clearInterval(intervalRef.current)
+    setActiveIdx(0)
+  }
 
   const handleAddToCart = (e: React.MouseEvent) => {
     e.preventDefault()
@@ -40,10 +56,14 @@ export function ProductCard({ product }: ProductCardProps) {
   return (
     <Link href={`/shop/${product.slug}`}>
       <Card hover className="h-full flex flex-col">
-        <div className="relative aspect-square bg-brand-dark overflow-hidden">
-          {product.image ? (
+        <div
+          className="relative aspect-square bg-brand-dark overflow-hidden"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
+          {allImages.length > 0 ? (
             <Image
-              src={product.image}
+              src={allImages[activeIdx]}
               alt={product.name}
               fill
               className="object-cover"
@@ -61,6 +81,16 @@ export function ProductCard({ product }: ProductCardProps) {
           {!product.inStock && (
             <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
               <span className="text-sm font-medium text-brand-muted">Out of Stock</span>
+            </div>
+          )}
+          {allImages.length > 1 && (
+            <div className="absolute bottom-2 left-0 right-0 flex justify-center gap-1 pointer-events-none">
+              {allImages.map((_, i) => (
+                <div
+                  key={i}
+                  className={`w-1.5 h-1.5 rounded-full transition-colors ${i === activeIdx ? 'bg-white' : 'bg-white/40'}`}
+                />
+              ))}
             </div>
           )}
         </div>

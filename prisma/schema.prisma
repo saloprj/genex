@@ -24,6 +24,7 @@ model Product {
   price         Decimal          @db.Decimal(10, 2)
   dosage        String?
   image         String?
+  images        String[]
   researchFocus String?
   productCode   String           @unique
   inStock       Boolean          @default(true)
