@@ -187,13 +187,21 @@ export function ProductEditModal({ product, onClose, onSaved }: ProductEditModal
           </div>
           <div className="flex-1 space-y-2">
             <label className="block text-sm font-medium text-brand-muted">Product Image</label>
-            <input
-              type="file"
-              accept=".png,.jpg,.jpeg,.webp"
-              onChange={handleFileChange}
-              className="block w-full text-sm text-brand-muted file:mr-3 file:py-1.5 file:px-3 file:rounded-md file:border-0 file:text-sm file:font-medium file:bg-brand-surface file:text-brand-text file:cursor-pointer hover:file:bg-brand-border"
-            />
-            <p className="text-xs text-brand-subtle">PNG, JPG, or WebP. Max 5MB. Leave empty to keep existing image.</p>
+            <label className="inline-flex items-center gap-2 cursor-pointer">
+              <span className="px-3 py-1.5 rounded-md text-sm font-medium bg-brand-surface text-brand-text hover:bg-brand-border transition-colors">
+                {imageFile ? 'Change Image' : 'Choose Image'}
+              </span>
+              {imageFile && (
+                <span className="text-xs text-brand-muted truncate max-w-[160px]">{imageFile.name}</span>
+              )}
+              <input
+                type="file"
+                accept=".png,.jpg,.jpeg,.webp"
+                onChange={handleFileChange}
+                className="sr-only"
+              />
+            </label>
+            <p className="text-xs text-brand-subtle">PNG, JPG, or WebP. Max 5MB.</p>
             {imageError && <p className="text-xs text-red-400">{imageError}</p>}
           </div>
         </div>
