@@ -45,6 +45,8 @@ services:
       EMAIL_FROM: ${EMAIL_FROM:-noreply@genexpep.com}
       UPSTASH_REDIS_REST_URL: ${UPSTASH_REDIS_REST_URL:-}
       UPSTASH_REDIS_REST_TOKEN: ${UPSTASH_REDIS_REST_TOKEN:-}
+    volumes:
+      - nextjs_image_cache:/app/.next/cache/images
     depends_on:
       postgres:
         condition: service_healthy
@@ -60,6 +62,7 @@ services:
 
 volumes:
   pgdata:
+  nextjs_image_cache:
 
 networks:
   internal:
