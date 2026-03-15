@@ -101,7 +101,12 @@ export default function AdminProductsPage() {
                   <Badge variant="outline">{product.category}</Badge>
                 </td>
                 <td className="py-3 px-2 text-right">
-                  <span className="font-mono">{formatPrice(product.price)}</span>
+                  <span className="font-mono">
+                    {product.variants.length > 0
+                      ? product.variants.map(v => formatPrice(v.price)).join(', ')
+                      : formatPrice(product.price)
+                    }
+                  </span>
                 </td>
                 <td className="py-3 px-2 text-center">
                   <button

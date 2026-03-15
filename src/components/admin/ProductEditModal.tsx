@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/Button'
 import { Input } from '@/components/ui/Input'
 import { toast } from '@/components/ui/Toast'
 import { CATEGORIES } from '@/lib/constants'
+import { formatPrice } from '@/lib/utils'
 import type { ProductWithVariants } from '@/types'
 
 interface VariantRow {
@@ -77,8 +78,10 @@ export function ProductEditModal({ product, onClose, onSaved }: ProductEditModal
   }
 
   const handleSave = async () => {
-    const priceNum = parseFloat(price)
-    if (isNaN(priceNum) || priceNum <= 0) {
+    const effectivePrice = variants.length > 0
+      ? Math.min(...variants.map(v => parseFloat(v.price)))
+      : parseFloat(price)
+    if (variants.length === 0 && (isNaN(effectivePrice) || effectivePrice <= 0)) {
       toast('Price must be greater than 0', 'error')
       return
     }
@@ -133,7 +136,7 @@ export function ProductEditModal({ product, onClose, onSaved }: ProductEditModal
           id: product.id,
           name: name.trim(),
           description: description.trim(),
-          price: priceNum,
+          price: effectivePrice,
           dosage: dosage.trim() || null,
           category,
           researchFocus: researchFocus.trim() || null,
@@ -190,7 +193,7 @@ export function ProductEditModal({ product, onClose, onSaved }: ProductEditModal
               onChange={handleFileChange}
               className="block w-full text-sm text-brand-muted file:mr-3 file:py-1.5 file:px-3 file:rounded-md file:border-0 file:text-sm file:font-medium file:bg-brand-surface file:text-brand-text file:cursor-pointer hover:file:bg-brand-border"
             />
-            <p className="text-xs text-brand-subtle">PNG, JPG, or WebP. Max 5MB.</p>
+            <p className="text-xs text-brand-subtle">PNG, JPG, or WebP. Max 5MB. Leave empty to keep existing image.</p>
             {imageError && <p className="text-xs text-red-400">{imageError}</p>}
           </div>
         </div>
@@ -232,17 +235,35 @@ export function ProductEditModal({ product, onClose, onSaved }: ProductEditModal
         </div>
 
         {/* Price + Stock */}
-        <div className="grid grid-cols-2 gap-4">
-          <Input
-            label="Price"
-            type="number"
-            step="0.01"
-            min="0.01"
-            value={price}
-            onChange={(e) => setPrice(e.target.value)}
-          />
-          <div className="flex items-end pb-1">
-            <label className="flex items-center gap-2 cursor-pointer">
+        {variants.length === 0 ? (
+          <div className="grid grid-cols-2 gap-4">
+            <Input
+              label="Price"
+              type="number"
+              step="0.01"
+              min="0.01"
+              value={price}
+              onChange={(e) => setPrice(e.target.value)}
+            />
+            <div className="flex items-end pb-1">
+              <label className="flex items-center gap-2 cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={inStock}
+                  onChange={(e) => setInStock(e.target.checked)}
+                  className="w-4 h-4 rounded border-brand-border bg-brand-surface text-brand-teal focus:ring-brand-teal"
+                />
+                <span className="text-sm font-medium text-brand-text">In Stock</span>
+              </label>
+            </div>
+          </div>
+        ) : (
+          <div className="flex items-center gap-4">
+            <p className="text-sm text-brand-muted">
+              Price set by variants ({formatPrice(Math.min(...variants.map(v => parseFloat(v.price) || 0)))}
+              {variants.length > 1 && ` – ${formatPrice(Math.max(...variants.map(v => parseFloat(v.price) || 0)))}`})
+            </p>
+            <label className="flex items-center gap-2 cursor-pointer ml-auto">
               <input
                 type="checkbox"
                 checked={inStock}
@@ -252,7 +273,7 @@ export function ProductEditModal({ product, onClose, onSaved }: ProductEditModal
               <span className="text-sm font-medium text-brand-text">In Stock</span>
             </label>
           </div>
-        </div>
+        )}
 
         {/* Description */}
         <div>
