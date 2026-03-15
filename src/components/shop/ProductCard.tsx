@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { ShoppingCart } from 'lucide-react'
 import { Badge } from '@/components/ui/Badge'
 import { Button } from '@/components/ui/Button'
@@ -22,18 +22,37 @@ export function ProductCard({ product }: ProductCardProps) {
   const allImages = [product.image, ...(product.images ?? [])].filter(Boolean) as string[]
   const [activeIdx, setActiveIdx] = useState(0)
   const intervalRef = useRef<ReturnType<typeof setInterval> | undefined>(undefined)
+  const containerRef = useRef<HTMLDivElement>(null)
 
-  const handleMouseEnter = () => {
+  const stopCycling = () => {
+    clearInterval(intervalRef.current)
+    intervalRef.current = undefined
+    setActiveIdx(0)
+  }
+
+  const startCycling = () => {
     if (allImages.length <= 1) return
     intervalRef.current = setInterval(() => {
       setActiveIdx((prev) => (prev + 1) % allImages.length)
-    }, 1000)
+    }, 2500)
   }
 
-  const handleMouseLeave = () => {
-    clearInterval(intervalRef.current)
-    setActiveIdx(0)
-  }
+  // Stop cycling when card scrolls out of view (mobile fix)
+  useEffect(() => {
+    const el = containerRef.current
+    if (!el || allImages.length <= 1) return
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (!entry.isIntersecting) stopCycling() },
+      { threshold: 0.1 }
+    )
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [allImages.length])
+
+  // Cleanup on unmount
+  useEffect(() => {
+    return () => clearInterval(intervalRef.current)
+  }, [])
 
   const handleAddToCart = (e: React.MouseEvent) => {
     e.preventDefault()
@@ -57,9 +76,10 @@ export function ProductCard({ product }: ProductCardProps) {
     <Link href={`/shop/${product.slug}`}>
       <Card hover className="h-full flex flex-col">
         <div
+          ref={containerRef}
           className="relative aspect-square bg-brand-dark overflow-hidden"
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
+          onMouseEnter={startCycling}
+          onMouseLeave={stopCycling}
         >
           {allImages.length > 0 ? (
             <Image
