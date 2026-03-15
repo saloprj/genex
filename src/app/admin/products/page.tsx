@@ -11,6 +11,7 @@ import type { ProductWithVariants } from '@/types'
 
 export default function AdminProductsPage() {
   const [products, setProducts] = useState<ProductWithVariants[]>([])
+  const [search, setSearch] = useState('')
   const [loading, setLoading] = useState(true)
   const [editingProduct, setEditingProduct] = useState<ProductWithVariants | null>(null)
 
@@ -62,6 +63,16 @@ export default function AdminProductsPage() {
         <p className="text-sm text-brand-muted">{products.length} products</p>
       </div>
 
+      <div className="mb-6">
+        <input
+          type="text"
+          placeholder="Search by name, code, or category..."
+          value={search}
+          onChange={e => setSearch(e.target.value)}
+          className="w-full max-w-sm bg-brand-dark border border-brand-border rounded-lg px-4 py-2 text-sm text-brand-text placeholder:text-brand-muted focus:outline-none focus:border-brand-teal"
+        />
+      </div>
+
       <div className="overflow-x-auto">
         <table className="w-full text-sm">
           <thead>
@@ -75,7 +86,10 @@ export default function AdminProductsPage() {
             </tr>
           </thead>
           <tbody>
-            {products.map((product) => (
+            {products.filter(p => {
+              const q = search.toLowerCase()
+              return !q || p.name.toLowerCase().includes(q) || p.productCode.toLowerCase().includes(q) || p.category.toLowerCase().includes(q)
+            }).map((product) => (
               <tr key={product.id} className="border-b border-brand-border/50 hover:bg-brand-dark/30">
                 <td className="py-3 px-2">
                   <div className="font-medium">{product.name}</div>
