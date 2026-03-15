@@ -19,6 +19,14 @@ const OTP_LENGTH = 8
 export function EmailCaptureForm({ showName = false }: EmailCaptureFormProps) {
   const router = useRouter()
   const [step, setStep] = useState<Step>('email')
+  const [loggedIn, setLoggedIn] = useState(false)
+
+  useEffect(() => {
+    const supabase = createClient()
+    supabase.auth.getSession().then(({ data }: { data: { session: unknown } }) => {
+      if (data.session) setLoggedIn(true)
+    })
+  }, [])
 
   // email step state
   const [email, setEmail] = useState('')
@@ -164,6 +172,17 @@ export function EmailCaptureForm({ showName = false }: EmailCaptureFormProps) {
       clearInputs()
       toast('New code sent!', 'success')
     }
+  }
+
+  // --- Already logged in ---
+  if (loggedIn) {
+    return (
+      <div className="flex flex-col items-center gap-3">
+        <Button variant="secondary" onClick={() => router.push('/shop')}>
+          Browse Shop →
+        </Button>
+      </div>
+    )
   }
 
   // --- Email step ---
