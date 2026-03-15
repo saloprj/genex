@@ -7,9 +7,14 @@ import { Modal } from '@/components/ui/Modal'
 import { Button } from '@/components/ui/Button'
 import { Input } from '@/components/ui/Input'
 import { toast } from '@/components/ui/Toast'
-import { CATEGORIES } from '@/lib/constants'
 import { formatPrice } from '@/lib/utils'
 import type { ProductWithVariants } from '@/types'
+
+interface CategoryOption {
+  id: string
+  slug: string
+  label: string
+}
 
 interface VariantRow {
   id?: string
@@ -35,6 +40,7 @@ export function ProductEditModal({ product, onClose, onSaved }: ProductEditModal
   const [imagePreview, setImagePreview] = useState<string | null>(null)
   const [imageError, setImageError] = useState('')
   const [saving, setSaving] = useState(false)
+  const [categories, setCategories] = useState<CategoryOption[]>([])
   const [variants, setVariants] = useState<VariantRow[]>(
     product.variants.map((v) => ({ id: v.id, label: v.label, price: String(v.price) }))
   )
@@ -45,6 +51,13 @@ export function ProductEditModal({ product, onClose, onSaved }: ProductEditModal
       if (imagePreview) URL.revokeObjectURL(imagePreview)
     }
   }, [imagePreview])
+
+  useEffect(() => {
+    fetch('/api/categories')
+      .then((r) => r.json())
+      .then((d) => setCategories(d.categories ?? []))
+      .catch(() => {})
+  }, [])
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0]
@@ -230,7 +243,7 @@ export function ProductEditModal({ product, onClose, onSaved }: ProductEditModal
               onChange={(e) => setCategory(e.target.value)}
               className="w-full px-3 py-2 bg-brand-surface border border-brand-border rounded-md text-brand-text focus:outline-none focus:ring-2 focus:ring-brand-teal focus:border-transparent"
             >
-              {CATEGORIES.map((cat) => (
+              {categories.map((cat) => (
                 <option key={cat.slug} value={cat.slug}>{cat.label}</option>
               ))}
             </select>

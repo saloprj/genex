@@ -8,6 +8,13 @@ datasource db {
   directUrl = env("DIRECT_URL")
 }
 
+model Category {
+  id        String @id @default(cuid())
+  slug      String @unique
+  label     String
+  sortOrder Int    @default(0)
+}
+
 model Product {
   id            String           @id @default(cuid())
   name          String

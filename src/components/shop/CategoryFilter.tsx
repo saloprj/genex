@@ -1,13 +1,26 @@
 'use client'
 
+import { useState, useEffect } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
-import { CATEGORIES } from '@/lib/constants'
 import { cn } from '@/lib/utils'
+
+interface Category {
+  slug: string
+  label: string
+}
 
 export function CategoryFilter() {
   const router = useRouter()
   const searchParams = useSearchParams()
   const activeCategory = searchParams.get('category') || ''
+  const [categories, setCategories] = useState<Category[]>([])
+
+  useEffect(() => {
+    fetch('/api/categories')
+      .then((r) => r.json())
+      .then((d) => setCategories(d.categories ?? []))
+      .catch(() => {})
+  }, [])
 
   const handleCategory = (slug: string) => {
     const params = new URLSearchParams(searchParams.toString())
@@ -36,7 +49,7 @@ export function CategoryFilter() {
       >
         All
       </button>
-      {CATEGORIES.map((cat) => (
+      {categories.map((cat) => (
         <button
           key={cat.slug}
           onClick={() => handleCategory(cat.slug)}
