@@ -10,7 +10,13 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Research Catalogue',
-  description: 'Browse our collection of research peptides for scientific exploration.',
+  description: 'Browse Gene X Labs\' full catalogue of research-grade peptides including BPC-157, TB-500, semaglutide, tirzepatide, CJC-1295, ipamorelin, and more.',
+  alternates: { canonical: 'https://genexpep.com/shop' },
+  openGraph: {
+    url: 'https://genexpep.com/shop',
+    title: 'Research Peptide Catalogue | Gene X Labs',
+    description: 'Browse Gene X Labs\' full catalogue of research-grade peptides. Education-first approach with COA available for every batch.',
+  },
 }
 
 interface ShopPageProps {

@@ -7,7 +7,13 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'About',
-  description: 'Learn about Gene X Labs and our commitment to research-grade peptides.',
+  description: 'Learn about Gene X Labs — our mission, values, and commitment to quality research-grade peptides with HPLC and Mass Spec tested compounds.',
+  alternates: { canonical: 'https://genexpep.com/about' },
+  openGraph: {
+    url: 'https://genexpep.com/about',
+    title: 'About Gene X Labs',
+    description: 'Gene X Labs is dedicated to advancing peptide research with quality compounds and comprehensive educational resources.',
+  },
 }
 
 export default function AboutPage() {
