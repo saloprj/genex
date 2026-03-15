@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import Image from 'next/image'
 
 interface ProductImageGalleryProps {
@@ -10,6 +10,26 @@ interface ProductImageGalleryProps {
 
 export function ProductImageGallery({ images, name }: ProductImageGalleryProps) {
   const [selectedIdx, setSelectedIdx] = useState(0)
+  const touchStartX = useRef<number | null>(null)
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX
+  }
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    if (touchStartX.current === null) return
+    const diff = touchStartX.current - e.changedTouches[0].clientX
+    if (Math.abs(diff) < 40) return // too small, ignore
+
+    if (diff > 0) {
+      // swipe left → next
+      setSelectedIdx((prev) => (prev + 1) % images.length)
+    } else {
+      // swipe right → prev
+      setSelectedIdx((prev) => (prev - 1 + images.length) % images.length)
+    }
+    touchStartX.current = null
+  }
 
   if (images.length === 0) {
     return (
@@ -23,7 +43,11 @@ export function ProductImageGallery({ images, name }: ProductImageGalleryProps) 
 
   return (
     <div className="space-y-3">
-      <div className="relative aspect-square bg-brand-surface border border-brand-border rounded-lg overflow-hidden">
+      <div
+        className="relative aspect-square bg-brand-surface border border-brand-border rounded-lg overflow-hidden"
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
+      >
         <Image
           src={images[selectedIdx]}
           alt={name}
@@ -32,6 +56,16 @@ export function ProductImageGallery({ images, name }: ProductImageGalleryProps) 
           priority
           sizes="(max-width: 1024px) 100vw, 50vw"
         />
+        {images.length > 1 && (
+          <div className="absolute bottom-2 left-0 right-0 flex justify-center gap-1.5 pointer-events-none">
+            {images.map((_, i) => (
+              <div
+                key={i}
+                className={`w-1.5 h-1.5 rounded-full transition-colors ${i === selectedIdx ? 'bg-white' : 'bg-white/40'}`}
+              />
+            ))}
+          </div>
+        )}
       </div>
 
       {images.length > 1 && (
