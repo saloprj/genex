@@ -58,9 +58,19 @@ export async function createInvoice(params: {
   return dexpayPost('/invoices/create', body)
 }
 
+export async function registerWebhook(url: string): Promise<{ private_key: string; public_key: string; id: number }> {
+  const body: Record<string, unknown> = {
+    event_type: 'invoice_update',
+    name: 'genexpep-invoices',
+    project_name: process.env.DEXPAY_PROJECT_NAME!,
+    url,
+  }
+  return dexpayPost('/callbacks/config/create', body)
+}
+
 export function verifyWebhookSignature(rawBody: string, signature: string): boolean {
   const secret = process.env.DEXPAY_WEBHOOK_SECRET
-  if (!secret) return true // skip verification if not configured
+  if (!secret) return false // reject if secret not configured
 
   const hmac = crypto.createHmac('sha256', secret)
   hmac.update(rawBody)

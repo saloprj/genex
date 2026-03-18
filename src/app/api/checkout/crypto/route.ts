@@ -27,18 +27,28 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Order not found' }, { status: 404 })
     }
 
-    const invoice = await createInvoice({
-      orderId: order.id,
-      amount: Number(order.total).toFixed(2),
-      customerEmail: order.shippingEmail,
-      description: order.items.map((i) => `${i.productName} x${i.quantity}`).join(', '),
-    })
+    let invoice
+    try {
+      invoice = await createInvoice({
+        orderId: order.id,
+        amount: Number(order.total).toFixed(2),
+        customerEmail: order.shippingEmail,
+        description: order.items.map((i) => `${i.productName} x${i.quantity}`).join(', '),
+      })
+    } catch (invoiceError) {
+      console.error('Dexpay invoice creation failed, cancelling order:', invoiceError)
+      await prisma.order.update({
+        where: { id: order.id },
+        data: { status: 'CANCELLED' },
+      })
+      throw invoiceError
+    }
 
     return NextResponse.json({ url: invoice.payment_page_url })
   } catch (error) {
     console.error('Dexpay checkout error:', error)
     return NextResponse.json(
-      { error: 'Failed to create crypto checkout' },
+      { error: error instanceof Error ? error.message : 'Failed to create crypto checkout' },
       { status: 500 }
     )
   }
