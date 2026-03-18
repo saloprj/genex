@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { prisma } from '@/lib/prisma'
-import { createCharge } from '@/lib/coinbase'
+import { createInvoice } from '@/lib/dexpay'
 import { createClient } from '@/lib/supabase/server'
 
 export async function POST(request: NextRequest) {
@@ -27,23 +27,16 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Order not found' }, { status: 404 })
     }
 
-    const appUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'
-
-    const charge = await createCharge({
-      name: `Gene X Labs Order #${order.id.slice(-8)}`,
-      description: order.items.map((i) => `${i.productName} x${i.quantity}`).join(', '),
+    const invoice = await createInvoice({
+      orderId: order.id,
       amount: Number(order.total).toFixed(2),
-      currency: 'USD',
-      metadata: {
-        orderId: order.id,
-      },
-      redirectUrl: `${appUrl}/checkout/success?orderId=${order.id}`,
-      cancelUrl: `${appUrl}/checkout`,
+      customerEmail: order.shippingEmail,
+      description: order.items.map((i) => `${i.productName} x${i.quantity}`).join(', '),
     })
 
-    return NextResponse.json({ url: charge.hosted_url })
+    return NextResponse.json({ url: invoice.payment_page_url })
   } catch (error) {
-    console.error('Coinbase checkout error:', error)
+    console.error('Dexpay checkout error:', error)
     return NextResponse.json(
       { error: 'Failed to create crypto checkout' },
       { status: 500 }

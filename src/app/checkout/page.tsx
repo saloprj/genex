@@ -263,7 +263,7 @@ export default function CheckoutPage() {
                   <Bitcoin className={cn('w-6 h-6', paymentMethod === 'CRYPTO' ? 'text-brand-teal' : 'text-brand-muted')} />
                   <div className="text-left">
                     <div className="font-medium text-sm">Cryptocurrency</div>
-                    <div className="text-xs text-brand-subtle">BTC, ETH, USDC</div>
+                    <div className="text-xs text-brand-subtle">USDT, USDC, BTC, ETH +</div>
                   </div>
                 </button>
                 {isDevMode && (
