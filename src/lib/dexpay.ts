@@ -44,12 +44,15 @@ export async function createInvoice(params: {
   customerEmail: string
   description: string
 }): Promise<DexpayInvoice> {
+  // amount_requested must be in base units (8 decimal places): $1 = 100000000
+  const amountBaseUnits = Math.round(parseFloat(params.amount) * 1e8).toString()
+
   const body: Record<string, unknown> = {
     project_name: process.env.DEXPAY_PROJECT_NAME!,
     public_id: params.orderId,
-    vault_id: process.env.DEXPAY_VAULT_ID!,
-    currency_iso: 'USD',
-    amount_requested: params.amount,
+    vault_id: parseInt(process.env.DEXPAY_VAULT_ID!),
+    currency_id: 5, // USDT_TRX (USD-pegged stablecoin on TRC20)
+    amount_requested: amountBaseUnits,
     order_id: params.orderId,
     customer_email: params.customerEmail,
     description: params.description,
