@@ -103,6 +103,14 @@ export default function CheckoutPage() {
 
     setLoading(true)
     try {
+      // Save shipping address before redirecting (debounce may not fire in time)
+      if (saveTimer.current) clearTimeout(saveTimer.current)
+      fetch('/api/shipping-address', {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(shipping),
+      }).catch(() => {})
+
       // 1. Create PENDING order
       const orderRes = await fetch('/api/orders', {
         method: 'POST',
