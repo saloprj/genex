@@ -49,16 +49,17 @@ export async function createInvoice(params: {
   // amount_requested must be in base units (8 decimal places): $1 = 100000000
   const amountBaseUnits = Math.round(parseFloat(params.amount) * 1e8).toString()
 
-  // Currency IDs: 1=ETH, 4=BTC, 5=USDT_TRX, 6=USDT_ETH, 87=USDT_BSC, 95=USDT_MATIC
-  // supported_currencies lets the buyer choose any of these on the payment page.
-  // currency_id 5 (USDT_TRX) is the base/reference — amount_requested is in USDT base units.
+  // currency_id 5 = USDT_TRX (base/reference for amount).
+  // supported_currencies enables multi-currency selection UI on payment page:
+  // 5=USDT_TRX, 6=USDT_ETH, 87=USDT_BSC, 1=ETH, 4=BTC
+  // Note: converted_coin_id causes 500 errors from Dexpay API — do not use.
   const body: Record<string, unknown> = {
     project_name: process.env.DEXPAY_PROJECT_NAME!,
     public_id: params.orderId,
     vault_id: parseInt(process.env.DEXPAY_VAULT_ID!),
-    currency_id: 5, // USDT_TRX as the base/reference currency
-    supported_currencies: [1, 4, 5, 6, 87, 95], // ETH, BTC, USDT_TRX, USDT_ETH, USDT_BSC, USDT_MATIC
+    currency_id: 5,
     amount_requested: amountBaseUnits,
+    supported_currencies: [5, 6, 87, 4],
     order_id: params.orderId,
     customer_email: params.customerEmail,
     description: params.description,
