@@ -33,6 +33,7 @@ export default function CheckoutPage() {
   const [paymentMethod, setPaymentMethod] = useState<PaymentMethod>('STRIPE')
   const [termsAccepted, setTermsAccepted] = useState(false)
   const prefilled = useRef(false)
+  const saveTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   const [shipping, setShipping] = useState({
     name: '',
@@ -69,7 +70,21 @@ export default function CheckoutPage() {
   }, [user]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const updateField = (field: string, value: string) => {
-    setShipping((prev) => ({ ...prev, [field]: value }))
+    setShipping((prev) => {
+      const next = { ...prev, [field]: value }
+      // Debounced auto-save (skip email — it's read-only from auth)
+      if (field !== 'email' && prefilled.current) {
+        if (saveTimer.current) clearTimeout(saveTimer.current)
+        saveTimer.current = setTimeout(() => {
+          fetch('/api/shipping-address', {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(next),
+          }).catch(() => {})
+        }, 800)
+      }
+      return next
+    })
   }
 
   const handleCheckout = async () => {

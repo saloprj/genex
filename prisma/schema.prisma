@@ -87,6 +87,19 @@ model Order {
   @@index([status])
 }
 
+model ShippingAddress {
+  id             String   @id @default(cuid())
+  userId         String   @unique
+  name           String   @default("")
+  address1       String   @default("")
+  address2       String   @default("")
+  city           String   @default("")
+  state          String   @default("")
+  postalCode     String   @default("")
+  country        String   @default("United Kingdom")
+  updatedAt      DateTime @updatedAt
+}
+
 model OrderItem {
   id           String  @id @default(cuid())
   orderId      String
