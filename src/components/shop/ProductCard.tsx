@@ -21,8 +21,10 @@ export function ProductCard({ product }: ProductCardProps) {
   const hasVariants = product.variants.length > 0
   const allImages = [product.image, ...(product.images ?? [])].filter(Boolean) as string[]
   const [activeIdx, setActiveIdx] = useState(0)
+  const [showVariantPicker, setShowVariantPicker] = useState(false)
   const intervalRef = useRef<ReturnType<typeof setInterval> | undefined>(undefined)
   const containerRef = useRef<HTMLDivElement>(null)
+  const pickerRef = useRef<HTMLDivElement>(null)
 
   const stopCycling = () => {
     clearInterval(intervalRef.current)
@@ -54,6 +56,18 @@ export function ProductCard({ product }: ProductCardProps) {
     return () => clearInterval(intervalRef.current)
   }, [])
 
+  // Close variant picker on outside click
+  useEffect(() => {
+    if (!showVariantPicker) return
+    const handler = (e: MouseEvent) => {
+      if (pickerRef.current && !pickerRef.current.contains(e.target as Node)) {
+        setShowVariantPicker(false)
+      }
+    }
+    document.addEventListener('mousedown', handler)
+    return () => document.removeEventListener('mousedown', handler)
+  }, [showVariantPicker])
+
   const handleAddToCart = (e: React.MouseEvent) => {
     e.preventDefault()
     addItem({
@@ -66,6 +80,29 @@ export function ProductCard({ product }: ProductCardProps) {
       productCode: product.productCode,
     })
     toast(`${product.name} added to cart`, 'success')
+  }
+
+  const handleOpenVariantPicker = (e: React.MouseEvent) => {
+    e.preventDefault()
+    setShowVariantPicker(true)
+  }
+
+  const handleVariantSelect = (e: React.MouseEvent, variant: typeof product.variants[0]) => {
+    e.preventDefault()
+    e.stopPropagation()
+    addItem({
+      id: `${product.id}-${variant.id}`,
+      productId: product.id,
+      name: product.name,
+      slug: product.slug,
+      price: Number(variant.price),
+      image: product.image,
+      productCode: product.productCode,
+      variantId: variant.id,
+      variantLabel: variant.label,
+    })
+    toast(`${product.name} (${variant.label}) added to cart`, 'success')
+    setShowVariantPicker(false)
   }
 
   const minVariantPrice = hasVariants
@@ -122,24 +159,42 @@ export function ProductCard({ product }: ProductCardProps) {
           {product.dosage && (
             <p className="text-xs text-brand-subtle mb-2">{product.dosage}</p>
           )}
-          <div className="mt-auto flex items-center justify-between pt-3">
-            <div>
+          <div className="mt-auto pt-3 relative">
+            <div className="flex items-center justify-between">
               <span className="text-lg font-bold font-mono text-brand-teal">
                 {hasVariants ? `From ${formatPrice(minVariantPrice!)}` : formatPrice(product.price)}
               </span>
-              {hasVariants && (
-                <p className="text-xs text-brand-muted mt-0.5">View Options →</p>
+              {product.inStock && (
+                <Button
+                  size="sm"
+                  onClick={hasVariants ? handleOpenVariantPicker : handleAddToCart}
+                  className="gap-1.5"
+                >
+                  <ShoppingCart className="w-3.5 h-3.5" />
+                  Add
+                </Button>
               )}
             </div>
-            {!hasVariants && product.inStock && (
-              <Button
-                size="sm"
-                onClick={handleAddToCart}
-                className="gap-1.5"
+
+            {hasVariants && showVariantPicker && (
+              <div
+                ref={pickerRef}
+                className="absolute bottom-full left-0 right-0 mb-2 bg-brand-surface border border-brand-border rounded-lg p-3 z-10 shadow-xl"
+                onClick={(e) => { e.preventDefault(); e.stopPropagation() }}
               >
-                <ShoppingCart className="w-3.5 h-3.5" />
-                Add
-              </Button>
+                <p className="text-xs text-brand-muted mb-2 font-medium">Select option:</p>
+                <div className="flex flex-wrap gap-1.5">
+                  {product.variants.map((variant) => (
+                    <button
+                      key={variant.id}
+                      onClick={(e) => handleVariantSelect(e, variant)}
+                      className="px-2.5 py-1 text-xs rounded-md border border-brand-border hover:border-brand-teal hover:text-brand-teal transition-colors bg-brand-bg"
+                    >
+                      {variant.label} — {formatPrice(Number(variant.price))}
+                    </button>
+                  ))}
+                </div>
+              </div>
             )}
           </div>
         </div>
