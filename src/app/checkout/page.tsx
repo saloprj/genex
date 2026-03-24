@@ -43,14 +43,26 @@ export default function CheckoutPage() {
     country: 'United Kingdom',
   })
 
-  // Auto-fill email from authenticated user
+  // Auto-fill from saved shipping address (last order), then override email from auth
   useEffect(() => {
-    if (user?.email && !shipping.email) {
-      setShipping((prev) => ({ ...prev, email: user.email! }))
-    }
-    if (user?.user_metadata?.full_name && !shipping.name) {
-      setShipping((prev) => ({ ...prev, name: user.user_metadata.full_name }))
-    }
+    if (!user) return
+    fetch('/api/shipping-address')
+      .then((r) => r.json())
+      .then((saved) => {
+        setShipping((prev) => ({
+          name: saved?.name || user.user_metadata?.full_name || prev.name,
+          email: user.email || prev.email,
+          address1: saved?.address1 || prev.address1,
+          address2: saved?.address2 || prev.address2,
+          city: saved?.city || prev.city,
+          state: saved?.state || prev.state,
+          postalCode: saved?.postalCode || prev.postalCode,
+          country: saved?.country || prev.country,
+        }))
+      })
+      .catch(() => {
+        if (user.email) setShipping((prev) => ({ ...prev, email: user.email! }))
+      })
   }, [user]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const updateField = (field: string, value: string) => {
