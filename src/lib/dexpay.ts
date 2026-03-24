@@ -3,9 +3,11 @@ import crypto from 'crypto'
 const DEXPAY_API_URL = 'https://dexpay-api.dextrade.com'
 
 function signRequest(body: Record<string, unknown>): string {
-  // Sort keys alphabetically, concatenate string values, append secret, SHA256
+  // Sort keys alphabetically, concatenate values (arrays joined without separator), append secret, SHA256
   const sortedKeys = Object.keys(body).sort()
-  const concatenated = sortedKeys.map((k) => String(body[k])).join('')
+  const concatenated = sortedKeys
+    .map((k) => (Array.isArray(body[k]) ? (body[k] as unknown[]).join('') : String(body[k])))
+    .join('')
   const toHash = concatenated + process.env.DEXPAY_SECRET_KEY!
   return crypto.createHash('sha256').update(toHash).digest('hex')
 }
@@ -47,11 +49,15 @@ export async function createInvoice(params: {
   // amount_requested must be in base units (8 decimal places): $1 = 100000000
   const amountBaseUnits = Math.round(parseFloat(params.amount) * 1e8).toString()
 
+  // Currency IDs: 1=ETH, 4=BTC, 5=USDT_TRX, 6=USDT_ETH, 87=USDT_BSC, 95=USDT_MATIC
+  // supported_currencies lets the buyer choose any of these on the payment page.
+  // currency_id 5 (USDT_TRX) is the base/reference — amount_requested is in USDT base units.
   const body: Record<string, unknown> = {
     project_name: process.env.DEXPAY_PROJECT_NAME!,
     public_id: params.orderId,
     vault_id: parseInt(process.env.DEXPAY_VAULT_ID!),
-    currency_id: 5, // USDT_TRX (USD-pegged stablecoin on TRC20)
+    currency_id: 5, // USDT_TRX as the base/reference currency
+    supported_currencies: [1, 4, 5, 6, 87, 95], // ETH, BTC, USDT_TRX, USDT_ETH, USDT_BSC, USDT_MATIC
     amount_requested: amountBaseUnits,
     order_id: params.orderId,
     customer_email: params.customerEmail,
