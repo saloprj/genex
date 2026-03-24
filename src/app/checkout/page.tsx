@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useRouter } from 'next/navigation'
 import { CreditCard, Bitcoin, Loader2, FlaskConical } from 'lucide-react'
 import { Header } from '@/components/layout/Header'
@@ -18,6 +18,7 @@ type PaymentMethod = 'STRIPE' | 'CRYPTO' | 'STUB'
 
 const isDevMode = !process.env.NEXT_PUBLIC_SUPABASE_URL
 
+
 const COUNTRIES = [
   'United Kingdom', 'United States', 'Australia', 'Canada', 'Germany',
   'France', 'Netherlands', 'Ireland', 'New Zealand', 'Sweden',
@@ -31,6 +32,7 @@ export default function CheckoutPage() {
   const [loading, setLoading] = useState(false)
   const [paymentMethod, setPaymentMethod] = useState<PaymentMethod>('STRIPE')
   const [termsAccepted, setTermsAccepted] = useState(false)
+  const prefilled = useRef(false)
 
   const [shipping, setShipping] = useState({
     name: '',
@@ -45,7 +47,8 @@ export default function CheckoutPage() {
 
   // Auto-fill from saved shipping address (last order), then override email from auth
   useEffect(() => {
-    if (!user) return
+    if (!user || prefilled.current) return
+    prefilled.current = true
     fetch('/api/shipping-address')
       .then((r) => r.json())
       .then((saved) => {
