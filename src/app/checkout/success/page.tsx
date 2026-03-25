@@ -28,12 +28,19 @@ function SuccessContent() {
       return
     }
 
+    let intervalId: ReturnType<typeof setInterval> | null = null
+
     const fetchOrder = async () => {
       try {
         const res = await fetch(`/api/orders?orderId=${orderId}`)
         if (res.ok) {
           const data = await res.json()
           setOrder(data.order)
+          // Stop polling once order is no longer PENDING
+          if (data.order?.status && data.order.status !== 'PENDING' && intervalId) {
+            clearInterval(intervalId)
+            intervalId = null
+          }
         }
       } catch {
         // Order might not be transitioned yet
@@ -43,6 +50,13 @@ function SuccessContent() {
     }
 
     fetchOrder()
+
+    // Poll every 3s while order is still PENDING
+    intervalId = setInterval(fetchOrder, 3000)
+
+    return () => {
+      if (intervalId) clearInterval(intervalId)
+    }
   }, [orderId])
 
   if (loading) {
@@ -54,14 +68,24 @@ function SuccessContent() {
     )
   }
 
+  const isPending = order?.status === 'PENDING'
+
   return (
     <>
-      <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-brand-teal/20 mb-6">
-        <CheckCircle className="w-8 h-8 text-brand-teal" />
+      <div className={`inline-flex items-center justify-center w-16 h-16 rounded-full mb-6 ${isPending ? 'bg-yellow-500/20' : 'bg-brand-teal/20'}`}>
+        {isPending ? (
+          <Loader2 className="w-8 h-8 text-yellow-500 animate-spin" />
+        ) : (
+          <CheckCircle className="w-8 h-8 text-brand-teal" />
+        )}
       </div>
-      <h1 className="text-3xl font-bold mb-2">Order Confirmed!</h1>
+      <h1 className="text-3xl font-bold mb-2">
+        {isPending ? 'Waiting for Payment Confirmation...' : 'Order Confirmed!'}
+      </h1>
       <p className="text-brand-muted mb-8">
-        Thank you for your order. You will receive a confirmation email shortly.
+        {isPending
+          ? 'Your payment is being processed. This page will update automatically.'
+          : 'Thank you for your order. You will receive a confirmation email shortly.'}
       </p>
 
       {order && (

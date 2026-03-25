@@ -2,6 +2,7 @@ import { prisma } from '@/lib/prisma'
 import { Card, CardContent } from '@/components/ui/Card'
 import { Package, ShoppingBag, DollarSign, TrendingUp } from 'lucide-react'
 import { formatPrice } from '@/lib/utils'
+import { DexpaySetup } from '@/components/admin/DexpaySetup'
 
 export const dynamic = 'force-dynamic'
 
@@ -69,6 +70,13 @@ export default async function AdminDashboard() {
           </Card>
         ))}
       </div>
+
+      {/* Dexpay Webhook Setup */}
+      <Card className="mb-8">
+        <CardContent>
+          <DexpaySetup />
+        </CardContent>
+      </Card>
 
       {/* Recent Orders */}
       <Card>

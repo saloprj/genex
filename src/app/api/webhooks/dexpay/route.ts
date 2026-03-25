@@ -15,8 +15,8 @@ export async function GET() {
 export async function POST(request: NextRequest) {
   const body = await request.text()
 
-  // Dexpay sends signature in x-signature header
-  const signature = request.headers.get('x-signature') || ''
+  // Dexpay sends signature in api-signature header
+  const signature = request.headers.get('api-signature') || ''
 
   if (!verifyWebhookSignature(body, signature)) {
     console.error('Dexpay webhook: invalid or missing signature')
@@ -30,14 +30,14 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: 'Invalid JSON' }, { status: 400 })
   }
 
-  // The webhook payload may be the invoice object directly or wrapped under event.data
-  const invoice = (event.data as Record<string, unknown>) ?? event
+  // Webhook body: {"event_type":"invoice_update","payload":[{invoice}, ...]}
+  const payloadArr = event.payload as Record<string, unknown>[] | undefined
+  const invoice = payloadArr?.[0] ?? (event.data as Record<string, unknown>) ?? event
   const status = Number(invoice.status)
 
-  console.log('Dexpay webhook received, status:', status, 'invoice:', JSON.stringify(invoice))
+  console.log('Dexpay webhook received, status:', status, 'orderId:', invoice.public_id ?? invoice.order_id)
 
   if (status === FULFILLED_STATUS) {
-    // public_id is the orderId we passed at invoice creation
     const orderId = (invoice.public_id ?? invoice.order_id) as string | undefined
 
     if (!orderId) {
@@ -65,7 +65,7 @@ export async function POST(request: NextRequest) {
       where: { id: orderId },
       data: {
         status: 'PAID',
-        paymentId: (invoice.id ?? invoice.public_id) as string | null,
+        paymentId: String(invoice.id ?? invoice.public_id ?? ''),
       },
     })
 

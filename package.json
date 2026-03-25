@@ -2,6 +2,9 @@
   "name": "genex",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -12,6 +15,9 @@
     "db:migrate": "prisma migrate dev",
     "db:seed": "npx tsx prisma/seed.ts",
     "db:studio": "prisma studio",
+    "db:local": "bash scripts/start-local-postgres.sh",
+    "tunnel": "cloudflared tunnel --url http://localhost:3000 --protocol http2",
+    "tunnel:ngrok": "ngrok http 3000",
     "postinstall": "prisma generate"
   },
   "dependencies": {

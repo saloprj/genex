@@ -77,13 +77,37 @@ export async function registerWebhook(url: string): Promise<{ private_key: strin
   return dexpayPost('/callbacks/config/create', body)
 }
 
+// Recursively flatten a value for Dexpay signature:
+// objects → sort keys, concat flattened values; arrays → concat flattened items; primitives → String()
+function flattenValue(val: unknown): string {
+  if (val === null || val === undefined) return ''
+  if (Array.isArray(val)) return val.map(flattenValue).join('')
+  if (typeof val === 'object') {
+    const obj = val as Record<string, unknown>
+    return Object.keys(obj).sort().map((k) => flattenValue(obj[k])).join('')
+  }
+  return String(val)
+}
+
 export function verifyWebhookSignature(rawBody: string, signature: string): boolean {
   const secret = process.env.DEXPAY_WEBHOOK_SECRET
-  if (!secret) return false // reject if secret not configured
+  if (!secret) {
+    console.warn('DEXPAY_WEBHOOK_SECRET not set — rejecting webhook')
+    return false
+  }
 
-  const hmac = crypto.createHmac('sha256', secret)
-  hmac.update(rawBody)
-  const computed = hmac.digest('hex')
+  let body: Record<string, unknown>
+  try {
+    body = JSON.parse(rawBody)
+  } catch {
+    return false
+  }
+
+  // Dexpay webhook signature: sort keys, recursively flatten values, append webhook secret, SHA256
+  const sortedKeys = Object.keys(body).sort()
+  const concatenated = sortedKeys.map((k) => flattenValue(body[k])).join('')
+  const toHash = concatenated + secret
+  const computed = crypto.createHash('sha256').update(toHash).digest('hex')
 
   try {
     return crypto.timingSafeEqual(

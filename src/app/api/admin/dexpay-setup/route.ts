@@ -8,8 +8,8 @@ export async function POST() {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
 
-  const adminEmails = (process.env.ADMIN_EMAILS || '').split(',').map((e) => e.trim())
-  if (!user || !adminEmails.includes(user.email || '')) {
+  const adminEmails = (process.env.ADMIN_EMAILS || '').split(',').map((e) => e.trim().toLowerCase())
+  if (!user || !user.email || !adminEmails.includes(user.email.toLowerCase())) {
     return NextResponse.json({ error: 'Forbidden' }, { status: 403 })
   }
 
