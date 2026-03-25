@@ -31,7 +31,6 @@ export default function CheckoutPage() {
   const { user } = useAuth()
   const [loading, setLoading] = useState(false)
   const [paymentMethod, setPaymentMethod] = useState<PaymentMethod>('STRIPE')
-  const [termsAccepted, setTermsAccepted] = useState(false)
   const prefilled = useRef(false)
   const saveTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
 
@@ -90,10 +89,6 @@ export default function CheckoutPage() {
   const handleCheckout = async () => {
     if (!shipping.name || !shipping.email || !shipping.address1 || !shipping.city || !shipping.postalCode) {
       toast('Please fill in all required shipping fields', 'error')
-      return
-    }
-    if (!termsAccepted) {
-      toast('Please accept the terms', 'error')
       return
     }
     if (items.length === 0) {
@@ -326,20 +321,6 @@ export default function CheckoutPage() {
                 )}
               </div>
             </section>
-
-            {/* Terms */}
-            <label className="flex items-start gap-2 cursor-pointer">
-              <input
-                type="checkbox"
-                checked={termsAccepted}
-                onChange={(e) => setTermsAccepted(e.target.checked)}
-                className="mt-1 rounded border-brand-border bg-brand-surface text-brand-teal focus:ring-brand-teal"
-              />
-              <span className="text-xs text-brand-subtle">
-                I confirm that all products are for research and educational purposes only,
-                not for human consumption. I agree to the terms of service.
-              </span>
-            </label>
           </div>
 
           {/* Right: Order Summary */}
@@ -378,7 +359,6 @@ export default function CheckoutPage() {
                 onClick={handleCheckout}
                 size="lg"
                 loading={loading}
-                disabled={!termsAccepted}
                 className="w-full mt-6"
               >
                 {loading ? (

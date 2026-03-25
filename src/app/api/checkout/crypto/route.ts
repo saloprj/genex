@@ -27,13 +27,18 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Order not found' }, { status: 404 })
     }
 
+    const appUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'
+    const successUrl = `${appUrl}/checkout/success?orderId=${order.id}`
+
     let invoice
     try {
       invoice = await createInvoice({
         orderId: order.id,
         amount: Number(order.total).toFixed(2),
         customerEmail: order.shippingEmail,
-        description: order.items.map((i) => `${i.productName} x${i.quantity}`).join(', '),
+        description: order.items
+          .map((item: { productName: string; quantity: number }) => `${item.productName} x${item.quantity}`)
+          .join(', '),
       })
     } catch (invoiceError) {
       console.error('Dexpay invoice creation failed, cancelling order:', invoiceError)
@@ -44,7 +49,17 @@ export async function POST(request: NextRequest) {
       throw invoiceError
     }
 
-    return NextResponse.json({ url: invoice.payment_page_url })
+    let paymentUrl = invoice.payment_page_url
+    try {
+      const u = new URL(paymentUrl)
+      u.searchParams.set('success_url', successUrl)
+      paymentUrl = u.toString()
+    } catch {
+      const sep = paymentUrl.includes('?') ? '&' : '?'
+      paymentUrl = `${paymentUrl}${sep}success_url=${encodeURIComponent(successUrl)}`
+    }
+
+    return NextResponse.json({ url: paymentUrl })
   } catch (error) {
     console.error('Dexpay checkout error:', error)
     return NextResponse.json(
