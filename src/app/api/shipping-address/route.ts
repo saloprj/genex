@@ -20,6 +20,7 @@ export async function GET() {
   if (saved) {
     return NextResponse.json({
       name: saved.name,
+      phone: saved.phone,
       address1: saved.address1,
       address2: saved.address2,
       city: saved.city,
@@ -66,12 +67,12 @@ export async function PUT(request: NextRequest) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   }
 
-  const { name, address1, address2, city, state, postalCode, country } = await request.json()
+  const { name, phone, address1, address2, city, state, postalCode, country } = await request.json()
 
   await (prisma as any).shippingAddress.upsert({
     where: { userId: user.id },
-    create: { id: `sa_${user.id}`, userId: user.id, name, address1, address2: address2 ?? '', city, state: state ?? '', postalCode, country },
-    update: { name, address1, address2: address2 ?? '', city, state: state ?? '', postalCode, country },
+    create: { id: `sa_${user.id}`, userId: user.id, name, phone: phone ?? '', address1, address2: address2 ?? '', city, state: state ?? '', postalCode, country },
+    update: { name, phone: phone ?? '', address1, address2: address2 ?? '', city, state: state ?? '', postalCode, country },
   })
 
   return NextResponse.json({ ok: true })

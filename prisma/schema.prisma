@@ -97,6 +97,7 @@ model ShippingAddress {
   state          String   @default("")
   postalCode     String   @default("")
   country        String   @default("United Kingdom")
+  phone          String   @default("")
   updatedAt      DateTime @updatedAt
 }
 
