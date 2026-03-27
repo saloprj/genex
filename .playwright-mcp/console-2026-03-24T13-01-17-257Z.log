@@ -1,0 +1,12 @@
+[    6352ms] [WARNING] Unrecognized feature: 'web-share'. @ https://www.google.com/xjs/_/js/k=xjs.s.en_GB.hnmqRklR7-E.2019.O/am=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEARAAABIAEAAAAgAAAAAAAAAAAAAACAAAgAEAAAAAAAAAAAAAAAAAAAAAAAAAAIIAIAAACABAAAAAAAABAAAAAACAAAAAAAAAAAwABAAABBAIAgAAAAKAAAAAAAAAAAAAAAAAAAAAAgCAQAAQAIJAIB_2x_QAAAAAAAAAAAAAAAAAAAAAAAAAEACAAAAAAAAAAAAWAAAAAChMAAACABCAAQAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAIAAAAAUAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAACAEAAAAAAAA4AAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAABDQAAAAAAgAIAAfwAAAQAAAAAAADAAQAAAAgEAAAAAAAXEEYAAGAAAAAAAHIAeDyAQwQFAAAAAAAAAAAAAAAAAAAAAAAAgAAoAONA8gMCIAAAAAAAAAAAAAAAAAAAAAAAAAAAAKAibAq2BgAE/d=0/dg=0/br=1/rs=ACT90oFS8Q38V7A2xK8FBoUHKZ8doXkKxA/cb=loaded_h_0/m=sy43p,P10Owf,sy69s,sy1xg,sy1rq,sy1ro,sy1rp,sy32n,sy32m,VD4Qme,sy6bc,TmFfhf,syxc,UBXHI,sy12d,Dq2Yjb,sy12h,sy12g,sy12e,NVlnE,sy12j,sy11v,qmdEUe,sy12l,sy12k,UqGwg,sy7cb,EAZJjb,sy6x6,qcH9Lc,sy8px,pjDTFb,gCngrf,sy6x5,sy2ui,sA1ssc,sy6wz,khkNpe?cb=121509378&xjs=s4:152
+[    6816ms] [WARNING] Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://www.youtube.com') does not match the recipient window's origin ('https://www.google.com'). @ https://www.youtube.com/s/player/1ebf2aa6/www-widgetapi.vflset/www-widgetapi.js:209
+[    7999ms] TypeError: Cannot read properties of null (reading 'getAttribute')
+    at Object.data (https://whapi.cloud/assets/js/lib/parallax.min.js:1:5535)
+    at new t (https://whapi.cloud/assets/js/lib/parallax.min.js:1:7352)
+    at https://whapi.cloud/:1789:34
+[   10592ms] [WARNING] [Smartlook] Smartlook not recording. Reason: Monthly recording limit reached. @ https://web-sdk.smartlook.com/es6/init.9207427f95fa799d6604.js:1
+[  149737ms] [WARNING] [Smartlook] Smartlook not recording. Reason: Monthly recording limit reached. @ https://web-sdk.smartlook.com/es6/init.9207427f95fa799d6604.js:1
+[  150178ms] TypeError: Cannot read properties of null (reading 'getAttribute')
+    at Object.data (https://whapi.cloud/assets/js/lib/parallax.min.js:1:5535)
+    at new t (https://whapi.cloud/assets/js/lib/parallax.min.js:1:7352)
+    at https://whapi.cloud/:1789:34

@@ -88,7 +88,7 @@ export default function AdminProductsPage() {
           <tbody>
             {products.filter(p => {
               const q = search.toLowerCase()
-              return !q || p.name.toLowerCase().includes(q) || p.productCode.toLowerCase().includes(q) || p.category.toLowerCase().includes(q)
+              return !q || p.name.toLowerCase().includes(q) || p.productCode.toLowerCase().includes(q) || p.categories.some(c => c.toLowerCase().includes(q))
             }).map((product) => (
               <tr key={product.id} className="border-b border-brand-border/50 hover:bg-brand-dark/30">
                 <td className="py-3 px-2">
@@ -98,7 +98,9 @@ export default function AdminProductsPage() {
                   {product.productCode}
                 </td>
                 <td className="py-3 px-2">
-                  <Badge variant="outline">{product.category}</Badge>
+                  <div className="flex flex-wrap gap-1">
+                    {product.categories.map(c => <Badge key={c} variant="outline">{c}</Badge>)}
+                  </div>
                 </td>
                 <td className="py-3 px-2 text-right">
                   <span className="font-mono">

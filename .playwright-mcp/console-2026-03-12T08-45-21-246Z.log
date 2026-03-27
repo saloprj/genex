@@ -1,0 +1,22 @@
+[    1482ms] [WARNING] No available adapters. @ https://resend.com/domains/add:0
+[    1482ms] [WARNING] No available adapters. @ https://resend.com/domains/add:0
+[    1813ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://resend.com/docs/dashboard/domains/introduction?_rsc=andoe:0
+[    7972ms] [WARNING] The resource https://resend.com/_next/static/chunks/c741423b360e6893.css?dpl=dpl_B3i8BZHXZ7GsnYtnzjcGzJ1nz6oV was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://resend.com/domains/add:0
+[   12297ms] [WARNING] The resource https://resend.com/_next/static/chunks/c741423b360e6893.css?dpl=dpl_B3i8BZHXZ7GsnYtnzjcGzJ1nz6oV was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://resend.com/domains/add:0
+[   14907ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://img.logo.dev/genexpep.com?token=pk_VYq4nDcETcaNca1Rh7z1dw&theme=light&format=png&fallback=404:0
+[   17956ms] [WARNING] The resource https://resend.com/_next/static/chunks/c741423b360e6893.css?dpl=dpl_B3i8BZHXZ7GsnYtnzjcGzJ1nz6oV was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://resend.com/domains/add:0
+[   30688ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://resend.com/docs/dashboard/domains/introduction?_rsc=1r34m:0
+[   31466ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://resend.com/docs/dashboard/domains/introduction?_rsc=acatz:0
+[   37329ms] [WARNING] The resource https://resend.com/_next/static/chunks/c741423b360e6893.css?dpl=dpl_B3i8BZHXZ7GsnYtnzjcGzJ1nz6oV was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://resend.com/domains/add/17956089-23d5-4114-a563-ebba75999a22:0
+[   47317ms] [WARNING] The resource https://resend.com/_next/static/chunks/c741423b360e6893.css?dpl=dpl_B3i8BZHXZ7GsnYtnzjcGzJ1nz6oV was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://resend.com/domains/add/17956089-23d5-4114-a563-ebba75999a22:0
+[   52311ms] [WARNING] The resource https://resend.com/_next/static/chunks/c741423b360e6893.css?dpl=dpl_B3i8BZHXZ7GsnYtnzjcGzJ1nz6oV was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://resend.com/domains/add/17956089-23d5-4114-a563-ebba75999a22:0
+[   52857ms] [ERROR] `DialogContent` requires a `DialogTitle` for the component to be accessible for screen reader users.
+
+If you want to hide the `DialogTitle`, you can wrap it with our VisuallyHidden component.
+
+For more information, see https://radix-ui.com/primitives/docs/components/dialog @ https://resend.com/relay-qWzP/static/posthog-recorder.js?v=1.335.0:0
+[   52859ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://resend.com/relay-qWzP/static/posthog-recorder.js?v=1.335.0:0
+[   55846ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://resend.com/docs/dashboard/domains/introduction?_rsc=1erp1:0
+[  109976ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://resend.com/docs/dashboard/domains/introduction?_rsc=1erp1:0
+[  110399ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://resend.com/docs/dashboard/domains/introduction?_rsc=1r34m:0
+[  110778ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://resend.com/docs/dashboard/domains/introduction?_rsc=1erp1:0

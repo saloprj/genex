@@ -1,0 +1,3 @@
+[     268ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://genexpep.com/shop:0
+[ 4428811ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://genexpep.com/_next/image?url=%2Flogo.png&w=384&q=75:0
+[ 4430007ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://genexpep.com/bg-galaxy.png:0

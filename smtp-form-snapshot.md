@@ -1,0 +1,316 @@
+- generic [ref=e1]:
+  - generic [ref=e216]:
+    - banner [ref=e218]:
+      - generic [ref=e219]:
+        - generic [ref=e220]:
+          - link "Supabase" [ref=e221] [cursor=pointer]:
+            - /url: /dashboard/org/fydzjmmmsfjkeaklavjq
+            - img "Supabase" [ref=e222]
+          - generic [ref=e223]:
+            - img [ref=e225]
+            - generic [ref=e227]:
+              - link "info@dextrade.com's Org Free" [ref=e228] [cursor=pointer]:
+                - /url: /dashboard/org/fydzjmmmsfjkeaklavjq
+                - img [ref=e229]
+                - generic [ref=e239]: info@dextrade.com's Org
+                - generic [ref=e240]: Free
+              - button [ref=e241] [cursor=pointer]:
+                - img [ref=e243]
+            - generic [ref=e246]:
+              - img [ref=e248]
+              - generic [ref=e250]:
+                - link "genexpep" [ref=e251] [cursor=pointer]:
+                  - /url: /dashboard/project/eautunskvehlwwlxdsjd
+                  - img [ref=e252]
+                  - generic "genexpep" [ref=e255]
+                - button [ref=e256] [cursor=pointer]:
+                  - img [ref=e258]
+              - img [ref=e262]
+              - generic [ref=e264]:
+                - link "main Production" [ref=e265] [cursor=pointer]:
+                  - /url: /dashboard/project/eautunskvehlwwlxdsjd
+                  - generic "main" [ref=e266]
+                  - generic [ref=e267]: Production
+                - button [ref=e268] [cursor=pointer]:
+                  - img [ref=e270]
+          - button "Connect" [ref=e274] [cursor=pointer]:
+            - img [ref=e276]
+            - generic [ref=e278]: Connect
+        - generic [ref=e279]:
+          - generic [ref=e281] [cursor=pointer]: Feedback
+          - generic [ref=e282]:
+            - button "Search..." [ref=e283] [cursor=pointer]:
+              - generic [ref=e284]:
+                - img [ref=e285]
+                - paragraph [ref=e288]: Search...
+              - generic [ref=e290]:
+                - img [ref=e291]
+                - generic [ref=e293]: K
+            - button [ref=e294] [cursor=pointer]:
+              - img [ref=e296]
+            - button [ref=e300] [cursor=pointer]:
+              - img [ref=e302]
+            - button [ref=e304] [cursor=pointer]:
+              - img [ref=e306]
+            - button [ref=e308] [cursor=pointer]:
+              - img [ref=e312]
+          - button [ref=e315] [cursor=pointer]:
+            - figure [ref=e317]:
+              - img [ref=e318]
+    - generic [ref=e320]:
+      - generic [ref=e324]:
+        - list [ref=e327]:
+          - generic [ref=e328]:
+            - listitem [ref=e329]:
+              - link "Project Overview" [ref=e330] [cursor=pointer]:
+                - /url: /dashboard/project/eautunskvehlwwlxdsjd
+                - img [ref=e331]
+                - generic: Project Overview
+            - listitem [ref=e333]:
+              - link "Table Editor" [ref=e334] [cursor=pointer]:
+                - /url: /dashboard/project/eautunskvehlwwlxdsjd/editor
+                - img [ref=e335]
+                - generic: Table Editor
+            - listitem [ref=e337]:
+              - link "SQL Editor" [ref=e338] [cursor=pointer]:
+                - /url: /dashboard/project/eautunskvehlwwlxdsjd/sql
+                - img [ref=e339]
+                - generic: SQL Editor
+          - generic [ref=e341]:
+            - listitem [ref=e342]:
+              - link "Database" [ref=e343] [cursor=pointer]:
+                - /url: /dashboard/project/eautunskvehlwwlxdsjd/database/schemas
+                - img [ref=e344]
+                - generic: Database
+            - listitem [ref=e348]:
+              - link "Authentication" [ref=e349] [cursor=pointer]:
+                - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/users
+                - img [ref=e350]
+                - generic: Authentication
+            - listitem [ref=e352]:
+              - link "Storage" [ref=e353] [cursor=pointer]:
+                - /url: /dashboard/project/eautunskvehlwwlxdsjd/storage/files
+                - img [ref=e354]
+                - generic: Storage
+            - listitem [ref=e356]:
+              - link "Edge Functions" [ref=e357] [cursor=pointer]:
+                - /url: /dashboard/project/eautunskvehlwwlxdsjd/functions
+                - img [ref=e358]
+                - generic: Edge Functions
+            - listitem [ref=e363]:
+              - link "Realtime" [ref=e364] [cursor=pointer]:
+                - /url: /dashboard/project/eautunskvehlwwlxdsjd/realtime/inspector
+                - img [ref=e365]
+                - generic: Realtime
+          - generic [ref=e367]:
+            - listitem [ref=e369]:
+              - link "Advisors" [ref=e370] [cursor=pointer]:
+                - /url: /dashboard/project/eautunskvehlwwlxdsjd/advisors/security
+                - img [ref=e371]
+                - generic: Advisors
+            - listitem [ref=e373]:
+              - link "Observability" [ref=e374] [cursor=pointer]:
+                - /url: /dashboard/project/eautunskvehlwwlxdsjd/observability
+                - img [ref=e375]
+                - generic: Observability
+            - listitem [ref=e383]:
+              - link "Logs" [ref=e384] [cursor=pointer]:
+                - /url: /dashboard/project/eautunskvehlwwlxdsjd/logs/explorer
+                - img [ref=e385]
+                - generic: Logs
+            - listitem [ref=e386]:
+              - link "Integrations" [ref=e387] [cursor=pointer]:
+                - /url: /dashboard/project/eautunskvehlwwlxdsjd/integrations
+                - img [ref=e388]
+                - generic: Integrations
+          - listitem [ref=e392]:
+            - link "Project Settings" [ref=e393] [cursor=pointer]:
+              - /url: /dashboard/project/eautunskvehlwwlxdsjd/settings/general
+              - img [ref=e394]
+              - generic: Project Settings
+        - button [ref=e399] [cursor=pointer]:
+          - img [ref=e401]
+      - generic [ref=e408]:
+        - generic [ref=e412]:
+          - heading "Authentication" [level=4] [ref=e414]
+          - menu "Sidebar" [disabled] [ref=e417]:
+            - list [ref=e418]:
+              - generic [ref=e421]:
+                - generic [ref=e425]: Manage
+                - generic [ref=e426]:
+                  - link "Users" [disabled] [ref=e427] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/users
+                    - menuitem "Users" [disabled] [ref=e428]:
+                      - generic "Users" [ref=e431]:
+                        - generic [ref=e432]: Users
+                  - link "OAuth Apps" [disabled] [ref=e433] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/oauth-apps
+                    - menuitem "OAuth Apps" [disabled] [ref=e434]:
+                      - generic "OAuth Apps" [ref=e437]:
+                        - generic [ref=e438]: OAuth Apps
+              - generic [ref=e442]:
+                - generic [ref=e446]: Notifications
+                - link "Email" [disabled] [ref=e448] [cursor=pointer]:
+                  - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/templates
+                  - menuitem "Email" [disabled] [ref=e449]:
+                    - generic "Email" [ref=e452]:
+                      - generic [ref=e453]: Email
+              - generic [ref=e457]:
+                - generic [ref=e461]: Configuration
+                - generic [ref=e462]:
+                  - link "Policies" [disabled] [ref=e463] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/policies
+                    - menuitem "Policies" [disabled] [ref=e464]:
+                      - generic "Policies" [ref=e467]:
+                        - generic [ref=e468]: Policies
+                  - link "Sign In / Providers" [disabled] [ref=e469] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/providers
+                    - menuitem "Sign In / Providers" [disabled] [ref=e470]:
+                      - generic "Sign In / Providers" [ref=e473]:
+                        - generic [ref=e474]: Sign In / Providers
+                  - link "OAuth Server Beta" [disabled] [ref=e475] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/oauth-server
+                    - menuitem "OAuth Server Beta" [disabled] [ref=e476]:
+                      - generic "OAuth Server" [ref=e479]:
+                        - generic [ref=e480]: OAuth Server
+                        - generic [ref=e481]: Beta
+                  - link "Sessions" [disabled] [ref=e482] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/sessions
+                    - menuitem "Sessions" [disabled] [ref=e483]:
+                      - generic "Sessions" [ref=e486]:
+                        - generic [ref=e487]: Sessions
+                  - link "Rate Limits" [disabled] [ref=e488] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/rate-limits
+                    - menuitem "Rate Limits" [disabled] [ref=e489]:
+                      - generic "Rate Limits" [ref=e492]:
+                        - generic [ref=e493]: Rate Limits
+                  - link "Multi-Factor" [disabled] [ref=e494] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/mfa
+                    - menuitem "Multi-Factor" [disabled] [ref=e495]:
+                      - generic "Multi-Factor" [ref=e498]:
+                        - generic [ref=e499]: Multi-Factor
+                  - link "URL Configuration" [disabled] [ref=e500] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/url-configuration
+                    - menuitem "URL Configuration" [disabled] [ref=e501]:
+                      - generic "URL Configuration" [ref=e504]:
+                        - generic [ref=e505]: URL Configuration
+                  - link "Attack Protection" [disabled] [ref=e506] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/protection
+                    - menuitem "Attack Protection" [disabled] [ref=e507]:
+                      - generic "Attack Protection" [ref=e510]:
+                        - generic [ref=e511]: Attack Protection
+                  - link "Auth Hooks Beta" [disabled] [ref=e512] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/hooks
+                    - menuitem "Auth Hooks Beta" [disabled] [ref=e513]:
+                      - generic "Auth Hooks" [ref=e516]:
+                        - generic [ref=e517]: Auth Hooks
+                        - generic [ref=e518]: Beta
+                  - link "Audit Logs" [disabled] [ref=e519] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/audit-logs
+                    - menuitem "Audit Logs" [disabled] [ref=e520]:
+                      - generic "Audit Logs" [ref=e523]:
+                        - generic [ref=e524]: Audit Logs
+                  - link "Performance" [disabled] [ref=e525] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/performance
+                    - menuitem "Performance" [disabled] [ref=e526]:
+                      - generic "Performance" [ref=e529]:
+                        - generic [ref=e530]: Performance
+        - separator [disabled] [ref=e531]:
+          - img [ref=e533]
+        - main [ref=e542]:
+          - generic [ref=e543]:
+            - generic [ref=e544]:
+              - generic [ref=e549]:
+                - heading "Emails" [level=1] [ref=e550]
+                - paragraph [ref=e551]: Configure what emails your users receive and how they are sent
+              - navigation [ref=e552]:
+                - menu [ref=e553]:
+                  - listitem [ref=e554]:
+                    - link "Templates" [ref=e555] [cursor=pointer]:
+                      - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/templates
+                  - listitem [ref=e556]:
+                    - link "SMTP Settings" [ref=e557] [cursor=pointer]:
+                      - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/smtp
+            - generic [ref=e562]:
+              - generic [ref=e563]:
+                - generic [ref=e565]:
+                  - generic [ref=e566]:
+                    - switch [checked] [ref=e567] [cursor=pointer]
+                    - checkbox [checked]
+                  - generic [ref=e568]:
+                    - generic [ref=e688]: Enable custom SMTP
+                    - paragraph [ref=e572]:
+                      - text: Emails will be sent using your custom SMTP provider. Email rate limits can be adjusted
+                      - link "here" [ref=e573] [cursor=pointer]:
+                        - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/rate-limits
+                      - text: .
+                - alert [ref=e577]:
+                  - img [ref=e578]
+                  - generic [ref=e581]:
+                    - heading "All fields must be filled" [level=5] [ref=e582]
+                    - paragraph [ref=e584]: Each of the fields below must be filled before custom SMTP can be enabled.
+              - generic [ref=e586]:
+                - generic [ref=e587]:
+                  - heading "Sender details" [level=3] [ref=e588]
+                  - paragraph [ref=e589]: Configure the sender information for your emails.
+                - generic [ref=e590]:
+                  - generic [ref=e592]:
+                    - generic [ref=e689]: Sender email address
+                    - generic [ref=e596]:
+                      - textbox "noreply@yourdomain.com" [active] [ref=e598]
+                      - paragraph [ref=e691]: Sender email address is required
+                      - generic [ref=e599]: The email address the emails are sent from.
+                  - generic [ref=e601]:
+                    - generic [ref=e692]: Sender name
+                    - generic [ref=e605]:
+                      - textbox "Your Name" [ref=e607]
+                      - paragraph [ref=e694]: Sender name is required
+                      - generic [ref=e608]: Name displayed in the recipient's inbox.
+              - generic [ref=e610]:
+                - generic [ref=e611]:
+                  - heading "SMTP provider settings" [level=3] [ref=e612]
+                  - paragraph [ref=e613]: Your SMTP credentials will always be encrypted in our database.
+                - generic [ref=e614]:
+                  - generic [ref=e616]:
+                    - generic [ref=e695]: Host
+                    - generic [ref=e620]:
+                      - textbox "your.smtp.host.com" [ref=e622]
+                      - paragraph [ref=e697]: Must be a valid URL or IP address
+                      - generic [ref=e623]: Hostname or IP address of your SMTP server.
+                  - generic [ref=e625]:
+                    - generic [ref=e698]: Port number
+                    - generic [ref=e629]:
+                      - spinbutton [ref=e631]: "465"
+                      - generic [ref=e633]: Port used by your SMTP server. Common ports include 465 and 587. Avoid using port 25 as it is often blocked by providers to curb spam.
+                  - generic [ref=e635]:
+                    - generic [ref=e699]: Minimum interval per user
+                    - generic [ref=e639]:
+                      - generic [ref=e641]:
+                        - spinbutton [ref=e643]: "60"
+                        - generic [ref=e645]: seconds
+                      - generic [ref=e646]: The minimum time in seconds between emails before another email can be sent to the same user.
+                  - generic [ref=e648]:
+                    - generic [ref=e700]: Username
+                    - generic [ref=e652]:
+                      - textbox "SMTP Username" [ref=e654]: genexpep
+                      - generic [ref=e655]: Username for your SMTP server.
+                  - generic [ref=e657]:
+                    - generic [ref=e701]: Password
+                    - generic [ref=e661]:
+                      - generic [ref=e663]:
+                        - textbox "SMTP Password" [ref=e665]: 7fh1f3DkpBtQ6C4Y
+                        - button [ref=e668] [cursor=pointer]:
+                          - img [ref=e670]
+                      - generic [ref=e673]: Password for your SMTP server. For security reasons, this password cannot be viewed once saved.
+              - generic [ref=e574]:
+                - paragraph [ref=e674]:
+                  - text: Rate limit for sending emails will be increased to 30 and
+                  - link "can be adjusted" [ref=e675] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/rate-limits
+                  - text: after enabling custom SMTP
+                - generic [ref=e575]:
+                  - button "Cancel" [ref=e676] [cursor=pointer]:
+                    - generic [ref=e677]: Cancel
+                  - button "Save changes" [ref=e678] [cursor=pointer]:
+                    - generic [ref=e679]: Save changes
+  - alert [ref=e215]: Email | Authentication | Supabase

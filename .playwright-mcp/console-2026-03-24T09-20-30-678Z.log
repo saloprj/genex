@@ -1,0 +1,4 @@
+[  702332ms] [ERROR] WalletNotFoundError: The wallet is not found.
+    at GateWalletAdapter.<anonymous> (https://ecom.dextrade.com/assets/index-C0Eur4Ea.js:900:36155)
+    at Generator.next (<anonymous>)
+    at ns (https://ecom.dextrade.com/assets/index-C0Eur4Ea.js:900:31405) @ https://ecom.dextrade.com/assets/index-C0Eur4Ea.js:989

@@ -1,0 +1,251 @@
+- generic [ref=e1]:
+  - generic [ref=e4]:
+    - banner [ref=e6]:
+      - generic [ref=e7]:
+        - generic [ref=e8]:
+          - link "Supabase" [ref=e9] [cursor=pointer]:
+            - /url: /dashboard/org/fydzjmmmsfjkeaklavjq
+            - img "Supabase" [ref=e10]
+          - generic [ref=e11]:
+            - img [ref=e13]
+            - generic [ref=e15]:
+              - link "info@dextrade.com's Org Free" [ref=e16] [cursor=pointer]:
+                - /url: /dashboard/org/fydzjmmmsfjkeaklavjq
+                - img [ref=e17]
+                - generic [ref=e27]: info@dextrade.com's Org
+                - generic [ref=e28]: Free
+              - button [ref=e29] [cursor=pointer]:
+                - img [ref=e31]
+            - generic [ref=e34]:
+              - img [ref=e36]
+              - generic [ref=e38]:
+                - link "genexpep" [ref=e39] [cursor=pointer]:
+                  - /url: /dashboard/project/eautunskvehlwwlxdsjd
+                  - img [ref=e40]
+                  - generic "genexpep" [ref=e43]
+                - button [ref=e44] [cursor=pointer]:
+                  - img [ref=e46]
+              - img [ref=e50]
+              - generic [ref=e52]:
+                - link "main Production" [ref=e53] [cursor=pointer]:
+                  - /url: /dashboard/project/eautunskvehlwwlxdsjd
+                  - generic "main" [ref=e54]
+                  - generic [ref=e55]: Production
+                - button [ref=e56] [cursor=pointer]:
+                  - img [ref=e58]
+          - button "Connect" [ref=e62] [cursor=pointer]:
+            - img [ref=e64]
+            - generic [ref=e66]: Connect
+        - generic [ref=e67]:
+          - generic [ref=e69] [cursor=pointer]: Feedback
+          - generic [ref=e70]:
+            - button "Search..." [ref=e71] [cursor=pointer]:
+              - generic [ref=e72]:
+                - img [ref=e73]
+                - paragraph [ref=e76]: Search...
+              - generic [ref=e78]:
+                - img [ref=e79]
+                - generic [ref=e81]: K
+            - button [ref=e82] [cursor=pointer]:
+              - img [ref=e84]
+            - button [ref=e88] [cursor=pointer]:
+              - img [ref=e90]
+            - button [ref=e92] [cursor=pointer]:
+              - img [ref=e94]
+            - button [ref=e96] [cursor=pointer]:
+              - img [ref=e100]
+          - button [ref=e103] [cursor=pointer]:
+            - figure [ref=e105]:
+              - img [ref=e106]
+    - generic [ref=e108]:
+      - generic [ref=e112]:
+        - list [ref=e115]:
+          - generic [ref=e116]:
+            - listitem [ref=e117]:
+              - link "Project Overview" [ref=e118] [cursor=pointer]:
+                - /url: /dashboard/project/eautunskvehlwwlxdsjd
+                - img [ref=e119]
+                - generic: Project Overview
+            - listitem [ref=e121]:
+              - link "Table Editor" [ref=e122] [cursor=pointer]:
+                - /url: /dashboard/project/eautunskvehlwwlxdsjd/editor
+                - img [ref=e123]
+                - generic: Table Editor
+            - listitem [ref=e125]:
+              - link "SQL Editor" [ref=e126] [cursor=pointer]:
+                - /url: /dashboard/project/eautunskvehlwwlxdsjd/sql
+                - img [ref=e127]
+                - generic: SQL Editor
+          - generic [ref=e129]:
+            - listitem [ref=e130]:
+              - link "Database" [ref=e131] [cursor=pointer]:
+                - /url: /dashboard/project/eautunskvehlwwlxdsjd/database/schemas
+                - img [ref=e132]
+                - generic: Database
+            - listitem [ref=e136]:
+              - link "Authentication" [ref=e137] [cursor=pointer]:
+                - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/users
+                - img [ref=e138]
+                - generic: Authentication
+            - listitem [ref=e140]:
+              - link "Storage" [ref=e141] [cursor=pointer]:
+                - /url: /dashboard/project/eautunskvehlwwlxdsjd/storage/files
+                - img [ref=e142]
+                - generic: Storage
+            - listitem [ref=e144]:
+              - link "Edge Functions" [ref=e145] [cursor=pointer]:
+                - /url: /dashboard/project/eautunskvehlwwlxdsjd/functions
+                - img [ref=e146]
+                - generic: Edge Functions
+            - listitem [ref=e151]:
+              - link "Realtime" [ref=e152] [cursor=pointer]:
+                - /url: /dashboard/project/eautunskvehlwwlxdsjd/realtime/inspector
+                - img [ref=e153]
+                - generic: Realtime
+          - generic [ref=e155]:
+            - listitem [ref=e157]:
+              - link "Advisors" [ref=e158] [cursor=pointer]:
+                - /url: /dashboard/project/eautunskvehlwwlxdsjd/advisors/security
+                - img [ref=e159]
+                - generic: Advisors
+            - listitem [ref=e161]:
+              - link "Observability" [ref=e162] [cursor=pointer]:
+                - /url: /dashboard/project/eautunskvehlwwlxdsjd/observability
+                - img [ref=e163]
+                - generic: Observability
+            - listitem [ref=e171]:
+              - link "Logs" [ref=e172] [cursor=pointer]:
+                - /url: /dashboard/project/eautunskvehlwwlxdsjd/logs/explorer
+                - img [ref=e173]
+                - generic: Logs
+            - listitem [ref=e174]:
+              - link "Integrations" [ref=e175] [cursor=pointer]:
+                - /url: /dashboard/project/eautunskvehlwwlxdsjd/integrations
+                - img [ref=e176]
+                - generic: Integrations
+          - listitem [ref=e180]:
+            - link "Project Settings" [ref=e181] [cursor=pointer]:
+              - /url: /dashboard/project/eautunskvehlwwlxdsjd/settings/general
+              - img [ref=e182]
+              - generic: Project Settings
+        - button [ref=e187] [cursor=pointer]:
+          - img [ref=e189]
+      - generic [ref=e196]:
+        - generic [ref=e200]:
+          - heading "Authentication" [level=4] [ref=e202]
+          - menu "Sidebar" [disabled] [ref=e205]:
+            - list [ref=e206]:
+              - generic [ref=e209]:
+                - generic [ref=e213]: Manage
+                - generic [ref=e214]:
+                  - link "Users" [disabled] [ref=e215] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/users
+                    - menuitem "Users" [disabled] [ref=e216]:
+                      - generic "Users" [ref=e219]:
+                        - generic [ref=e220]: Users
+                  - link "OAuth Apps" [disabled] [ref=e221] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/oauth-apps
+                    - menuitem "OAuth Apps" [disabled] [ref=e222]:
+                      - generic "OAuth Apps" [ref=e225]:
+                        - generic [ref=e226]: OAuth Apps
+              - generic [ref=e230]:
+                - generic [ref=e234]: Notifications
+                - link "Email" [disabled] [ref=e236] [cursor=pointer]:
+                  - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/templates
+                  - menuitem "Email" [disabled] [ref=e237]:
+                    - generic "Email" [ref=e240]:
+                      - generic [ref=e241]: Email
+              - generic [ref=e245]:
+                - generic [ref=e249]: Configuration
+                - generic [ref=e250]:
+                  - link "Policies" [disabled] [ref=e251] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/policies
+                    - menuitem "Policies" [disabled] [ref=e252]:
+                      - generic "Policies" [ref=e255]:
+                        - generic [ref=e256]: Policies
+                  - link "Sign In / Providers" [disabled] [ref=e257] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/providers
+                    - menuitem "Sign In / Providers" [disabled] [ref=e258]:
+                      - generic "Sign In / Providers" [ref=e261]:
+                        - generic [ref=e262]: Sign In / Providers
+                  - link "OAuth Server Beta" [disabled] [ref=e263] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/oauth-server
+                    - menuitem "OAuth Server Beta" [disabled] [ref=e264]:
+                      - generic "OAuth Server" [ref=e267]:
+                        - generic [ref=e268]: OAuth Server
+                        - generic [ref=e269]: Beta
+                  - link "Sessions" [disabled] [ref=e270] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/sessions
+                    - menuitem "Sessions" [disabled] [ref=e271]:
+                      - generic "Sessions" [ref=e274]:
+                        - generic [ref=e275]: Sessions
+                  - link "Rate Limits" [disabled] [ref=e276] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/rate-limits
+                    - menuitem "Rate Limits" [disabled] [ref=e277]:
+                      - generic "Rate Limits" [ref=e280]:
+                        - generic [ref=e281]: Rate Limits
+                  - link "Multi-Factor" [disabled] [ref=e282] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/mfa
+                    - menuitem "Multi-Factor" [disabled] [ref=e283]:
+                      - generic "Multi-Factor" [ref=e286]:
+                        - generic [ref=e287]: Multi-Factor
+                  - link "URL Configuration" [disabled] [ref=e288] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/url-configuration
+                    - menuitem "URL Configuration" [disabled] [ref=e289]:
+                      - generic "URL Configuration" [ref=e292]:
+                        - generic [ref=e293]: URL Configuration
+                  - link "Attack Protection" [disabled] [ref=e294] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/protection
+                    - menuitem "Attack Protection" [disabled] [ref=e295]:
+                      - generic "Attack Protection" [ref=e298]:
+                        - generic [ref=e299]: Attack Protection
+                  - link "Auth Hooks Beta" [disabled] [ref=e300] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/hooks
+                    - menuitem "Auth Hooks Beta" [disabled] [ref=e301]:
+                      - generic "Auth Hooks" [ref=e304]:
+                        - generic [ref=e305]: Auth Hooks
+                        - generic [ref=e306]: Beta
+                  - link "Audit Logs" [disabled] [ref=e307] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/audit-logs
+                    - menuitem "Audit Logs" [disabled] [ref=e308]:
+                      - generic "Audit Logs" [ref=e311]:
+                        - generic [ref=e312]: Audit Logs
+                  - link "Performance" [disabled] [ref=e313] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/performance
+                    - menuitem "Performance" [disabled] [ref=e314]:
+                      - generic "Performance" [ref=e317]:
+                        - generic [ref=e318]: Performance
+        - separator [disabled] [ref=e319]:
+          - img [ref=e321]
+        - main [ref=e330]:
+          - generic [ref=e334]:
+            - heading "URL Configuration" [level=1] [ref=e335]
+            - generic [ref=e336]: Configure site URL and redirect URLs for authentication
+          - generic [ref=e337]:
+            - generic [ref=e338]:
+              - heading "Site URL" [level=2] [ref=e342]
+              - generic [ref=e345]:
+                - generic [ref=e348]:
+                  - textbox [active] [ref=e350]: http://localhost:3000
+                  - generic [ref=e351]:
+                    - generic [ref=e353]: Site URL
+                    - generic [ref=e354]: Configure the default redirect URL used when a redirect URL is not specified or doesn't match one from the allow list. This value is also exposed as a template variable in the email templates section. Wildcards cannot be used here.
+                - generic [ref=e355]:
+                  - button "Save changes" [disabled]:
+                    - generic: Save changes
+            - generic [ref=e356]:
+              - generic [ref=e358]:
+                - generic [ref=e359]:
+                  - heading "Redirect URLs" [level=2] [ref=e360]
+                  - generic [ref=e361]: URLs that auth providers are permitted to redirect to post authentication. Wildcards are allowed, for example, https://*.domain.com
+                - link "Docs" [ref=e363] [cursor=pointer]:
+                  - /url: https://supabase.com/docs/guides/auth/concepts/redirect-urls
+                  - img [ref=e365]
+                  - generic [ref=e368]: Docs
+              - generic [ref=e370]:
+                - button "Add URL" [ref=e372] [cursor=pointer]:
+                  - generic [ref=e373]: Add URL
+                - generic [ref=e379]:
+                  - heading "No Redirect URLs" [level=3] [ref=e380]
+                  - paragraph [ref=e381]: Auth providers may need a URL to redirect back to
+  - alert [ref=e382]: URL Configuration | Authentication | Supabase

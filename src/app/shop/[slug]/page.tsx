@@ -119,7 +119,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
         <div className="space-y-6">
           <div>
             <div className="flex items-center gap-3 mb-2">
-              <Badge variant="teal">{product.category}</Badge>
+              {product.categories.map(c => <Badge key={c} variant="teal">{c}</Badge>)}
               {product.inStock ? (
                 <Badge variant="teal">In Stock</Badge>
               ) : (

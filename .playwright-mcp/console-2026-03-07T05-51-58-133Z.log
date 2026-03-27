@@ -1,0 +1,180 @@
+[    1365ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3002/shop/nad-plus:0
+[    1855ms] [WARNING] No default component was found for a parallel route rendered on this page. Falling back to nearest NotFound boundary.
+Learn more: https://nextjs.org/docs/app/building-your-application/routing/parallel-routes#defaultjs
+
+ @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[    2077ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3002/shop/nad-plus:0
+[    2448ms] [WARNING] No default component was found for a parallel route rendered on this page. Falling back to nearest NotFound boundary.
+Learn more: https://nextjs.org/docs/app/building-your-application/routing/parallel-routes#defaultjs
+
+ @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[    2649ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3002/shop/nad-plus:0
+[    3002ms] [WARNING] No default component was found for a parallel route rendered on this page. Falling back to nearest NotFound boundary.
+Learn more: https://nextjs.org/docs/app/building-your-application/routing/parallel-routes#defaultjs
+
+ @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[    3238ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3002/shop/nad-plus:0
+[    4020ms] [WARNING] No default component was found for a parallel route rendered on this page. Falling back to nearest NotFound boundary.
+Learn more: https://nextjs.org/docs/app/building-your-application/routing/parallel-routes#defaultjs
+
+ @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[    4747ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3002/shop/nad-plus:0
+[    5122ms] [WARNING] No default component was found for a parallel route rendered on this page. Falling back to nearest NotFound boundary.
+Learn more: https://nextjs.org/docs/app/building-your-application/routing/parallel-routes#defaultjs
+
+ @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[    5394ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3002/shop/nad-plus:0
+[    5774ms] [WARNING] No default component was found for a parallel route rendered on this page. Falling back to nearest NotFound boundary.
+Learn more: https://nextjs.org/docs/app/building-your-application/routing/parallel-routes#defaultjs
+
+ @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[    5989ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3002/shop/nad-plus:0
+[    6335ms] [WARNING] No default component was found for a parallel route rendered on this page. Falling back to nearest NotFound boundary.
+Learn more: https://nextjs.org/docs/app/building-your-application/routing/parallel-routes#defaultjs
+
+ @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[    6552ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3002/shop/nad-plus:0
+[    6909ms] [WARNING] No default component was found for a parallel route rendered on this page. Falling back to nearest NotFound boundary.
+Learn more: https://nextjs.org/docs/app/building-your-application/routing/parallel-routes#defaultjs
+
+ @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[    7112ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3002/shop/nad-plus:0
+[    7476ms] [WARNING] No default component was found for a parallel route rendered on this page. Falling back to nearest NotFound boundary.
+Learn more: https://nextjs.org/docs/app/building-your-application/routing/parallel-routes#defaultjs
+
+ @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[    7703ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3002/shop/nad-plus:0
+[    8064ms] [WARNING] No default component was found for a parallel route rendered on this page. Falling back to nearest NotFound boundary.
+Learn more: https://nextjs.org/docs/app/building-your-application/routing/parallel-routes#defaultjs
+
+ @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[    8271ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3002/shop/nad-plus:0
+[    8647ms] [WARNING] No default component was found for a parallel route rendered on this page. Falling back to nearest NotFound boundary.
+Learn more: https://nextjs.org/docs/app/building-your-application/routing/parallel-routes#defaultjs
+
+ @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[    8902ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3002/shop/nad-plus:0
+[    9721ms] [WARNING] No default component was found for a parallel route rendered on this page. Falling back to nearest NotFound boundary.
+Learn more: https://nextjs.org/docs/app/building-your-application/routing/parallel-routes#defaultjs
+
+ @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[    9993ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3002/shop/nad-plus:0
+[   10359ms] [WARNING] No default component was found for a parallel route rendered on this page. Falling back to nearest NotFound boundary.
+Learn more: https://nextjs.org/docs/app/building-your-application/routing/parallel-routes#defaultjs
+
+ @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[   10570ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3002/shop/nad-plus:0
+[   10921ms] [WARNING] No default component was found for a parallel route rendered on this page. Falling back to nearest NotFound boundary.
+Learn more: https://nextjs.org/docs/app/building-your-application/routing/parallel-routes#defaultjs
+
+ @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[   11133ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3002/shop/nad-plus:0
+[   11506ms] [WARNING] No default component was found for a parallel route rendered on this page. Falling back to nearest NotFound boundary.
+Learn more: https://nextjs.org/docs/app/building-your-application/routing/parallel-routes#defaultjs
+
+ @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[   11702ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3002/shop/nad-plus:0
+[   12055ms] [WARNING] No default component was found for a parallel route rendered on this page. Falling back to nearest NotFound boundary.
+Learn more: https://nextjs.org/docs/app/building-your-application/routing/parallel-routes#defaultjs
+
+ @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[   12273ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3002/shop/nad-plus:0
+[   12669ms] [WARNING] No default component was found for a parallel route rendered on this page. Falling back to nearest NotFound boundary.
+Learn more: https://nextjs.org/docs/app/building-your-application/routing/parallel-routes#defaultjs
+
+ @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[   12892ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3002/shop/nad-plus:0
+[   13277ms] [WARNING] No default component was found for a parallel route rendered on this page. Falling back to nearest NotFound boundary.
+Learn more: https://nextjs.org/docs/app/building-your-application/routing/parallel-routes#defaultjs
+
+ @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[   13538ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3002/shop/nad-plus:0
+[   14579ms] [WARNING] No default component was found for a parallel route rendered on this page. Falling back to nearest NotFound boundary.
+Learn more: https://nextjs.org/docs/app/building-your-application/routing/parallel-routes#defaultjs
+
+ @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[   14927ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3002/shop/nad-plus:0
+[   15289ms] [WARNING] No default component was found for a parallel route rendered on this page. Falling back to nearest NotFound boundary.
+Learn more: https://nextjs.org/docs/app/building-your-application/routing/parallel-routes#defaultjs
+
+ @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[   15515ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3002/shop/nad-plus:0
+[   15949ms] [WARNING] No default component was found for a parallel route rendered on this page. Falling back to nearest NotFound boundary.
+Learn more: https://nextjs.org/docs/app/building-your-application/routing/parallel-routes#defaultjs
+
+ @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[   16141ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3002/shop/nad-plus:0
+[   16505ms] [WARNING] No default component was found for a parallel route rendered on this page. Falling back to nearest NotFound boundary.
+Learn more: https://nextjs.org/docs/app/building-your-application/routing/parallel-routes#defaultjs
+
+ @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[   16732ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3002/shop/nad-plus:0
+[   17100ms] [WARNING] No default component was found for a parallel route rendered on this page. Falling back to nearest NotFound boundary.
+Learn more: https://nextjs.org/docs/app/building-your-application/routing/parallel-routes#defaultjs
+
+ @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[   17322ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3002/shop/nad-plus:0
+[   17671ms] [WARNING] No default component was found for a parallel route rendered on this page. Falling back to nearest NotFound boundary.
+Learn more: https://nextjs.org/docs/app/building-your-application/routing/parallel-routes#defaultjs
+
+ @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[   17879ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3002/shop/nad-plus:0
+[   18261ms] [WARNING] No default component was found for a parallel route rendered on this page. Falling back to nearest NotFound boundary.
+Learn more: https://nextjs.org/docs/app/building-your-application/routing/parallel-routes#defaultjs
+
+ @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[   18478ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3002/shop/nad-plus:0
+[   18879ms] [WARNING] No default component was found for a parallel route rendered on this page. Falling back to nearest NotFound boundary.
+Learn more: https://nextjs.org/docs/app/building-your-application/routing/parallel-routes#defaultjs
+
+ @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[   19419ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3002/shop/nad-plus:0
+[   19777ms] [WARNING] No default component was found for a parallel route rendered on this page. Falling back to nearest NotFound boundary.
+Learn more: https://nextjs.org/docs/app/building-your-application/routing/parallel-routes#defaultjs
+
+ @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[   19983ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3002/shop/nad-plus:0
+[   20337ms] [WARNING] No default component was found for a parallel route rendered on this page. Falling back to nearest NotFound boundary.
+Learn more: https://nextjs.org/docs/app/building-your-application/routing/parallel-routes#defaultjs
+
+ @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[   20529ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3002/shop/nad-plus:0
+[   20870ms] [WARNING] No default component was found for a parallel route rendered on this page. Falling back to nearest NotFound boundary.
+Learn more: https://nextjs.org/docs/app/building-your-application/routing/parallel-routes#defaultjs
+
+ @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[   21093ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3002/shop/nad-plus:0
+[   21439ms] [WARNING] No default component was found for a parallel route rendered on this page. Falling back to nearest NotFound boundary.
+Learn more: https://nextjs.org/docs/app/building-your-application/routing/parallel-routes#defaultjs
+
+ @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[   21629ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3002/shop/nad-plus:0
+[   22009ms] [WARNING] No default component was found for a parallel route rendered on this page. Falling back to nearest NotFound boundary.
+Learn more: https://nextjs.org/docs/app/building-your-application/routing/parallel-routes#defaultjs
+
+ @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[   22201ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3002/shop/nad-plus:0
+[   22547ms] [WARNING] No default component was found for a parallel route rendered on this page. Falling back to nearest NotFound boundary.
+Learn more: https://nextjs.org/docs/app/building-your-application/routing/parallel-routes#defaultjs
+
+ @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[   22740ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3002/shop/nad-plus:0
+[   23148ms] [WARNING] No default component was found for a parallel route rendered on this page. Falling back to nearest NotFound boundary.
+Learn more: https://nextjs.org/docs/app/building-your-application/routing/parallel-routes#defaultjs
+
+ @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[   23398ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3002/shop/nad-plus:0
+[   24297ms] [WARNING] No default component was found for a parallel route rendered on this page. Falling back to nearest NotFound boundary.
+Learn more: https://nextjs.org/docs/app/building-your-application/routing/parallel-routes#defaultjs
+
+ @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[   25080ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3002/shop/nad-plus:0
+[   25436ms] [WARNING] No default component was found for a parallel route rendered on this page. Falling back to nearest NotFound boundary.
+Learn more: https://nextjs.org/docs/app/building-your-application/routing/parallel-routes#defaultjs
+
+ @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[   25640ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3002/shop/nad-plus:0
+[   25995ms] [WARNING] No default component was found for a parallel route rendered on this page. Falling back to nearest NotFound boundary.
+Learn more: https://nextjs.org/docs/app/building-your-application/routing/parallel-routes#defaultjs
+
+ @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:15

@@ -1,0 +1,4 @@
+[     283ms] [WARNING] The configured WalletConnect 'metadata.url':https://p2p.rize.hk differs from the actual page url:https://rize.hk. This is probably unintended and can lead to issues. @ https://rize.hk/_nuxt/D_7nsKI9.js:1403
+[    2747ms] [ERROR] Origin https://rize.hk not found on Allowlist - update configuration on cloud.reown.com @ https://rize.hk/_nuxt/lxKP5uuV.js:8
+[    3064ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pulse.walletconnect.org/e?projectId=1ee56a25a2dad471b92feb59898b7aa6&st=appkit&sv=html-universal-1.7.6:0
+[    3064ms] [ERROR] Origin https://rize.hk not found on Allowlist - update configuration on cloud.reown.com @ https://rize.hk/_nuxt/lxKP5uuV.js:8

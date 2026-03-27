@@ -33,7 +33,7 @@ export function ProductEditModal({ product, onClose, onSaved }: ProductEditModal
   const [description, setDescription] = useState(product.description)
   const [price, setPrice] = useState(String(product.price))
   const [dosage, setDosage] = useState(product.dosage || '')
-  const [category, setCategory] = useState(product.category)
+  const [selectedCategories, setSelectedCategories] = useState<string[]>(product.categories ?? [])
   const [researchFocus, setResearchFocus] = useState(product.researchFocus || '')
   const [inStock, setInStock] = useState(product.inStock)
   const [imageFile, setImageFile] = useState<File | null>(null)
@@ -153,7 +153,7 @@ export function ProductEditModal({ product, onClose, onSaved }: ProductEditModal
           description: description.trim(),
           price: effectivePrice,
           dosage: dosage.trim() || null,
-          category,
+          categories: selectedCategories,
           researchFocus: researchFocus.trim() || null,
           image: imagePath,
           images: additionalImages,
@@ -294,19 +294,27 @@ export function ProductEditModal({ product, onClose, onSaved }: ProductEditModal
           />
         </div>
 
-        {/* Category + Dosage */}
+        {/* Categories + Dosage */}
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <label className="block text-sm font-medium text-brand-muted mb-1.5">Category</label>
-            <select
-              value={category}
-              onChange={(e) => setCategory(e.target.value)}
-              className="w-full px-3 py-2 bg-brand-surface border border-brand-border rounded-md text-brand-text focus:outline-none focus:ring-2 focus:ring-brand-teal focus:border-transparent"
-            >
+            <label className="block text-sm font-medium text-brand-muted mb-1.5">Categories</label>
+            <div className="border border-brand-border rounded-md p-2 max-h-36 overflow-y-auto space-y-1 bg-brand-surface">
               {categories.map((cat) => (
-                <option key={cat.slug} value={cat.slug}>{cat.label}</option>
+                <label key={cat.slug} className="flex items-center gap-2 px-1 py-0.5 rounded hover:bg-brand-dark cursor-pointer">
+                  <input
+                    type="checkbox"
+                    checked={selectedCategories.includes(cat.slug)}
+                    onChange={(e) => {
+                      setSelectedCategories(prev =>
+                        e.target.checked ? [...prev, cat.slug] : prev.filter(s => s !== cat.slug)
+                      )
+                    }}
+                    className="rounded border-brand-border bg-brand-bg text-brand-teal focus:ring-brand-teal"
+                  />
+                  <span className="text-sm text-brand-text">{cat.label}</span>
+                </label>
               ))}
-            </select>
+            </div>
           </div>
           <Input
             label="Dosage"

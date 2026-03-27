@@ -1,0 +1,204 @@
+[     858ms] Error: 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:5434`
+
+Please make sure your database server is running at `localhost:5434`.
+    at $n.handleRequestError (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:121:7615)
+    at $n.handleAndLogRequestError (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async ProductsSection (webpack-internal:///(rsc)/./src/app/shop/page.tsx:30:22)
+[     866ms] Error: 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:5434`
+
+Please make sure your database server is running at `localhost:5434`.
+    at $n.handleRequestError (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:121:7615)
+    at $n.handleAndLogRequestError (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async ProductsSection (webpack-internal:///(rsc)/./src/app/shop/page.tsx:30:22)
+[     867ms] Error: 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:5434`
+
+Please make sure your database server is running at `localhost:5434`.
+    at $n.handleRequestError (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:121:7615)
+    at $n.handleAndLogRequestError (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async ProductsSection (webpack-internal:///(rsc)/./src/app/shop/page.tsx:30:22)
+[     870ms] Error: 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:5434`
+
+Please make sure your database server is running at `localhost:5434`.
+    at $n.handleRequestError (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:121:7615)
+    at $n.handleAndLogRequestError (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async ProductsSection (webpack-internal:///(rsc)/./src/app/shop/page.tsx:30:22)
+[     873ms] Error: 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:5434`
+
+Please make sure your database server is running at `localhost:5434`.
+    at $n.handleRequestError (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:121:7615)
+    at $n.handleAndLogRequestError (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async ProductsSection (webpack-internal:///(rsc)/./src/app/shop/page.tsx:30:22)
+[     874ms] Error: 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:5434`
+
+Please make sure your database server is running at `localhost:5434`.
+    at $n.handleRequestError (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:121:7615)
+    at $n.handleAndLogRequestError (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async ProductsSection (webpack-internal:///(rsc)/./src/app/shop/page.tsx:30:22)
+[     876ms] Error: 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:5434`
+
+Please make sure your database server is running at `localhost:5434`.
+    at $n.handleRequestError (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:121:7615)
+    at $n.handleAndLogRequestError (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async ProductsSection (webpack-internal:///(rsc)/./src/app/shop/page.tsx:30:22)
+[     877ms] Error: 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:5434`
+
+Please make sure your database server is running at `localhost:5434`.
+    at $n.handleRequestError (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:121:7615)
+    at $n.handleAndLogRequestError (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async ProductsSection (webpack-internal:///(rsc)/./src/app/shop/page.tsx:30:22)
+[     878ms] Error: 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:5434`
+
+Please make sure your database server is running at `localhost:5434`.
+    at $n.handleRequestError (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:121:7615)
+    at $n.handleAndLogRequestError (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async ProductsSection (webpack-internal:///(rsc)/./src/app/shop/page.tsx:30:22)
+[     880ms] Error: 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:5434`
+
+Please make sure your database server is running at `localhost:5434`.
+    at $n.handleRequestError (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:121:7615)
+    at $n.handleAndLogRequestError (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async ProductsSection (webpack-internal:///(rsc)/./src/app/shop/page.tsx:30:22)
+[     880ms] Error: 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:5434`
+
+Please make sure your database server is running at `localhost:5434`.
+    at $n.handleRequestError (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:121:7615)
+    at $n.handleAndLogRequestError (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async ProductsSection (webpack-internal:///(rsc)/./src/app/shop/page.tsx:30:22)
+[     882ms] Error: 
+Invalid `prisma.product.findMany()` invocation:
+
+
+Can't reach database server at `localhost:5434`
+
+Please make sure your database server is running at `localhost:5434`.
+    at $n.handleRequestError (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:121:7615)
+    at $n.handleAndLogRequestError (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/home/saloprj/projects/genex/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async ProductsSection (webpack-internal:///(rsc)/./src/app/shop/page.tsx:30:22)
+[     888ms] [ERROR] The above error occurred in the <NotFoundErrorBoundary> component:
+
+    at Suspense
+    at div
+    at div
+    at ShopPage (Server)
+    at InnerLayoutRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:243:11)
+    at RedirectErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:74:9)
+    at RedirectBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:82:11)
+    at NotFoundBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/not-found-boundary.js:84:11)
+    at LoadingBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:349:11)
+    at ErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/error-boundary.js:160:11)
+    at InnerScrollAndFocusHandler (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:153:9)
+    at ScrollAndFocusHandler (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:228:11)
+    at RenderFromTemplateContext (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/render-from-template-context.js:16:44)
+    at OuterLayoutRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:370:11)
+    at main
+    at div
+    at ShopLayout (Server)
+    at InnerLayoutRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:243:11)
+    at RedirectErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:74:9)
+    at RedirectBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:82:11)
+    at NotFoundErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/not-found-boundary.js:76:9)
+    at NotFoundBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/not-found-boundary.js:84:11)
+    at LoadingBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:349:11)
+    at ErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/error-boundary.js:160:11)
+    at InnerScrollAndFocusHandler (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:153:9)
+    at ScrollAndFocusHandler (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:228:11)
+    at RenderFromTemplateContext (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/render-from-template-context.js:16:44)
+    at OuterLayoutRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:370:11)
+    at ToastProvider (webpack-internal:///(app-pages-browser)/./src/components/ui/Toast.tsx:25:11)
+    at body
+    at html
+    at RootLayout (Server)
+    at RedirectErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:74:9)
+    at RedirectBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:82:11)
+    at NotFoundErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/not-found-boundary.js:76:9)
+    at NotFoundBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/not-found-boundary.js:84:11)
+    at DevRootNotFoundBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/dev-root-not-found-boundary.js:33:11)
+    at ReactDevOverlay (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9)
+    at HotReload (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:321:11)
+    at Router (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/app-router.js:207:11)
+    at ErrorBoundaryHandler (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/error-boundary.js:113:9)
+    at ErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/error-boundary.js:160:11)
+    at AppRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/app-router.js:585:13)
+    at ServerRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:112:27)
+    at Root (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:117:11)
+
+React will try to recreate this component tree from scratch using the error boundary you provided, ReactDevOverlay. @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
+[     919ms] [ERROR] Failed to load resource: the server responded with a status of 400 (Bad Request) @ http://localhost:3004/__nextjs_original-stack-frame?isServer=false&isEdgeServer=false&isAppDirectory=true&errorMessage=Error%3A+%0AInvalid+%60prisma.product.findMany%28%29%60+invocation%3A%0A%0A%0ACan%27t+reach+database+server+at+%60localhost%3A5434%60%0A%0APlease+make+sure+your+database+server+is+running+at+%60localhost%3A5434%60.&file=%2Fhome%2Fsaloprj%2Fprojects%2Fgenex%2Fnode_modules%2F%40prisma%2Fclient%2Fruntime%2Flibrary.js&methodName=%24n.handleRequestError&arguments=&lineNumber=121&column=7615:0
+[     920ms] [ERROR] Failed to load resource: the server responded with a status of 400 (Bad Request) @ http://localhost:3004/__nextjs_original-stack-frame?isServer=false&isEdgeServer=false&isAppDirectory=true&errorMessage=Error%3A+%0AInvalid+%60prisma.product.findMany%28%29%60+invocation%3A%0A%0A%0ACan%27t+reach+database+server+at+%60localhost%3A5434%60%0A%0APlease+make+sure+your+database+server+is+running+at+%60localhost%3A5434%60.&file=%2Fhome%2Fsaloprj%2Fprojects%2Fgenex%2Fnode_modules%2F%40prisma%2Fclient%2Fruntime%2Flibrary.js&methodName=%24n.handleAndLogRequestError&arguments=&lineNumber=121&column=6623:0
+[     922ms] [ERROR] Failed to load resource: the server responded with a status of 400 (Bad Request) @ http://localhost:3004/__nextjs_original-stack-frame?isServer=false&isEdgeServer=false&isAppDirectory=true&errorMessage=Error%3A+%0AInvalid+%60prisma.product.findMany%28%29%60+invocation%3A%0A%0A%0ACan%27t+reach+database+server+at+%60localhost%3A5434%60%0A%0APlease+make+sure+your+database+server+is+running+at+%60localhost%3A5434%60.&file=%2Fhome%2Fsaloprj%2Fprojects%2Fgenex%2Fnode_modules%2F%40prisma%2Fclient%2Fruntime%2Flibrary.js&methodName=%24n.request&arguments=&lineNumber=121&column=6307:0
+[     923ms] [ERROR] Failed to load resource: the server responded with a status of 400 (Bad Request) @ http://localhost:3004/__nextjs_original-stack-frame?isServer=false&isEdgeServer=false&isAppDirectory=true&errorMessage=Error%3A+%0AInvalid+%60prisma.product.findMany%28%29%60+invocation%3A%0A%0A%0ACan%27t+reach+database+server+at+%60localhost%3A5434%60%0A%0APlease+make+sure+your+database+server+is+running+at+%60localhost%3A5434%60.&file=%2Fhome%2Fsaloprj%2Fprojects%2Fgenex%2Fnode_modules%2F%40prisma%2Fclient%2Fruntime%2Flibrary.js&methodName=async+l&arguments=&lineNumber=130&column=9633:0
+[     927ms] [ERROR] Failed to load resource: the server responded with a status of 400 (Bad Request) @ http://localhost:3004/__nextjs_original-stack-frame?isServer=false&isEdgeServer=false&isAppDirectory=true&errorMessage=Error%3A+%0AInvalid+%60prisma.product.findMany%28%29%60+invocation%3A%0A%0A%0ACan%27t+reach+database+server+at+%60localhost%3A5434%60%0A%0APlease+make+sure+your+database+server+is+running+at+%60localhost%3A5434%60.&file=%2Fhome%2Fsaloprj%2Fprojects%2Fgenex%2Fnode_modules%2F%40prisma%2Fclient%2Fruntime%2Flibrary.js&methodName=async+l&arguments=&lineNumber=130&column=9633:0
+[     932ms] [ERROR] Failed to load resource: the server responded with a status of 400 (Bad Request) @ http://localhost:3004/__nextjs_original-stack-frame?isServer=false&isEdgeServer=false&isAppDirectory=true&errorMessage=Error%3A+%0AInvalid+%60prisma.product.findMany%28%29%60+invocation%3A%0A%0A%0ACan%27t+reach+database+server+at+%60localhost%3A5434%60%0A%0APlease+make+sure+your+database+server+is+running+at+%60localhost%3A5434%60.&file=%2Fhome%2Fsaloprj%2Fprojects%2Fgenex%2Fnode_modules%2F%40prisma%2Fclient%2Fruntime%2Flibrary.js&methodName=%24n.request&arguments=&lineNumber=121&column=6307:0
+[     935ms] [ERROR] Failed to load resource: the server responded with a status of 400 (Bad Request) @ http://localhost:3004/__nextjs_original-stack-frame?isServer=false&isEdgeServer=false&isAppDirectory=true&errorMessage=Error%3A+%0AInvalid+%60prisma.product.findMany%28%29%60+invocation%3A%0A%0A%0ACan%27t+reach+database+server+at+%60localhost%3A5434%60%0A%0APlease+make+sure+your+database+server+is+running+at+%60localhost%3A5434%60.&file=%2Fhome%2Fsaloprj%2Fprojects%2Fgenex%2Fnode_modules%2F%40prisma%2Fclient%2Fruntime%2Flibrary.js&methodName=%24n.handleRequestError&arguments=&lineNumber=121&column=7615:0
+[     936ms] [ERROR] Failed to load resource: the server responded with a status of 400 (Bad Request) @ http://localhost:3004/__nextjs_original-stack-frame?isServer=false&isEdgeServer=false&isAppDirectory=true&errorMessage=Error%3A+%0AInvalid+%60prisma.product.findMany%28%29%60+invocation%3A%0A%0A%0ACan%27t+reach+database+server+at+%60localhost%3A5434%60%0A%0APlease+make+sure+your+database+server+is+running+at+%60localhost%3A5434%60.&file=%2Fhome%2Fsaloprj%2Fprojects%2Fgenex%2Fnode_modules%2F%40prisma%2Fclient%2Fruntime%2Flibrary.js&methodName=%24n.handleAndLogRequestError&arguments=&lineNumber=121&column=6623:0
+[    1135ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:114
+[    1294ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:114
+[    1468ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:114

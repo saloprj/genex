@@ -10,7 +10,7 @@ export async function GET(request: NextRequest) {
 
   const products = await prisma.product.findMany({
     where: {
-      ...(category && { category }),
+      ...(category && { categories: { has: category } }),
       ...(q && {
         OR: [
           { name: { contains: q, mode: 'insensitive' } },
@@ -39,7 +39,7 @@ export async function PATCH(request: NextRequest) {
     return NextResponse.json({ error: 'Forbidden' }, { status: 403 })
   }
 
-  const { id, name, description, price, dosage, category, researchFocus, image, images, inStock, variants } = await request.json()
+  const { id, name, description, price, dosage, categories, researchFocus, image, images, inStock, variants } = await request.json()
   if (!id) {
     return NextResponse.json({ error: 'Product ID required' }, { status: 400 })
   }
@@ -49,7 +49,7 @@ export async function PATCH(request: NextRequest) {
   if (name !== undefined) data.name = name
   if (description !== undefined) data.description = description
   if (dosage !== undefined) data.dosage = dosage
-  if (category !== undefined) data.category = category
+  if (categories !== undefined) data.categories = categories
   if (researchFocus !== undefined) data.researchFocus = researchFocus
   if (image !== undefined) data.image = image
   if (images !== undefined) data.images = images

@@ -1,0 +1,105 @@
+[    9338ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://gf.dialogbrain.com/api/dashboards/uid/db-perf-001/public-dashboards:0
+[  309149ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://gf.dialogbrain.com/api/ds/query?ds_type=prometheus&requestId=SQR210:0
+[  309150ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://gf.dialogbrain.com/api/ds/query?ds_type=prometheus&requestId=SQR211:0
+[  309152ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://gf.dialogbrain.com/api/ds/query?ds_type=prometheus&requestId=SQR212:0
+[  309153ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://gf.dialogbrain.com/api/ds/query?ds_type=prometheus&requestId=SQR213:0
+[  309154ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://gf.dialogbrain.com/api/ds/query?ds_type=prometheus&requestId=SQR214:0
+[  309155ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://gf.dialogbrain.com/api/annotations?from=1774347489034&to=1774351089034&limit=100&matchAny=false&dashboardUID=db-perf-001:0
+[  309155ms] [ERROR] runRequest.catchError TypeError: Failed to fetch
+    at M._subscribe (https://gf.dialogbrain.com/public/build/7031.047b15171c23b248efa0.js:56:10929)
+    at M._trySubscribe (https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:174:6411)
+    at https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:174:6334
+    at c (https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:39:2689)
+    at M.subscribe (https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:174:6244)
+    at x (https://gf.dialogbrain.com/public/build/7031.047b15171c23b248efa0.js:369:26183)
+    at https://gf.dialogbrain.com/public/build/7031.047b15171c23b248efa0.js:327:514
+    at y.<anonymous> (https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:174:11644)
+    at https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:174:6302
+    at c (https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:39:2689) @ https://gf.dialogbrain.com/public/build/9414.642bfe0d5eb16efd0c16.js:224
+[  609237ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://gf.dialogbrain.com/api/ds/query?ds_type=prometheus&requestId=SQR320:0
+[  609238ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://gf.dialogbrain.com/api/ds/query?ds_type=prometheus&requestId=SQR321:0
+[  609239ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://gf.dialogbrain.com/api/ds/query?ds_type=prometheus&requestId=SQR322:0
+[  609240ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://gf.dialogbrain.com/api/ds/query?ds_type=prometheus&requestId=SQR323:0
+[  609241ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://gf.dialogbrain.com/api/ds/query?ds_type=prometheus&requestId=SQR324:0
+[  609241ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://gf.dialogbrain.com/api/annotations?from=1774347789034&to=1774351389034&limit=100&matchAny=false&dashboardUID=db-perf-001:0
+[  609242ms] [ERROR] runRequest.catchError TypeError: Failed to fetch
+    at M._subscribe (https://gf.dialogbrain.com/public/build/7031.047b15171c23b248efa0.js:56:10929)
+    at M._trySubscribe (https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:174:6411)
+    at https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:174:6334
+    at c (https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:39:2689)
+    at M.subscribe (https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:174:6244)
+    at x (https://gf.dialogbrain.com/public/build/7031.047b15171c23b248efa0.js:369:26183)
+    at https://gf.dialogbrain.com/public/build/7031.047b15171c23b248efa0.js:327:514
+    at y.<anonymous> (https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:174:11644)
+    at https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:174:6302
+    at c (https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:39:2689) @ https://gf.dialogbrain.com/public/build/9414.642bfe0d5eb16efd0c16.js:224
+[ 1059143ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://gf.dialogbrain.com/api/ds/query?ds_type=prometheus&requestId=SQR485:0
+[ 1059145ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://gf.dialogbrain.com/api/ds/query?ds_type=prometheus&requestId=SQR486:0
+[ 1059147ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://gf.dialogbrain.com/api/ds/query?ds_type=prometheus&requestId=SQR487:0
+[ 1059149ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://gf.dialogbrain.com/api/ds/query?ds_type=prometheus&requestId=SQR488:0
+[ 1059151ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://gf.dialogbrain.com/api/ds/query?ds_type=prometheus&requestId=SQR489:0
+[ 1059157ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://gf.dialogbrain.com/api/annotations?from=1774348239034&to=1774351839034&limit=100&matchAny=false&dashboardUID=db-perf-001:0
+[ 1059158ms] [ERROR] runRequest.catchError TypeError: Failed to fetch
+    at M._subscribe (https://gf.dialogbrain.com/public/build/7031.047b15171c23b248efa0.js:56:10929)
+    at M._trySubscribe (https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:174:6411)
+    at https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:174:6334
+    at c (https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:39:2689)
+    at M.subscribe (https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:174:6244)
+    at x (https://gf.dialogbrain.com/public/build/7031.047b15171c23b248efa0.js:369:26183)
+    at https://gf.dialogbrain.com/public/build/7031.047b15171c23b248efa0.js:327:514
+    at y.<anonymous> (https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:174:11644)
+    at https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:174:6302
+    at c (https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:39:2689) @ https://gf.dialogbrain.com/public/build/9414.642bfe0d5eb16efd0c16.js:224
+[ 1209151ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://gf.dialogbrain.com/api/ds/query?ds_type=prometheus&requestId=SQR540:0
+[ 1209153ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://gf.dialogbrain.com/api/ds/query?ds_type=prometheus&requestId=SQR541:0
+[ 1209154ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://gf.dialogbrain.com/api/ds/query?ds_type=prometheus&requestId=SQR542:0
+[ 1209155ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://gf.dialogbrain.com/api/ds/query?ds_type=prometheus&requestId=SQR543:0
+[ 1209156ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://gf.dialogbrain.com/api/ds/query?ds_type=prometheus&requestId=SQR544:0
+[ 1209157ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://gf.dialogbrain.com/api/annotations?from=1774348389034&to=1774351989034&limit=100&matchAny=false&dashboardUID=db-perf-001:0
+[ 1209157ms] [ERROR] runRequest.catchError TypeError: Failed to fetch
+    at M._subscribe (https://gf.dialogbrain.com/public/build/7031.047b15171c23b248efa0.js:56:10929)
+    at M._trySubscribe (https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:174:6411)
+    at https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:174:6334
+    at c (https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:39:2689)
+    at M.subscribe (https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:174:6244)
+    at x (https://gf.dialogbrain.com/public/build/7031.047b15171c23b248efa0.js:369:26183)
+    at https://gf.dialogbrain.com/public/build/7031.047b15171c23b248efa0.js:327:514
+    at y.<anonymous> (https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:174:11644)
+    at https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:174:6302
+    at c (https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:39:2689) @ https://gf.dialogbrain.com/public/build/9414.642bfe0d5eb16efd0c16.js:224
+[ 1299151ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://gf.dialogbrain.com/api/ds/query?ds_type=prometheus&requestId=SQR573:0
+[ 1299152ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://gf.dialogbrain.com/api/ds/query?ds_type=prometheus&requestId=SQR574:0
+[ 1299153ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://gf.dialogbrain.com/api/ds/query?ds_type=prometheus&requestId=SQR575:0
+[ 1299154ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://gf.dialogbrain.com/api/ds/query?ds_type=prometheus&requestId=SQR576:0
+[ 1299155ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://gf.dialogbrain.com/api/ds/query?ds_type=prometheus&requestId=SQR577:0
+[ 1299156ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://gf.dialogbrain.com/api/annotations?from=1774348479034&to=1774352079034&limit=100&matchAny=false&dashboardUID=db-perf-001:0
+[ 1299157ms] [ERROR] runRequest.catchError TypeError: Failed to fetch
+    at M._subscribe (https://gf.dialogbrain.com/public/build/7031.047b15171c23b248efa0.js:56:10929)
+    at M._trySubscribe (https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:174:6411)
+    at https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:174:6334
+    at c (https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:39:2689)
+    at M.subscribe (https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:174:6244)
+    at x (https://gf.dialogbrain.com/public/build/7031.047b15171c23b248efa0.js:369:26183)
+    at https://gf.dialogbrain.com/public/build/7031.047b15171c23b248efa0.js:327:514
+    at y.<anonymous> (https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:174:11644)
+    at https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:174:6302
+    at c (https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:39:2689) @ https://gf.dialogbrain.com/public/build/9414.642bfe0d5eb16efd0c16.js:224
+[ 1629156ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://gf.dialogbrain.com/api/ds/query?ds_type=prometheus&requestId=SQR694:0
+[ 1629156ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://gf.dialogbrain.com/api/ds/query?ds_type=prometheus&requestId=SQR695:0
+[ 1629161ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://gf.dialogbrain.com/api/ds/query?ds_type=prometheus&requestId=SQR696:0
+[ 1629162ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://gf.dialogbrain.com/api/ds/query?ds_type=prometheus&requestId=SQR697:0
+[ 1629163ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://gf.dialogbrain.com/api/ds/query?ds_type=prometheus&requestId=SQR698:0
+[ 1629164ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://gf.dialogbrain.com/api/annotations?from=1774348809034&to=1774352409034&limit=100&matchAny=false&dashboardUID=db-perf-001:0
+[ 1629165ms] [ERROR] runRequest.catchError TypeError: Failed to fetch
+    at M._subscribe (https://gf.dialogbrain.com/public/build/7031.047b15171c23b248efa0.js:56:10929)
+    at M._trySubscribe (https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:174:6411)
+    at https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:174:6334
+    at c (https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:39:2689)
+    at M.subscribe (https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:174:6244)
+    at x (https://gf.dialogbrain.com/public/build/7031.047b15171c23b248efa0.js:369:26183)
+    at https://gf.dialogbrain.com/public/build/7031.047b15171c23b248efa0.js:327:514
+    at y.<anonymous> (https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:174:11644)
+    at https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:174:6302
+    at c (https://gf.dialogbrain.com/public/build/5671.e1e396b75d7b95ef461f.js:39:2689) @ https://gf.dialogbrain.com/public/build/9414.642bfe0d5eb16efd0c16.js:224
+[ 1719131ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://gf.dialogbrain.com/api/ds/query?ds_type=prometheus&requestId=SQR727:0
+[ 1719135ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://gf.dialogbrain.com/api/ds/query?ds_type=prometheus&requestId=SQR728:0

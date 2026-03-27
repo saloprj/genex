@@ -1,0 +1,232 @@
+[      99ms] [ERROR] ./src/components/shop/AddToCartButton.tsx
+Error: Failed to read source code from /home/saloprj/projects/genex/src/components/shop/AddToCartButton.tsx
+
+Caused by:
+    No such file or directory (os error 2)
+
+Import trace for requested module:
+./src/components/shop/AddToCartButton.tsx @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[     247ms] [ERROR] ./src/components/shop/AddToCartButton.tsx
+Error: Failed to read source code from /home/saloprj/projects/genex/src/components/shop/AddToCartButton.tsx
+
+Caused by:
+    No such file or directory (os error 2)
+
+Import trace for requested module:
+./src/components/shop/AddToCartButton.tsx @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[     408ms] [ERROR] ./src/components/shop/AddToCartButton.tsx
+Error: Failed to read source code from /home/saloprj/projects/genex/src/components/shop/AddToCartButton.tsx
+
+Caused by:
+    No such file or directory (os error 2)
+
+Import trace for requested module:
+./src/components/shop/AddToCartButton.tsx @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[     596ms] [ERROR] ./src/components/shop/AddToCartButton.tsx
+Error: Failed to read source code from /home/saloprj/projects/genex/src/components/shop/AddToCartButton.tsx
+
+Caused by:
+    No such file or directory (os error 2)
+
+Import trace for requested module:
+./src/components/shop/AddToCartButton.tsx @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[     751ms] [ERROR] ./src/components/shop/AddToCartButton.tsx
+Error: Failed to read source code from /home/saloprj/projects/genex/src/components/shop/AddToCartButton.tsx
+
+Caused by:
+    No such file or directory (os error 2)
+
+Import trace for requested module:
+./src/components/shop/AddToCartButton.tsx @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[     914ms] [ERROR] ./src/components/shop/AddToCartButton.tsx
+Error: Failed to read source code from /home/saloprj/projects/genex/src/components/shop/AddToCartButton.tsx
+
+Caused by:
+    No such file or directory (os error 2)
+
+Import trace for requested module:
+./src/components/shop/AddToCartButton.tsx @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    1073ms] [ERROR] ./src/components/shop/AddToCartButton.tsx
+Error: Failed to read source code from /home/saloprj/projects/genex/src/components/shop/AddToCartButton.tsx
+
+Caused by:
+    No such file or directory (os error 2)
+
+Import trace for requested module:
+./src/components/shop/AddToCartButton.tsx @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    1240ms] [ERROR] ./src/components/shop/AddToCartButton.tsx
+Error: Failed to read source code from /home/saloprj/projects/genex/src/components/shop/AddToCartButton.tsx
+
+Caused by:
+    No such file or directory (os error 2)
+
+Import trace for requested module:
+./src/components/shop/AddToCartButton.tsx @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    1422ms] [ERROR] ./src/components/shop/AddToCartButton.tsx
+Error: Failed to read source code from /home/saloprj/projects/genex/src/components/shop/AddToCartButton.tsx
+
+Caused by:
+    No such file or directory (os error 2)
+
+Import trace for requested module:
+./src/components/shop/AddToCartButton.tsx @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    1615ms] [ERROR] ./src/components/shop/AddToCartButton.tsx
+Error: Failed to read source code from /home/saloprj/projects/genex/src/components/shop/AddToCartButton.tsx
+
+Caused by:
+    No such file or directory (os error 2)
+
+Import trace for requested module:
+./src/components/shop/AddToCartButton.tsx @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    1793ms] [ERROR] ./src/components/shop/AddToCartButton.tsx
+Error: Failed to read source code from /home/saloprj/projects/genex/src/components/shop/AddToCartButton.tsx
+
+Caused by:
+    No such file or directory (os error 2)
+
+Import trace for requested module:
+./src/components/shop/AddToCartButton.tsx @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    1951ms] [ERROR] ./src/components/shop/AddToCartButton.tsx
+Error: Failed to read source code from /home/saloprj/projects/genex/src/components/shop/AddToCartButton.tsx
+
+Caused by:
+    No such file or directory (os error 2)
+
+Import trace for requested module:
+./src/components/shop/AddToCartButton.tsx @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    2111ms] [ERROR] ./src/components/shop/AddToCartButton.tsx
+Error: Failed to read source code from /home/saloprj/projects/genex/src/components/shop/AddToCartButton.tsx
+
+Caused by:
+    No such file or directory (os error 2)
+
+Import trace for requested module:
+./src/components/shop/AddToCartButton.tsx @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    2289ms] [ERROR] ./src/components/shop/AddToCartButton.tsx
+Error: Failed to read source code from /home/saloprj/projects/genex/src/components/shop/AddToCartButton.tsx
+
+Caused by:
+    No such file or directory (os error 2)
+
+Import trace for requested module:
+./src/components/shop/AddToCartButton.tsx @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    2446ms] [ERROR] ./src/components/shop/AddToCartButton.tsx
+Error: Failed to read source code from /home/saloprj/projects/genex/src/components/shop/AddToCartButton.tsx
+
+Caused by:
+    No such file or directory (os error 2)
+
+Import trace for requested module:
+./src/components/shop/AddToCartButton.tsx @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    2617ms] [ERROR] ./src/components/shop/AddToCartButton.tsx
+Error: Failed to read source code from /home/saloprj/projects/genex/src/components/shop/AddToCartButton.tsx
+
+Caused by:
+    No such file or directory (os error 2)
+
+Import trace for requested module:
+./src/components/shop/AddToCartButton.tsx @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    2787ms] [ERROR] ./src/components/shop/AddToCartButton.tsx
+Error: Failed to read source code from /home/saloprj/projects/genex/src/components/shop/AddToCartButton.tsx
+
+Caused by:
+    No such file or directory (os error 2)
+
+Import trace for requested module:
+./src/components/shop/AddToCartButton.tsx @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    2963ms] [ERROR] ./src/components/shop/AddToCartButton.tsx
+Error: Failed to read source code from /home/saloprj/projects/genex/src/components/shop/AddToCartButton.tsx
+
+Caused by:
+    No such file or directory (os error 2)
+
+Import trace for requested module:
+./src/components/shop/AddToCartButton.tsx @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    3129ms] [ERROR] ./src/components/shop/AddToCartButton.tsx
+Error: Failed to read source code from /home/saloprj/projects/genex/src/components/shop/AddToCartButton.tsx
+
+Caused by:
+    No such file or directory (os error 2)
+
+Import trace for requested module:
+./src/components/shop/AddToCartButton.tsx @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    3291ms] [ERROR] ./src/components/shop/AddToCartButton.tsx
+Error: Failed to read source code from /home/saloprj/projects/genex/src/components/shop/AddToCartButton.tsx
+
+Caused by:
+    No such file or directory (os error 2)
+
+Import trace for requested module:
+./src/components/shop/AddToCartButton.tsx @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    3463ms] [ERROR] ./src/components/shop/AddToCartButton.tsx
+Error: Failed to read source code from /home/saloprj/projects/genex/src/components/shop/AddToCartButton.tsx
+
+Caused by:
+    No such file or directory (os error 2)
+
+Import trace for requested module:
+./src/components/shop/AddToCartButton.tsx @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    3635ms] [ERROR] ./src/components/shop/AddToCartButton.tsx
+Error: Failed to read source code from /home/saloprj/projects/genex/src/components/shop/AddToCartButton.tsx
+
+Caused by:
+    No such file or directory (os error 2)
+
+Import trace for requested module:
+./src/components/shop/AddToCartButton.tsx @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    3817ms] [ERROR] ./src/components/shop/AddToCartButton.tsx
+Error: Failed to read source code from /home/saloprj/projects/genex/src/components/shop/AddToCartButton.tsx
+
+Caused by:
+    No such file or directory (os error 2)
+
+Import trace for requested module:
+./src/components/shop/AddToCartButton.tsx @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    3983ms] [ERROR] ./src/components/shop/AddToCartButton.tsx
+Error: Failed to read source code from /home/saloprj/projects/genex/src/components/shop/AddToCartButton.tsx
+
+Caused by:
+    No such file or directory (os error 2)
+
+Import trace for requested module:
+./src/components/shop/AddToCartButton.tsx @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    4189ms] [ERROR] ./src/components/shop/AddToCartButton.tsx
+Error: Failed to read source code from /home/saloprj/projects/genex/src/components/shop/AddToCartButton.tsx
+
+Caused by:
+    No such file or directory (os error 2)
+
+Import trace for requested module:
+./src/components/shop/AddToCartButton.tsx @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    4571ms] [ERROR] ./src/components/shop/AddToCartButton.tsx
+Error: Failed to read source code from /home/saloprj/projects/genex/src/components/shop/AddToCartButton.tsx
+
+Caused by:
+    No such file or directory (os error 2)
+
+Import trace for requested module:
+./src/components/shop/AddToCartButton.tsx @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    5094ms] [ERROR] ./src/components/shop/AddToCartButton.tsx
+Error: Failed to read source code from /home/saloprj/projects/genex/src/components/shop/AddToCartButton.tsx
+
+Caused by:
+    No such file or directory (os error 2)
+
+Import trace for requested module:
+./src/components/shop/AddToCartButton.tsx @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    5567ms] [ERROR] ./src/components/shop/AddToCartButton.tsx
+Error: Failed to read source code from /home/saloprj/projects/genex/src/components/shop/AddToCartButton.tsx
+
+Caused by:
+    No such file or directory (os error 2)
+
+Import trace for requested module:
+./src/components/shop/AddToCartButton.tsx @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    5751ms] [ERROR] ./src/components/shop/AddToCartButton.tsx
+Error: Failed to read source code from /home/saloprj/projects/genex/src/components/shop/AddToCartButton.tsx
+
+Caused by:
+    No such file or directory (os error 2)
+
+Import trace for requested module:
+./src/components/shop/AddToCartButton.tsx @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62

@@ -1,0 +1,376 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e216]:
+    - banner [ref=e218]:
+      - generic [ref=e219]:
+        - generic [ref=e220]:
+          - link "Supabase" [ref=e221] [cursor=pointer]:
+            - /url: /dashboard/org/fydzjmmmsfjkeaklavjq
+            - img "Supabase" [ref=e222]
+          - generic [ref=e223]:
+            - img [ref=e225]
+            - generic [ref=e227]:
+              - link "info@dextrade.com's Org Free" [ref=e228] [cursor=pointer]:
+                - /url: /dashboard/org/fydzjmmmsfjkeaklavjq
+                - img [ref=e229]
+                - generic [ref=e239]: info@dextrade.com's Org
+                - generic [ref=e240]: Free
+              - button [ref=e241] [cursor=pointer]:
+                - img [ref=e243]
+            - generic [ref=e246]:
+              - img [ref=e248]
+              - generic [ref=e250]:
+                - link "genexpep" [ref=e251] [cursor=pointer]:
+                  - /url: /dashboard/project/eautunskvehlwwlxdsjd
+                  - img [ref=e252]
+                  - generic "genexpep" [ref=e255]
+                - button [ref=e256] [cursor=pointer]:
+                  - img [ref=e258]
+              - img [ref=e262]
+              - generic [ref=e264]:
+                - link "main Production" [ref=e265] [cursor=pointer]:
+                  - /url: /dashboard/project/eautunskvehlwwlxdsjd
+                  - generic "main" [ref=e266]
+                  - generic [ref=e267]: Production
+                - button [ref=e268] [cursor=pointer]:
+                  - img [ref=e270]
+          - button "Connect" [ref=e274] [cursor=pointer]:
+            - img [ref=e276]
+            - generic [ref=e278]: Connect
+        - generic [ref=e279]:
+          - generic [ref=e281] [cursor=pointer]: Feedback
+          - generic [ref=e282]:
+            - button "Search..." [ref=e283] [cursor=pointer]:
+              - generic [ref=e284]:
+                - img [ref=e285]
+                - paragraph [ref=e288]: Search...
+              - generic [ref=e290]:
+                - img [ref=e291]
+                - generic [ref=e293]: K
+            - button [ref=e294] [cursor=pointer]:
+              - img [ref=e296]
+            - button [ref=e300] [cursor=pointer]:
+              - img [ref=e302]
+            - button [ref=e304] [cursor=pointer]:
+              - img [ref=e306]
+            - button [ref=e308] [cursor=pointer]:
+              - img [ref=e312]
+          - button [ref=e315] [cursor=pointer]:
+            - figure [ref=e317]:
+              - img [ref=e318]
+    - generic [ref=e320]:
+      - generic [ref=e324]:
+        - list [ref=e327]:
+          - generic [ref=e328]:
+            - listitem [ref=e329]:
+              - link "Project Overview" [ref=e330] [cursor=pointer]:
+                - /url: /dashboard/project/eautunskvehlwwlxdsjd
+                - img [ref=e331]
+                - generic: Project Overview
+            - listitem [ref=e333]:
+              - link "Table Editor" [ref=e334] [cursor=pointer]:
+                - /url: /dashboard/project/eautunskvehlwwlxdsjd/editor
+                - img [ref=e335]
+                - generic: Table Editor
+            - listitem [ref=e337]:
+              - link "SQL Editor" [ref=e338] [cursor=pointer]:
+                - /url: /dashboard/project/eautunskvehlwwlxdsjd/sql
+                - img [ref=e339]
+                - generic: SQL Editor
+          - generic [ref=e341]:
+            - listitem [ref=e342]:
+              - link "Database" [ref=e343] [cursor=pointer]:
+                - /url: /dashboard/project/eautunskvehlwwlxdsjd/database/schemas
+                - img [ref=e344]
+                - generic: Database
+            - listitem [ref=e348]:
+              - link "Authentication" [ref=e349] [cursor=pointer]:
+                - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/users
+                - img [ref=e350]
+                - generic: Authentication
+            - listitem [ref=e352]:
+              - link "Storage" [ref=e353] [cursor=pointer]:
+                - /url: /dashboard/project/eautunskvehlwwlxdsjd/storage/files
+                - img [ref=e354]
+                - generic: Storage
+            - listitem [ref=e356]:
+              - link "Edge Functions" [ref=e357] [cursor=pointer]:
+                - /url: /dashboard/project/eautunskvehlwwlxdsjd/functions
+                - img [ref=e358]
+                - generic: Edge Functions
+            - listitem [ref=e363]:
+              - link "Realtime" [ref=e364] [cursor=pointer]:
+                - /url: /dashboard/project/eautunskvehlwwlxdsjd/realtime/inspector
+                - img [ref=e365]
+                - generic: Realtime
+          - generic [ref=e367]:
+            - listitem [ref=e369]:
+              - link "Advisors" [ref=e370] [cursor=pointer]:
+                - /url: /dashboard/project/eautunskvehlwwlxdsjd/advisors/security
+                - img [ref=e371]
+                - generic: Advisors
+            - listitem [ref=e373]:
+              - link "Observability" [ref=e374] [cursor=pointer]:
+                - /url: /dashboard/project/eautunskvehlwwlxdsjd/observability
+                - img [ref=e375]
+                - generic: Observability
+            - listitem [ref=e383]:
+              - link "Logs" [ref=e384] [cursor=pointer]:
+                - /url: /dashboard/project/eautunskvehlwwlxdsjd/logs/explorer
+                - img [ref=e385]
+                - generic: Logs
+            - listitem [ref=e386]:
+              - link "Integrations" [ref=e387] [cursor=pointer]:
+                - /url: /dashboard/project/eautunskvehlwwlxdsjd/integrations
+                - img [ref=e388]
+                - generic: Integrations
+          - listitem [ref=e392]:
+            - link "Project Settings" [ref=e393] [cursor=pointer]:
+              - /url: /dashboard/project/eautunskvehlwwlxdsjd/settings/general
+              - img [ref=e394]
+              - generic: Project Settings
+        - button [ref=e399] [cursor=pointer]:
+          - img [ref=e401]
+      - generic [ref=e408]:
+        - generic [ref=e412]:
+          - heading "Authentication" [level=4] [ref=e414]
+          - menu "Sidebar" [disabled] [ref=e417]:
+            - list [ref=e418]:
+              - generic [ref=e421]:
+                - generic [ref=e425]: Manage
+                - generic [ref=e426]:
+                  - link "Users" [disabled] [ref=e427] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/users
+                    - menuitem "Users" [disabled] [ref=e428]:
+                      - generic "Users" [ref=e431]:
+                        - generic [ref=e432]: Users
+                  - link "OAuth Apps" [disabled] [ref=e433] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/oauth-apps
+                    - menuitem "OAuth Apps" [disabled] [ref=e434]:
+                      - generic "OAuth Apps" [ref=e437]:
+                        - generic [ref=e438]: OAuth Apps
+              - generic [ref=e442]:
+                - generic [ref=e446]: Notifications
+                - link "Email" [disabled] [ref=e448] [cursor=pointer]:
+                  - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/templates
+                  - menuitem "Email" [disabled] [ref=e449]:
+                    - generic "Email" [ref=e452]:
+                      - generic [ref=e453]: Email
+              - generic [ref=e457]:
+                - generic [ref=e461]: Configuration
+                - generic [ref=e462]:
+                  - link "Policies" [disabled] [ref=e463] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/policies
+                    - menuitem "Policies" [disabled] [ref=e464]:
+                      - generic "Policies" [ref=e467]:
+                        - generic [ref=e468]: Policies
+                  - link "Sign In / Providers" [disabled] [ref=e469] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/providers
+                    - menuitem "Sign In / Providers" [disabled] [ref=e470]:
+                      - generic "Sign In / Providers" [ref=e473]:
+                        - generic [ref=e474]: Sign In / Providers
+                  - link "OAuth Server Beta" [disabled] [ref=e475] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/oauth-server
+                    - menuitem "OAuth Server Beta" [disabled] [ref=e476]:
+                      - generic "OAuth Server" [ref=e479]:
+                        - generic [ref=e480]: OAuth Server
+                        - generic [ref=e481]: Beta
+                  - link "Sessions" [disabled] [ref=e482] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/sessions
+                    - menuitem "Sessions" [disabled] [ref=e483]:
+                      - generic "Sessions" [ref=e486]:
+                        - generic [ref=e487]: Sessions
+                  - link "Rate Limits" [disabled] [ref=e488] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/rate-limits
+                    - menuitem "Rate Limits" [disabled] [ref=e489]:
+                      - generic "Rate Limits" [ref=e492]:
+                        - generic [ref=e493]: Rate Limits
+                  - link "Multi-Factor" [disabled] [ref=e494] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/mfa
+                    - menuitem "Multi-Factor" [disabled] [ref=e495]:
+                      - generic "Multi-Factor" [ref=e498]:
+                        - generic [ref=e499]: Multi-Factor
+                  - link "URL Configuration" [disabled] [ref=e500] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/url-configuration
+                    - menuitem "URL Configuration" [disabled] [ref=e501]:
+                      - generic "URL Configuration" [ref=e504]:
+                        - generic [ref=e505]: URL Configuration
+                  - link "Attack Protection" [disabled] [ref=e506] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/protection
+                    - menuitem "Attack Protection" [disabled] [ref=e507]:
+                      - generic "Attack Protection" [ref=e510]:
+                        - generic [ref=e511]: Attack Protection
+                  - link "Auth Hooks Beta" [disabled] [ref=e512] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/hooks
+                    - menuitem "Auth Hooks Beta" [disabled] [ref=e513]:
+                      - generic "Auth Hooks" [ref=e516]:
+                        - generic [ref=e517]: Auth Hooks
+                        - generic [ref=e518]: Beta
+                  - link "Audit Logs" [disabled] [ref=e519] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/audit-logs
+                    - menuitem "Audit Logs" [disabled] [ref=e520]:
+                      - generic "Audit Logs" [ref=e523]:
+                        - generic [ref=e524]: Audit Logs
+                  - link "Performance" [disabled] [ref=e525] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/performance
+                    - menuitem "Performance" [disabled] [ref=e526]:
+                      - generic "Performance" [ref=e529]:
+                        - generic [ref=e530]: Performance
+        - separator [disabled] [ref=e531]:
+          - img [ref=e533]
+        - main [ref=e542]:
+          - generic [ref=e543]:
+            - generic [ref=e544]:
+              - generic [ref=e549]:
+                - heading "Emails" [level=1] [ref=e550]
+                - paragraph [ref=e551]: Configure what emails your users receive and how they are sent
+              - navigation [ref=e552]:
+                - menu [ref=e553]:
+                  - listitem [ref=e554]:
+                    - link "Templates" [ref=e555] [cursor=pointer]:
+                      - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/templates
+                  - listitem [ref=e556]:
+                    - link "SMTP Settings" [ref=e557] [cursor=pointer]:
+                      - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/smtp
+            - generic [ref=e755]:
+              - generic [ref=e756]:
+                - heading "Authentication" [level=2] [ref=e760]
+                - generic [ref=e762]:
+                  - link "Confirm sign up Ask users to confirm their email address after signing up" [ref=e764] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/templates/confirm-sign-up
+                    - generic [ref=e765]:
+                      - heading "Confirm sign up" [level=3] [ref=e766]
+                      - paragraph [ref=e767]: Ask users to confirm their email address after signing up
+                    - img [ref=e769]
+                  - link "Invite user Invite users who don't yet have an account to sign up" [ref=e772] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/templates/invite-user
+                    - generic [ref=e773]:
+                      - heading "Invite user" [level=3] [ref=e774]
+                      - paragraph [ref=e775]: Invite users who don't yet have an account to sign up
+                    - img [ref=e777]
+                  - link "Magic link Allow users to sign in via a one-time link sent to their email" [ref=e780] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/templates/magic-link
+                    - generic [ref=e781]:
+                      - heading "Magic link" [level=3] [ref=e782]
+                      - paragraph [ref=e783]: Allow users to sign in via a one-time link sent to their email
+                    - img [ref=e785]
+                  - link "Change email address Ask users to verify their new email address after changing it" [ref=e788] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/templates/change-email-address
+                    - generic [ref=e789]:
+                      - heading "Change email address" [level=3] [ref=e790]
+                      - paragraph [ref=e791]: Ask users to verify their new email address after changing it
+                    - img [ref=e793]
+                  - link "Reset password Allow users to reset their password if they forget it" [ref=e796] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/templates/reset-password
+                    - generic [ref=e797]:
+                      - heading "Reset password" [level=3] [ref=e798]
+                      - paragraph [ref=e799]: Allow users to reset their password if they forget it
+                    - img [ref=e801]
+                  - link "Reauthentication Ask users to re-authenticate before performing a sensitive action" [ref=e804] [cursor=pointer]:
+                    - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/templates/reauthentication
+                    - generic [ref=e805]:
+                      - heading "Reauthentication" [level=3] [ref=e806]
+                      - paragraph [ref=e807]: Ask users to re-authenticate before performing a sensitive action
+                    - img [ref=e809]
+              - generic [ref=e811]:
+                - heading "Security" [level=2] [ref=e815]
+                - generic [ref=e816]:
+                  - alert [ref=e817]:
+                    - generic [ref=e819]:
+                      - button [ref=e820] [cursor=pointer]:
+                        - img [ref=e821]
+                      - generic [ref=e824]:
+                        - generic [ref=e825]:
+                          - generic [ref=e826]:
+                            - generic [ref=e827]: New
+                            - paragraph [ref=e828]: Notify users about security-sensitive actions on their accounts
+                          - paragraph [ref=e829]:
+                            - text: We’ve expanded our email templates to handle security-sensitive actions. The list of templates will continue to grow as our feature-set changes, and as we
+                            - link "gather feedback" [ref=e830] [cursor=pointer]:
+                              - /url: https://github.com/orgs/supabase/discussions/40349
+                            - text: from our community .
+                        - link "Docs" [ref=e831] [cursor=pointer]:
+                          - /url: https://supabase.com/docs/guides/auth/auth-email-templates
+                          - img [ref=e833]
+                          - generic [ref=e837]: Docs
+                  - generic [ref=e839]:
+                    - generic [ref=e840]:
+                      - link "Password changed Notify users when their password has changed" [ref=e841] [cursor=pointer]:
+                        - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/templates/password-changed
+                        - heading "Password changed" [level=3] [ref=e842]
+                        - paragraph [ref=e843]: Notify users when their password has changed
+                      - generic [ref=e844]:
+                        - switch [ref=e845] [cursor=pointer]
+                        - checkbox
+                        - link [ref=e846] [cursor=pointer]:
+                          - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/templates/password-changed
+                          - img [ref=e847]
+                    - generic [ref=e849]:
+                      - link "Email address changed Notify users when their email address has changed" [ref=e850] [cursor=pointer]:
+                        - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/templates/email-address-changed
+                        - heading "Email address changed" [level=3] [ref=e851]
+                        - paragraph [ref=e852]: Notify users when their email address has changed
+                      - generic [ref=e853]:
+                        - switch [ref=e854] [cursor=pointer]
+                        - checkbox
+                        - link [ref=e855] [cursor=pointer]:
+                          - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/templates/email-address-changed
+                          - img [ref=e856]
+                    - generic [ref=e858]:
+                      - link "Phone number changed Notify users when their phone number has changed" [ref=e859] [cursor=pointer]:
+                        - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/templates/phone-number-changed
+                        - heading "Phone number changed" [level=3] [ref=e860]
+                        - paragraph [ref=e861]: Notify users when their phone number has changed
+                      - generic [ref=e862]:
+                        - switch [ref=e863] [cursor=pointer]
+                        - checkbox
+                        - link [ref=e864] [cursor=pointer]:
+                          - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/templates/phone-number-changed
+                          - img [ref=e865]
+                    - generic [ref=e867]:
+                      - link "Identity linked Notify users when a new identity has been linked to their account" [ref=e868] [cursor=pointer]:
+                        - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/templates/identity-linked
+                        - heading "Identity linked" [level=3] [ref=e869]
+                        - paragraph [ref=e870]: Notify users when a new identity has been linked to their account
+                      - generic [ref=e871]:
+                        - switch [ref=e872] [cursor=pointer]
+                        - checkbox
+                        - link [ref=e873] [cursor=pointer]:
+                          - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/templates/identity-linked
+                          - img [ref=e874]
+                    - generic [ref=e876]:
+                      - link "Identity unlinked Notify users when an identity has been unlinked from their account" [ref=e877] [cursor=pointer]:
+                        - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/templates/identity-unlinked
+                        - heading "Identity unlinked" [level=3] [ref=e878]
+                        - paragraph [ref=e879]: Notify users when an identity has been unlinked from their account
+                      - generic [ref=e880]:
+                        - switch [ref=e881] [cursor=pointer]
+                        - checkbox
+                        - link [ref=e882] [cursor=pointer]:
+                          - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/templates/identity-unlinked
+                          - img [ref=e883]
+                    - generic [ref=e885]:
+                      - link "Multi-factor authentication method added Notify users when a new multi-factor authentication method has been added to their account" [ref=e886] [cursor=pointer]:
+                        - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/templates/multi-factor-authentication-method-added
+                        - heading "Multi-factor authentication method added" [level=3] [ref=e887]
+                        - paragraph [ref=e888]: Notify users when a new multi-factor authentication method has been added to their account
+                      - generic [ref=e889]:
+                        - switch [ref=e890] [cursor=pointer]
+                        - checkbox
+                        - link [ref=e891] [cursor=pointer]:
+                          - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/templates/multi-factor-authentication-method-added
+                          - img [ref=e892]
+                    - generic [ref=e894]:
+                      - link "Multi-factor authentication method removed Notify users when a multi-factor authentication method has been removed from their account" [ref=e895] [cursor=pointer]:
+                        - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/templates/multi-factor-authentication-method-removed
+                        - heading "Multi-factor authentication method removed" [level=3] [ref=e896]
+                        - paragraph [ref=e897]: Notify users when a multi-factor authentication method has been removed from their account
+                      - generic [ref=e898]:
+                        - switch [ref=e899] [cursor=pointer]
+                        - checkbox
+                        - link [ref=e900] [cursor=pointer]:
+                          - /url: /dashboard/project/eautunskvehlwwlxdsjd/auth/templates/multi-factor-authentication-method-removed
+                          - img [ref=e901]
+                    - generic [ref=e903]:
+                      - button "Save changes" [disabled]:
+                        - generic: Save changes
+  - alert [ref=e215]: Email | Authentication | genexpep | info@dextrade.com's Org | Supabase

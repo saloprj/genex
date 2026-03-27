@@ -1,0 +1,13 @@
+[    1503ms] [WARNING] No available adapters. @ https://resend.com/domains/17956089-23d5-4114-a563-ebba75999a22:0
+[    1503ms] [WARNING] No available adapters. @ https://resend.com/domains/17956089-23d5-4114-a563-ebba75999a22:0
+[    1626ms] Error: Minified React error #418; visit https://react.dev/errors/418?args[]=text&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at rK (https://resend.com/_next/static/chunks/514a232733176010.js?dpl=dpl_B3i8BZHXZ7GsnYtnzjcGzJ1nz6oV:1:46183)
+    at rX (https://resend.com/_next/static/chunks/514a232733176010.js?dpl=dpl_B3i8BZHXZ7GsnYtnzjcGzJ1nz6oV:1:47216)
+    at https://resend.com/_next/static/chunks/514a232733176010.js?dpl=dpl_B3i8BZHXZ7GsnYtnzjcGzJ1nz6oV:1:140935
+    at sp (https://resend.com/_next/static/chunks/514a232733176010.js?dpl=dpl_B3i8BZHXZ7GsnYtnzjcGzJ1nz6oV:1:146096)
+    at sc (https://resend.com/_next/static/chunks/514a232733176010.js?dpl=dpl_B3i8BZHXZ7GsnYtnzjcGzJ1nz6oV:1:137436)
+    at https://resend.com/_next/static/chunks/514a232733176010.js?dpl=dpl_B3i8BZHXZ7GsnYtnzjcGzJ1nz6oV:1:132265
+    at u9 (https://resend.com/_next/static/chunks/514a232733176010.js?dpl=dpl_B3i8BZHXZ7GsnYtnzjcGzJ1nz6oV:1:132366)
+    at sV (https://resend.com/_next/static/chunks/514a232733176010.js?dpl=dpl_B3i8BZHXZ7GsnYtnzjcGzJ1nz6oV:1:158748)
+    at MessagePort.O (https://resend.com/_next/static/chunks/514a232733176010.js?dpl=dpl_B3i8BZHXZ7GsnYtnzjcGzJ1nz6oV:1:7708)
+[    1883ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://resend.com/docs/dashboard/domains/introduction?_rsc=1erp1:0

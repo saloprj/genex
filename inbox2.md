@@ -1,0 +1,1115 @@
+- generic [ref=e1]:
+  - iframe [ref=e2]:
+    
+  - iframe
+  - generic [ref=e10]:
+    - generic [ref=e12]:
+      - generic [ref=e13]:
+        - link "Skip to content" [ref=e14] [cursor=pointer]:
+          - /url: ""
+        - link "Using Liqpaid Mail with screen readers" [ref=e15] [cursor=pointer]:
+          - /url: ""
+      - heading [level=1] [ref=e17]:
+        - banner [ref=e18]:
+          - generic [ref=e19]:
+            - generic [ref=e20]:
+              - button "Main menu" [expanded] [ref=e21] [cursor=pointer]:
+                - img [ref=e22]
+              - link "Gmail" [ref=e26] [cursor=pointer]:
+                - /url: "#inbox"
+                - img [ref=e27]
+            - generic [ref=e28]:
+              - search "Search mail" [ref=e30]:
+                - heading "Search mail" [level=2] [ref=e31]
+                - table [ref=e33]:
+                  - rowgroup [ref=e34]:
+                    - row [ref=e35]:
+                      - cell [ref=e36]:
+                        - textbox "Search mail" [ref=e37]
+                - button "Advanced search options" [ref=e38] [cursor=pointer]:
+                  - img [ref=e39]
+                - button "Search mail" [disabled] [ref=e41] [cursor=pointer]:
+                  - img [ref=e42]
+              - generic [ref=e45]:
+                - 'button "Status: Active" [ref=e46] [cursor=pointer]':
+                  - img [ref=e50]
+                - button "Support" [ref=e1224] [cursor=pointer]:
+                  - img [ref=e1225]
+                - button "Settings" [ref=e55] [cursor=pointer]:
+                  - img [ref=e56]
+                - generic [ref=e59]:
+                  - generic:
+                    - button "Ask Gemini" [ref=e62] [cursor=pointer]:
+                      - img [ref=e65]
+                    - tooltip [ref=e68]: Ask Gemini
+            - generic [ref=e70]:
+              - button "Google apps" [ref=e74] [cursor=pointer]:
+                - img [ref=e75]
+              - 'button "Google Account: Dialog Brain (support@dialogbrain.com)" [ref=e78] [cursor=pointer]':
+                - 'button "Google Account: Dialog Brain (support@dialogbrain.com)" [ref=e83]':
+                  - img [ref=e85]
+      - alert [ref=e88]:
+        - generic [ref=e89]:
+          - generic [ref=e90]: Enable desktop notifications for Liqpaid Mail.
+          - generic [ref=e91]:
+            - link "OK" [ref=e92] [cursor=pointer]
+            - link "No thanks" [ref=e93] [cursor=pointer]
+          - button "Close" [ref=e94] [cursor=pointer]
+    - generic [ref=e96]:
+      - navigation [ref=e97]:
+        - generic [ref=e98]:
+          - link "Mail, 834 unread messages" [ref=e99] [cursor=pointer]:
+            - generic [ref=e101]: 99+
+          - heading "Mail" [level=2] [ref=e102] [cursor=pointer]
+        - generic [ref=e103]:
+          - link "Chat, 1 unread message" [ref=e1228] [cursor=pointer]:
+            - img [ref=e1233]
+          - heading "Chat" [level=2] [ref=e105] [cursor=pointer]
+        - generic [ref=e106]:
+          - link "Meet" [ref=e107] [cursor=pointer]
+          - heading "Meet" [level=2] [ref=e108] [cursor=pointer]
+      - generic [ref=e110]:
+        - button "Compose" [ref=e113] [cursor=pointer]
+        - generic [ref=e118]:
+          - generic "Labels" [ref=e120]:
+            - heading "Labels" [level=2] [ref=e121]
+            - generic [ref=e122]:
+              - generic [ref=e123]:
+                - generic [ref=e125]:
+                  - generic [ref=e1238]:
+                    - link "Inbox 834 unread" [ref=e1240] [cursor=pointer]:
+                      - /url: https://mail.google.com/mail/u/0/#inbox
+                      - text: Inbox
+                    - generic [ref=e1241]: "834"
+                  - link "Starred" [ref=e1248] [cursor=pointer]:
+                    - /url: https://mail.google.com/mail/u/0/#starred
+                  - link "Snoozed" [ref=e1255] [cursor=pointer]:
+                    - /url: https://mail.google.com/mail/u/0/#snoozed
+                  - link "Sent" [ref=e1262] [cursor=pointer]:
+                    - /url: https://mail.google.com/mail/u/0/#sent
+                  - link "Drafts" [ref=e1269] [cursor=pointer]:
+                    - /url: https://mail.google.com/mail/u/0/#drafts
+                - generic [ref=e166]:
+                  - 'link "Expand label: Categories" [ref=e167] [cursor=pointer]'
+                  - link "Categories collapsed" [ref=e171] [cursor=pointer]:
+                    - /url: https://mail.google.com/mail/u/0/
+                    - text: Categories
+              - button "More labels" [ref=e173] [cursor=pointer]:
+                - generic [ref=e174]: More
+          - generic [ref=e177]:
+            - heading "Labels" [ref=e178]
+            - button "Create new label" [ref=e179] [cursor=pointer]
+          - generic:
+            - generic "Labels":
+              - heading "Labels" [level=2] [ref=e180]
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - iframe
+      - generic [ref=e185]:
+        - generic [ref=e187]:
+          - toolbar "search refinement"
+          - generic [ref=e188]:
+            - generic [ref=e191]:
+              - button "Select" [ref=e193] [cursor=pointer]:
+                - checkbox [ref=e195]
+              - button "Refresh" [ref=e198] [cursor=pointer]
+              - button "More email options" [ref=e202] [cursor=pointer]
+            - generic [ref=e205]:
+              - generic [ref=e207]:
+                - button "Show more messages" [ref=e208] [cursor=pointer]:
+                  - generic [ref=e209]:
+                    - generic [ref=e210]: 1–50
+                    - text: of 923
+                - button "Newer" [disabled] [ref=e211]
+                - button "Older" [ref=e212] [cursor=pointer]
+              - generic [ref=e216]:
+                - button "Input tools on/off (Ctrl-Shift-K)" [ref=e217] [cursor=pointer]
+                - button "Select input tool" [ref=e219] [cursor=pointer]
+        - generic [ref=e222]:
+          - main [ref=e225]:
+            - heading "Conversations" [level=2] [ref=e227]
+            - grid [ref=e1271]:
+              - rowgroup [ref=e1272]:
+                - row "unread, Gene X Labs 8, Your Access Link — Gene X Labs, 7:56 PM, Gene X Labs Research Peptides Your Sign-In Code Enter this 6-digit code to sign in to the Gene X Labs research catalogue. 30521662 This code expires in 1 hour. Do not share it. For research and." [ref=e1273] [cursor=pointer]:
+                  - gridcell [ref=e1274]
+                  - gridcell "unread, Gene X Labs 8, Your Access Link — Gene X Labs, 7:56 PM, Gene X Labs Research Peptides Your Sign-In Code Enter this 6-digit code to sign in to the Gene X Labs research catalogue. 30521662 This code expires in 1 hour. Do not share it. For research and." [ref=e1275]:
+                    - checkbox "unread, Gene X Labs 8, Your Access Link — Gene X Labs, 7:56 PM, Gene X Labs Research Peptides Your Sign-In Code Enter this 6-digit code to sign in to the Gene X Labs research catalogue. 30521662 This code expires in 1 hour. Do not share it. For research and." [ref=e1276]
+                  - gridcell "Not starred" [ref=e1277]:
+                    - button "Not starred" [ref=e1278]
+                  - gridcell "Gene X Labs 8" [ref=e1279]:
+                    - generic [ref=e1280]:
+                      - generic [ref=e1281]: Gene X Labs
+                      - generic [ref=e1282]: "8"
+                  - gridcell "Your Access Link — Gene X Labs - Gene X Labs Research Peptides Your Sign-In Code Enter this 6-digit code to sign in to the Gene X Labs research catalogue. 30521662 This code expires in 1 hour. Do not share it. For research and" [ref=e1283]:
+                    - link "Your Access Link — Gene X Labs - Gene X Labs Research Peptides Your Sign-In Code Enter this 6-digit code to sign in to the Gene X Labs research catalogue. 30521662 This code expires in 1 hour. Do not share it. For research and" [ref=e1284]:
+                      - generic [ref=e1285]:
+                        - generic [ref=e1287]: Your Access Link — Gene X Labs
+                        - generic [ref=e1288]:
+                          - generic [ref=e1289]: "-"
+                          - text: Gene X Labs Research Peptides Your Sign-In Code Enter this 6-digit code to sign in to the Gene X Labs research catalogue. 30521662 This code expires in 1 hour. Do not share it. For research and
+                  - gridcell [ref=e1290]
+                  - gridcell "Fri, Mar 13, 2026, 7:56 PM" [ref=e1291]:
+                    - generic "Fri, Mar 13, 2026, 7:56 PM" [ref=e1292]: 7:56 PM
+                  - gridcell
+                - 'row "unread, LinkedIn, Google for Developers posted: Join the Gemini 3 AMA Get ready for the \"Build with AI\" season! Join Google… 💡, 7:46 PM, Join the Gemini 3 AMA Get ready for the \"Build with AI\" season! Join Google… ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e1293] [cursor=pointer]':
+                  - gridcell [ref=e1294]
+                  - 'gridcell "unread, LinkedIn, Google for Developers posted: Join the Gemini 3 AMA Get ready for the \"Build with AI\" season! Join Google… 💡, 7:46 PM, Join the Gemini 3 AMA Get ready for the \"Build with AI\" season! Join Google… ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e1295]':
+                    - 'checkbox "unread, LinkedIn, Google for Developers posted: Join the Gemini 3 AMA Get ready for the \"Build with AI\" season! Join Google… 💡, 7:46 PM, Join the Gemini 3 AMA Get ready for the \"Build with AI\" season! Join Google… ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e1296]'
+                  - gridcell "Not starred" [ref=e1297]:
+                    - button "Not starred" [ref=e1298]
+                  - gridcell "LinkedIn" [ref=e1299]:
+                    - generic [ref=e1301]: LinkedIn
+                  - 'gridcell "Google for Developers posted: Join the Gemini 3 AMA Get ready for the \"Build with AI\" season! Join Google… 💡 - Join the Gemini 3 AMA Get ready for the \"Build with AI\" season! Join Google… ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏" [ref=e1302]':
+                    - 'link "Google for Developers posted: Join the Gemini 3 AMA Get ready for the \"Build with AI\" season! Join Google… 💡 - Join the Gemini 3 AMA Get ready for the \"Build with AI\" season! Join Google… ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏" [ref=e1304]':
+                      - generic [ref=e1305]:
+                        - generic [ref=e1308]:
+                          - text: "Google for Developers posted: Join the Gemini 3 AMA Get ready for the \"Build with AI\" season! Join Google…"
+                          - img "💡" [ref=e1309]
+                        - generic:
+                          - generic [ref=e1310]: "-"
+                          - text: Join the Gemini 3 AMA Get ready for the "Build with AI" season! Join Google… ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏
+                  - gridcell [ref=e1311]
+                  - gridcell "Fri, Mar 13, 2026, 7:46 PM" [ref=e1312]:
+                    - generic "Fri, Mar 13, 2026, 7:46 PM" [ref=e1313]: 7:46 PM
+                  - gridcell
+                - row "Gene X Labs, Confirm Your Access — Gene X Labs, 6:30 PM, Gene X Labs Research Peptides Confirm Your Access You requested access to the Gene X Labs research catalogue. Click the button below to confirm your email address and gain access. Confirm Email Address." [ref=e1314] [cursor=pointer]:
+                  - gridcell [ref=e1315]
+                  - gridcell "Gene X Labs, Confirm Your Access — Gene X Labs, 6:30 PM, Gene X Labs Research Peptides Confirm Your Access You requested access to the Gene X Labs research catalogue. Click the button below to confirm your email address and gain access. Confirm Email Address." [ref=e1316]:
+                    - checkbox "Gene X Labs, Confirm Your Access — Gene X Labs, 6:30 PM, Gene X Labs Research Peptides Confirm Your Access You requested access to the Gene X Labs research catalogue. Click the button below to confirm your email address and gain access. Confirm Email Address." [ref=e1317]
+                  - gridcell "Not starred" [ref=e1318]:
+                    - button "Not starred" [ref=e1319]
+                  - gridcell "Gene X Labs" [ref=e1320]:
+                    - generic [ref=e1322]: Gene X Labs
+                  - gridcell "Confirm Your Access — Gene X Labs - Gene X Labs Research Peptides Confirm Your Access You requested access to the Gene X Labs research catalogue. Click the button below to confirm your email address and gain access. Confirm Email Address" [ref=e1323]:
+                    - link "Confirm Your Access — Gene X Labs - Gene X Labs Research Peptides Confirm Your Access You requested access to the Gene X Labs research catalogue. Click the button below to confirm your email address and gain access. Confirm Email Address" [ref=e1324]:
+                      - generic [ref=e1325]:
+                        - generic [ref=e1327]: Confirm Your Access — Gene X Labs
+                        - generic [ref=e1328]:
+                          - generic [ref=e1329]: "-"
+                          - text: Gene X Labs Research Peptides Confirm Your Access You requested access to the Gene X Labs research catalogue. Click the button below to confirm your email address and gain access. Confirm Email Address
+                  - gridcell [ref=e1330]
+                  - gridcell "Fri, Mar 13, 2026, 6:30 PM" [ref=e1331]:
+                    - generic "Fri, Mar 13, 2026, 6:30 PM" [ref=e1332]: 6:30 PM
+                  - gridcell
+                - row "unread, Funnelly Internatio., $35.00 payment to Funnelly International S.R.L. was unsuccessful, 6:26 PM, We weren't able to charge the credit card you provided. ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e1333] [cursor=pointer]:
+                  - gridcell [ref=e1334]
+                  - gridcell "unread, Funnelly Internatio., $35.00 payment to Funnelly International S.R.L. was unsuccessful, 6:26 PM, We weren't able to charge the credit card you provided. ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e1335]:
+                    - checkbox "unread, Funnelly Internatio., $35.00 payment to Funnelly International S.R.L. was unsuccessful, 6:26 PM, We weren't able to charge the credit card you provided. ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e1336]
+                  - gridcell "Not starred" [ref=e1337]:
+                    - button "Not starred" [ref=e1338]
+                  - gridcell "Funnelly Internatio." [ref=e1339]:
+                    - generic [ref=e1341]: Funnelly Internatio.
+                  - gridcell "$35.00 payment to Funnelly International S.R.L. was unsuccessful - We weren't able to charge the credit card you provided. ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏" [ref=e1342]:
+                    - link "$35.00 payment to Funnelly International S.R.L. was unsuccessful - We weren't able to charge the credit card you provided. ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏" [ref=e1343]:
+                      - generic [ref=e1344]:
+                        - generic [ref=e1346]: $35.00 payment to Funnelly International S.R.L. was unsuccessful
+                        - generic [ref=e1347]:
+                          - generic [ref=e1348]: "-"
+                          - text: We weren't able to charge the credit card you provided. ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏
+                  - gridcell [ref=e1349]
+                  - gridcell "Fri, Mar 13, 2026, 6:26 PM" [ref=e1350]:
+                    - generic "Fri, Mar 13, 2026, 6:26 PM" [ref=e1351]: 6:26 PM
+                  - gridcell
+                - row "unread, Sentry, DIALOGBRAIN-API-E1 - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., 5:46 PM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1352] [cursor=pointer]:
+                  - gridcell [ref=e1353]
+                  - gridcell "unread, Sentry, DIALOGBRAIN-API-E1 - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., 5:46 PM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1354]:
+                    - checkbox "unread, Sentry, DIALOGBRAIN-API-E1 - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., 5:46 PM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1355]
+                  - gridcell "Not starred" [ref=e1356]:
+                    - button "Not starred" [ref=e1357]
+                  - gridcell "Sentry" [ref=e1358]:
+                    - generic [ref=e1360]: Sentry
+                  - gridcell "DIALOGBRAIN-API-E1 - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e1361]:
+                    - link "DIALOGBRAIN-API-E1 - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e1363]:
+                      - generic [ref=e1364]:
+                        - generic [ref=e1366]: DIALOGBRAIN-API-E1 - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec...
+                        - generic:
+                          - generic [ref=e1367]: "-"
+                          - text: New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active
+                  - gridcell [ref=e1368]
+                  - gridcell "Fri, Mar 13, 2026, 5:46 PM" [ref=e1369]:
+                    - generic "Fri, Mar 13, 2026, 5:46 PM" [ref=e1370]: 5:46 PM
+                  - gridcell
+                - 'row "unread, LinkedIn, General Manager: Howard Johnson and ASAI Hotels hired roles near you, 5:45 PM, Dialog, Howard Johnson is a top company hiring for General Manager roles ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e1371] [cursor=pointer]':
+                  - gridcell [ref=e1372]
+                  - 'gridcell "unread, LinkedIn, General Manager: Howard Johnson and ASAI Hotels hired roles near you, 5:45 PM, Dialog, Howard Johnson is a top company hiring for General Manager roles ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e1373]':
+                    - 'checkbox "unread, LinkedIn, General Manager: Howard Johnson and ASAI Hotels hired roles near you, 5:45 PM, Dialog, Howard Johnson is a top company hiring for General Manager roles ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e1374]'
+                  - gridcell "Not starred" [ref=e1375]:
+                    - button "Not starred" [ref=e1376]
+                  - gridcell "LinkedIn" [ref=e1377]:
+                    - generic [ref=e1379]: LinkedIn
+                  - 'gridcell "General Manager: Howard Johnson and ASAI Hotels hired roles near you - Dialog, Howard Johnson is a top company hiring for General Manager roles ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏" [ref=e1380]':
+                    - 'link "General Manager: Howard Johnson and ASAI Hotels hired roles near you - Dialog, Howard Johnson is a top company hiring for General Manager roles ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏" [ref=e1382]':
+                      - generic [ref=e1383]:
+                        - generic [ref=e1385]: "General Manager: Howard Johnson and ASAI Hotels hired roles near you"
+                        - generic [ref=e1386]:
+                          - generic [ref=e1387]: "-"
+                          - text: Dialog, Howard Johnson is a top company hiring for General Manager roles ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏
+                  - gridcell [ref=e1388]
+                  - gridcell "Fri, Mar 13, 2026, 5:45 PM" [ref=e1389]:
+                    - generic "Fri, Mar 13, 2026, 5:45 PM" [ref=e1390]: 5:45 PM
+                  - gridcell
+                - row "unread, Sentry, DIALOGBRAIN-API-D1 - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., 5:40 PM, New Alert from dialogbrain-api. Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New." [ref=e1391] [cursor=pointer]:
+                  - gridcell [ref=e1392]
+                  - gridcell "unread, Sentry, DIALOGBRAIN-API-D1 - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., 5:40 PM, New Alert from dialogbrain-api. Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New." [ref=e1393]:
+                    - checkbox "unread, Sentry, DIALOGBRAIN-API-D1 - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., 5:40 PM, New Alert from dialogbrain-api. Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New." [ref=e1394]
+                  - gridcell "Not starred" [ref=e1395]:
+                    - button "Not starred" [ref=e1396]
+                  - gridcell "Sentry" [ref=e1397]:
+                    - generic [ref=e1399]: Sentry
+                  - gridcell "DIALOGBRAIN-API-D1 - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec... - New Alert from dialogbrain-api. Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New" [ref=e1400]:
+                    - link "DIALOGBRAIN-API-D1 - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec... - New Alert from dialogbrain-api. Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New" [ref=e1402]:
+                      - generic [ref=e1403]:
+                        - generic [ref=e1405]: DIALOGBRAIN-API-D1 - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec...
+                        - generic:
+                          - generic [ref=e1406]: "-"
+                          - text: New Alert from dialogbrain-api. Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New
+                  - gridcell [ref=e1407]
+                  - gridcell "Fri, Mar 13, 2026, 5:40 PM" [ref=e1408]:
+                    - generic "Fri, Mar 13, 2026, 5:40 PM" [ref=e1409]: 5:40 PM
+                  - gridcell
+                - row "unread, Sentry, DIALOGBRAIN-API-DX - 4 new alerts since March 13, 2026, 4:51 p.m. +07, 4:57 PM, Set up in Slack 4 new alerts from dialogbrain-api March 13, 2026, 4:51 p.m. +07 Mute this alert This email was triggered by Send a notification for high priorit." [ref=e1410] [cursor=pointer]:
+                  - gridcell [ref=e1411]
+                  - gridcell "unread, Sentry, DIALOGBRAIN-API-DX - 4 new alerts since March 13, 2026, 4:51 p.m. +07, 4:57 PM, Set up in Slack 4 new alerts from dialogbrain-api March 13, 2026, 4:51 p.m. +07 Mute this alert This email was triggered by Send a notification for high priorit." [ref=e1412]:
+                    - checkbox "unread, Sentry, DIALOGBRAIN-API-DX - 4 new alerts since March 13, 2026, 4:51 p.m. +07, 4:57 PM, Set up in Slack 4 new alerts from dialogbrain-api March 13, 2026, 4:51 p.m. +07 Mute this alert This email was triggered by Send a notification for high priorit." [ref=e1413]
+                  - gridcell "Not starred" [ref=e1414]:
+                    - button "Not starred" [ref=e1415]
+                  - gridcell "Sentry" [ref=e1416]:
+                    - generic [ref=e1418]: Sentry
+                  - gridcell "DIALOGBRAIN-API-DX - 4 new alerts since March 13, 2026, 4:51 p.m. +07 - Set up in Slack 4 new alerts from dialogbrain-api March 13, 2026, 4:51 p.m. +07 Mute this alert This email was triggered by Send a notification for high priorit" [ref=e1419]:
+                    - link "DIALOGBRAIN-API-DX - 4 new alerts since March 13, 2026, 4:51 p.m. +07 - Set up in Slack 4 new alerts from dialogbrain-api March 13, 2026, 4:51 p.m. +07 Mute this alert This email was triggered by Send a notification for high priorit" [ref=e1420]:
+                      - generic [ref=e1421]:
+                        - generic [ref=e1423]: DIALOGBRAIN-API-DX - 4 new alerts since March 13, 2026, 4:51 p.m. +07
+                        - generic [ref=e1424]:
+                          - generic [ref=e1425]: "-"
+                          - text: Set up in Slack 4 new alerts from dialogbrain-api March 13, 2026, 4:51 p.m. +07 Mute this alert This email was triggered by Send a notification for high priorit
+                  - gridcell [ref=e1426]
+                  - gridcell "Fri, Mar 13, 2026, 4:57 PM" [ref=e1427]:
+                    - generic "Fri, Mar 13, 2026, 4:57 PM" [ref=e1428]: 4:57 PM
+                  - gridcell
+                - row "unread, Sentry, DIALOGBRAIN-API-DS - 4 new alerts since March 13, 2026, 4:42 p.m. +07, 4:49 PM, Set up in Slack 4 new alerts from dialogbrain-api March 13, 2026, 4:42 p.m. +07 Mute this alert This email was triggered by Send a notification for high priorit." [ref=e1429] [cursor=pointer]:
+                  - gridcell [ref=e1430]
+                  - gridcell "unread, Sentry, DIALOGBRAIN-API-DS - 4 new alerts since March 13, 2026, 4:42 p.m. +07, 4:49 PM, Set up in Slack 4 new alerts from dialogbrain-api March 13, 2026, 4:42 p.m. +07 Mute this alert This email was triggered by Send a notification for high priorit." [ref=e1431]:
+                    - checkbox "unread, Sentry, DIALOGBRAIN-API-DS - 4 new alerts since March 13, 2026, 4:42 p.m. +07, 4:49 PM, Set up in Slack 4 new alerts from dialogbrain-api March 13, 2026, 4:42 p.m. +07 Mute this alert This email was triggered by Send a notification for high priorit." [ref=e1432]
+                  - gridcell "Not starred" [ref=e1433]:
+                    - button "Not starred" [ref=e1434]
+                  - gridcell "Sentry" [ref=e1435]:
+                    - generic [ref=e1437]: Sentry
+                  - gridcell "DIALOGBRAIN-API-DS - 4 new alerts since March 13, 2026, 4:42 p.m. +07 - Set up in Slack 4 new alerts from dialogbrain-api March 13, 2026, 4:42 p.m. +07 Mute this alert This email was triggered by Send a notification for high priorit" [ref=e1438]:
+                    - link "DIALOGBRAIN-API-DS - 4 new alerts since March 13, 2026, 4:42 p.m. +07 - Set up in Slack 4 new alerts from dialogbrain-api March 13, 2026, 4:42 p.m. +07 Mute this alert This email was triggered by Send a notification for high priorit" [ref=e1439]:
+                      - generic [ref=e1440]:
+                        - generic [ref=e1442]: DIALOGBRAIN-API-DS - 4 new alerts since March 13, 2026, 4:42 p.m. +07
+                        - generic [ref=e1443]:
+                          - generic [ref=e1444]: "-"
+                          - text: Set up in Slack 4 new alerts from dialogbrain-api March 13, 2026, 4:42 p.m. +07 Mute this alert This email was triggered by Send a notification for high priorit
+                  - gridcell [ref=e1445]
+                  - gridcell "Fri, Mar 13, 2026, 4:49 PM" [ref=e1446]:
+                    - generic "Fri, Mar 13, 2026, 4:49 PM" [ref=e1447]: 4:49 PM
+                  - gridcell
+                - 'row "unread, Sentry, DIALOGBRAIN-API-DR - RuntimeError: aclose(): asynchronous generator is already running, 4:42 PM, New issue from dialogbrain-api. Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New." [ref=e1448] [cursor=pointer]':
+                  - gridcell [ref=e1449]
+                  - 'gridcell "unread, Sentry, DIALOGBRAIN-API-DR - RuntimeError: aclose(): asynchronous generator is already running, 4:42 PM, New issue from dialogbrain-api. Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New." [ref=e1450]':
+                    - 'checkbox "unread, Sentry, DIALOGBRAIN-API-DR - RuntimeError: aclose(): asynchronous generator is already running, 4:42 PM, New issue from dialogbrain-api. Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New." [ref=e1451]'
+                  - gridcell "Not starred" [ref=e1452]:
+                    - button "Not starred" [ref=e1453]
+                  - gridcell "Sentry" [ref=e1454]:
+                    - generic [ref=e1456]: Sentry
+                  - 'gridcell "DIALOGBRAIN-API-DR - RuntimeError: aclose(): asynchronous generator is already running - New issue from dialogbrain-api. Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New" [ref=e1457]':
+                    - 'link "DIALOGBRAIN-API-DR - RuntimeError: aclose(): asynchronous generator is already running - New issue from dialogbrain-api. Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New" [ref=e1459]':
+                      - generic [ref=e1460]:
+                        - generic [ref=e1462]: "DIALOGBRAIN-API-DR - RuntimeError: aclose(): asynchronous generator is already running"
+                        - generic:
+                          - generic [ref=e1463]: "-"
+                          - text: New issue from dialogbrain-api. Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New
+                  - gridcell [ref=e1464]
+                  - gridcell "Fri, Mar 13, 2026, 4:42 PM" [ref=e1465]:
+                    - generic "Fri, Mar 13, 2026, 4:42 PM" [ref=e1466]: 4:42 PM
+                  - gridcell
+                - 'row "unread, Sentry, DIALOGBRAIN-API-DK - ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class ''asyncpg.exceptions.U..., 4:34 PM, New Alert from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New Alert We notified recently active." [ref=e1467] [cursor=pointer]':
+                  - gridcell [ref=e1468]
+                  - 'gridcell "unread, Sentry, DIALOGBRAIN-API-DK - ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class ''asyncpg.exceptions.U..., 4:34 PM, New Alert from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New Alert We notified recently active." [ref=e1469]':
+                    - 'checkbox "unread, Sentry, DIALOGBRAIN-API-DK - ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class ''asyncpg.exceptions.U..., 4:34 PM, New Alert from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New Alert We notified recently active." [ref=e1470]'
+                  - gridcell "Not starred" [ref=e1471]:
+                    - button "Not starred" [ref=e1472]
+                  - gridcell "Sentry" [ref=e1473]:
+                    - generic [ref=e1475]: Sentry
+                  - 'gridcell "DIALOGBRAIN-API-DK - ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class ''asyncpg.exceptions.U... - New Alert from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New Alert We notified recently active" [ref=e1476]':
+                    - 'link "DIALOGBRAIN-API-DK - ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class ''asyncpg.exceptions.U... - New Alert from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New Alert We notified recently active" [ref=e1478]':
+                      - generic [ref=e1479]:
+                        - generic [ref=e1481]: "DIALOGBRAIN-API-DK - ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.U..."
+                        - generic:
+                          - generic [ref=e1482]: "-"
+                          - text: New Alert from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New Alert We notified recently active
+                  - gridcell [ref=e1483]
+                  - gridcell "Fri, Mar 13, 2026, 4:34 PM" [ref=e1484]:
+                    - generic "Fri, Mar 13, 2026, 4:34 PM" [ref=e1485]: 4:34 PM
+                  - gridcell
+                - row "unread, Sentry, DIALOGBRAIN-API-DQ - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., 4:28 PM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1486] [cursor=pointer]:
+                  - gridcell [ref=e1487]
+                  - gridcell "unread, Sentry, DIALOGBRAIN-API-DQ - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., 4:28 PM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1488]:
+                    - checkbox "unread, Sentry, DIALOGBRAIN-API-DQ - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., 4:28 PM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1489]
+                  - gridcell "Not starred" [ref=e1490]:
+                    - button "Not starred" [ref=e1491]
+                  - gridcell "Sentry" [ref=e1492]:
+                    - generic [ref=e1494]: Sentry
+                  - gridcell "DIALOGBRAIN-API-DQ - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e1495]:
+                    - link "DIALOGBRAIN-API-DQ - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e1497]:
+                      - generic [ref=e1498]:
+                        - generic [ref=e1500]: DIALOGBRAIN-API-DQ - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec...
+                        - generic:
+                          - generic [ref=e1501]: "-"
+                          - text: New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active
+                  - gridcell [ref=e1502]
+                  - gridcell "Fri, Mar 13, 2026, 4:28 PM" [ref=e1503]:
+                    - generic "Fri, Mar 13, 2026, 4:28 PM" [ref=e1504]: 4:28 PM
+                  - gridcell
+                - row "unread, Sentry, DIALOGBRAIN-API-DP - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., 4:22 PM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1505] [cursor=pointer]:
+                  - gridcell [ref=e1506]
+                  - gridcell "unread, Sentry, DIALOGBRAIN-API-DP - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., 4:22 PM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1507]:
+                    - checkbox "unread, Sentry, DIALOGBRAIN-API-DP - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., 4:22 PM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1508]
+                  - gridcell "Not starred" [ref=e1509]:
+                    - button "Not starred" [ref=e1510]
+                  - gridcell "Sentry" [ref=e1511]:
+                    - generic [ref=e1513]: Sentry
+                  - gridcell "DIALOGBRAIN-API-DP - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e1514]:
+                    - link "DIALOGBRAIN-API-DP - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e1516]:
+                      - generic [ref=e1517]:
+                        - generic [ref=e1519]: DIALOGBRAIN-API-DP - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec...
+                        - generic:
+                          - generic [ref=e1520]: "-"
+                          - text: New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active
+                  - gridcell [ref=e1521]
+                  - gridcell "Fri, Mar 13, 2026, 4:22 PM" [ref=e1522]:
+                    - generic "Fri, Mar 13, 2026, 4:22 PM" [ref=e1523]: 4:22 PM
+                  - gridcell
+                - row "unread, Sentry, DIALOGBRAIN-API-DN - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., 4:02 PM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1524] [cursor=pointer]:
+                  - gridcell [ref=e1525]
+                  - gridcell "unread, Sentry, DIALOGBRAIN-API-DN - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., 4:02 PM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1526]:
+                    - checkbox "unread, Sentry, DIALOGBRAIN-API-DN - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., 4:02 PM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1527]
+                  - gridcell "Not starred" [ref=e1528]:
+                    - button "Not starred" [ref=e1529]
+                  - gridcell "Sentry" [ref=e1530]:
+                    - generic [ref=e1532]: Sentry
+                  - gridcell "DIALOGBRAIN-API-DN - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e1533]:
+                    - link "DIALOGBRAIN-API-DN - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e1535]:
+                      - generic [ref=e1536]:
+                        - generic [ref=e1538]: DIALOGBRAIN-API-DN - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec...
+                        - generic:
+                          - generic [ref=e1539]: "-"
+                          - text: New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active
+                  - gridcell [ref=e1540]
+                  - gridcell "Fri, Mar 13, 2026, 4:02 PM" [ref=e1541]:
+                    - generic "Fri, Mar 13, 2026, 4:02 PM" [ref=e1542]: 4:02 PM
+                  - gridcell
+                - row "unread, Sentry, DIALOGBRAIN-API-DM - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., 3:56 PM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1543] [cursor=pointer]:
+                  - gridcell [ref=e1544]
+                  - gridcell "unread, Sentry, DIALOGBRAIN-API-DM - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., 3:56 PM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1545]:
+                    - checkbox "unread, Sentry, DIALOGBRAIN-API-DM - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., 3:56 PM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1546]
+                  - gridcell "Not starred" [ref=e1547]:
+                    - button "Not starred" [ref=e1548]
+                  - gridcell "Sentry" [ref=e1549]:
+                    - generic [ref=e1551]: Sentry
+                  - gridcell "DIALOGBRAIN-API-DM - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e1552]:
+                    - link "DIALOGBRAIN-API-DM - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e1554]:
+                      - generic [ref=e1555]:
+                        - generic [ref=e1557]: DIALOGBRAIN-API-DM - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec...
+                        - generic:
+                          - generic [ref=e1558]: "-"
+                          - text: New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active
+                  - gridcell [ref=e1559]
+                  - gridcell "Fri, Mar 13, 2026, 3:56 PM" [ref=e1560]:
+                    - generic "Fri, Mar 13, 2026, 3:56 PM" [ref=e1561]: 3:56 PM
+                  - gridcell
+                - row "unread, LinkedIn, Dialog, follow Pita Limjaroenrat - Visiting Fellow at Harvard University, 3:45 PM, See your recommendations ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e1562] [cursor=pointer]:
+                  - gridcell [ref=e1563]
+                  - gridcell "unread, LinkedIn, Dialog, follow Pita Limjaroenrat - Visiting Fellow at Harvard University, 3:45 PM, See your recommendations ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e1564]:
+                    - checkbox "unread, LinkedIn, Dialog, follow Pita Limjaroenrat - Visiting Fellow at Harvard University, 3:45 PM, See your recommendations ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e1565]
+                  - gridcell "Not starred" [ref=e1566]:
+                    - button "Not starred" [ref=e1567]
+                  - gridcell "LinkedIn" [ref=e1568]:
+                    - generic [ref=e1570]: LinkedIn
+                  - gridcell "Dialog, follow Pita Limjaroenrat - Visiting Fellow at Harvard University - See your recommendations ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏" [ref=e1571]:
+                    - link "Dialog, follow Pita Limjaroenrat - Visiting Fellow at Harvard University - See your recommendations ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏" [ref=e1573]:
+                      - generic [ref=e1574]:
+                        - generic [ref=e1576]: Dialog, follow Pita Limjaroenrat - Visiting Fellow at Harvard University
+                        - generic [ref=e1577]:
+                          - generic [ref=e1578]: "-"
+                          - text: See your recommendations ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏
+                  - gridcell [ref=e1579]
+                  - gridcell "Fri, Mar 13, 2026, 3:45 PM" [ref=e1580]:
+                    - generic "Fri, Mar 13, 2026, 3:45 PM" [ref=e1581]: 3:45 PM
+                  - gridcell
+                - 'row "unread, Sentry, DIALOGBRAIN-API-DK - ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class ''asyncpg.exceptions.U..., 3:05 PM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1582] [cursor=pointer]':
+                  - gridcell [ref=e1583]
+                  - 'gridcell "unread, Sentry, DIALOGBRAIN-API-DK - ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class ''asyncpg.exceptions.U..., 3:05 PM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1584]':
+                    - 'checkbox "unread, Sentry, DIALOGBRAIN-API-DK - ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class ''asyncpg.exceptions.U..., 3:05 PM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1585]'
+                  - gridcell "Not starred" [ref=e1586]:
+                    - button "Not starred" [ref=e1587]
+                  - gridcell "Sentry" [ref=e1588]:
+                    - generic [ref=e1590]: Sentry
+                  - 'gridcell "DIALOGBRAIN-API-DK - ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class ''asyncpg.exceptions.U... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e1591]':
+                    - 'link "DIALOGBRAIN-API-DK - ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class ''asyncpg.exceptions.U... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e1593]':
+                      - generic [ref=e1594]:
+                        - generic [ref=e1596]: "DIALOGBRAIN-API-DK - ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.U..."
+                        - generic:
+                          - generic [ref=e1597]: "-"
+                          - text: New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active
+                  - gridcell [ref=e1598]
+                  - gridcell "Fri, Mar 13, 2026, 3:05 PM" [ref=e1599]:
+                    - generic "Fri, Mar 13, 2026, 3:05 PM" [ref=e1600]: 3:05 PM
+                  - gridcell
+                - row "unread, Sentry, DIALOGBRAIN-API-DJ - 2 new alerts since March 13, 2026, 2:53 p.m. +07, 2:59 PM, Sentry Set up in Slack 2 new alerts from dialogbrain-api March 13, 2026, 2:53 pm +07 to March 13, 2026, 2:55 pm +07 Mute this alert This email was triggered by Send a notification for high priority." [ref=e1601] [cursor=pointer]:
+                  - gridcell [ref=e1602]
+                  - gridcell "unread, Sentry, DIALOGBRAIN-API-DJ - 2 new alerts since March 13, 2026, 2:53 p.m. +07, 2:59 PM, Sentry Set up in Slack 2 new alerts from dialogbrain-api March 13, 2026, 2:53 pm +07 to March 13, 2026, 2:55 pm +07 Mute this alert This email was triggered by Send a notification for high priority." [ref=e1603]:
+                    - checkbox "unread, Sentry, DIALOGBRAIN-API-DJ - 2 new alerts since March 13, 2026, 2:53 p.m. +07, 2:59 PM, Sentry Set up in Slack 2 new alerts from dialogbrain-api March 13, 2026, 2:53 pm +07 to March 13, 2026, 2:55 pm +07 Mute this alert This email was triggered by Send a notification for high priority." [ref=e1604]
+                  - gridcell "Not starred" [ref=e1605]:
+                    - button "Not starred" [ref=e1606]
+                  - gridcell "Sentry" [ref=e1607]:
+                    - generic [ref=e1609]: Sentry
+                  - gridcell "DIALOGBRAIN-API-DJ - 2 new alerts since March 13, 2026, 2:53 p.m. +07 - Sentry Set up in Slack 2 new alerts from dialogbrain-api March 13, 2026, 2:53 pm +07 to March 13, 2026, 2:55 pm +07 Mute this alert This email was triggered by Send a notification for high priority" [ref=e1610]:
+                    - link "DIALOGBRAIN-API-DJ - 2 new alerts since March 13, 2026, 2:53 p.m. +07 - Sentry Set up in Slack 2 new alerts from dialogbrain-api March 13, 2026, 2:53 pm +07 to March 13, 2026, 2:55 pm +07 Mute this alert This email was triggered by Send a notification for high priority" [ref=e1611]:
+                      - generic [ref=e1612]:
+                        - generic [ref=e1614]: DIALOGBRAIN-API-DJ - 2 new alerts since March 13, 2026, 2:53 p.m. +07
+                        - generic [ref=e1615]:
+                          - generic [ref=e1616]: "-"
+                          - text: Sentry Set up in Slack 2 new alerts from dialogbrain-api March 13, 2026, 2:53 pm +07 to March 13, 2026, 2:55 pm +07 Mute this alert This email was triggered by Send a notification for high priority
+                  - gridcell [ref=e1617]
+                  - gridcell "Fri, Mar 13, 2026, 2:59 PM" [ref=e1618]:
+                    - generic "Fri, Mar 13, 2026, 2:59 PM" [ref=e1619]: 2:59 PM
+                  - gridcell
+                - row "unread, Sentry, DIALOGBRAIN-API-DG - Critical step step_2 failed - aborting plan, 2:53 PM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1620] [cursor=pointer]:
+                  - gridcell [ref=e1621]
+                  - gridcell "unread, Sentry, DIALOGBRAIN-API-DG - Critical step step_2 failed - aborting plan, 2:53 PM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1622]:
+                    - checkbox "unread, Sentry, DIALOGBRAIN-API-DG - Critical step step_2 failed - aborting plan, 2:53 PM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1623]
+                  - gridcell "Not starred" [ref=e1624]:
+                    - button "Not starred" [ref=e1625]
+                  - gridcell "Sentry" [ref=e1626]:
+                    - generic [ref=e1628]: Sentry
+                  - gridcell "DIALOGBRAIN-API-DG - Critical step step_2 failed - aborting plan - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e1629]:
+                    - link "DIALOGBRAIN-API-DG - Critical step step_2 failed - aborting plan - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e1631]:
+                      - generic [ref=e1632]:
+                        - generic [ref=e1634]: DIALOGBRAIN-API-DG - Critical step step_2 failed - aborting plan
+                        - generic [ref=e1635]:
+                          - generic [ref=e1636]: "-"
+                          - text: New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active
+                  - gridcell [ref=e1637]
+                  - gridcell "Fri, Mar 13, 2026, 2:53 PM" [ref=e1638]:
+                    - generic "Fri, Mar 13, 2026, 2:53 PM" [ref=e1639]: 2:53 PM
+                  - gridcell
+                - row "unread, Unipile, €105.00 payment to Unipile was unsuccessful again, 2:50 PM, We weren't able to charge the credit card you provided. ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e1640] [cursor=pointer]:
+                  - gridcell [ref=e1641]
+                  - gridcell "unread, Unipile, €105.00 payment to Unipile was unsuccessful again, 2:50 PM, We weren't able to charge the credit card you provided. ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e1642]:
+                    - checkbox "unread, Unipile, €105.00 payment to Unipile was unsuccessful again, 2:50 PM, We weren't able to charge the credit card you provided. ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e1643]
+                  - gridcell "Not starred" [ref=e1644]:
+                    - button "Not starred" [ref=e1645]
+                  - gridcell "Unipile" [ref=e1646]:
+                    - generic [ref=e1648]: Unipile
+                  - gridcell "€105.00 payment to Unipile was unsuccessful again - We weren't able to charge the credit card you provided. ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏" [ref=e1649]:
+                    - link "€105.00 payment to Unipile was unsuccessful again - We weren't able to charge the credit card you provided. ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏" [ref=e1650]:
+                      - generic [ref=e1651]:
+                        - generic [ref=e1653]: €105.00 payment to Unipile was unsuccessful again
+                        - generic [ref=e1654]:
+                          - generic [ref=e1655]: "-"
+                          - text: We weren't able to charge the credit card you provided. ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏
+                  - gridcell [ref=e1656]
+                  - gridcell "Fri, Mar 13, 2026, 2:50 PM" [ref=e1657]:
+                    - generic "Fri, Mar 13, 2026, 2:50 PM" [ref=e1658]: 2:50 PM
+                  - gridcell
+                - row "unread, Unipile, Unipile - Payment rejected, 2:49 PM, Hello Denys, We're reaching out to let you know that there seems to have been an issue with the payment for your recent transaction. To avoid any interruptions, we kindly ask that you update your." [ref=e1659] [cursor=pointer]:
+                  - gridcell [ref=e1660]
+                  - gridcell "unread, Unipile, Unipile - Payment rejected, 2:49 PM, Hello Denys, We're reaching out to let you know that there seems to have been an issue with the payment for your recent transaction. To avoid any interruptions, we kindly ask that you update your." [ref=e1661]:
+                    - checkbox "unread, Unipile, Unipile - Payment rejected, 2:49 PM, Hello Denys, We're reaching out to let you know that there seems to have been an issue with the payment for your recent transaction. To avoid any interruptions, we kindly ask that you update your." [ref=e1662]
+                  - gridcell "Not starred" [ref=e1663]:
+                    - button "Not starred" [ref=e1664]
+                  - gridcell "Unipile" [ref=e1665]:
+                    - generic [ref=e1667]: Unipile
+                  - gridcell "Unipile - Payment rejected - Hello Denys, We're reaching out to let you know that there seems to have been an issue with the payment for your recent transaction. To avoid any interruptions, we kindly ask that you update your" [ref=e1668]:
+                    - link "Unipile - Payment rejected - Hello Denys, We're reaching out to let you know that there seems to have been an issue with the payment for your recent transaction. To avoid any interruptions, we kindly ask that you update your" [ref=e1669]:
+                      - generic [ref=e1670]:
+                        - generic [ref=e1672]: Unipile - Payment rejected
+                        - generic [ref=e1673]:
+                          - generic [ref=e1674]: "-"
+                          - text: Hello Denys, We're reaching out to let you know that there seems to have been an issue with the payment for your recent transaction. To avoid any interruptions, we kindly ask that you update your
+                  - gridcell [ref=e1675]
+                  - gridcell "Fri, Mar 13, 2026, 2:49 PM" [ref=e1676]:
+                    - generic "Fri, Mar 13, 2026, 2:49 PM" [ref=e1677]: 2:49 PM
+                  - gridcell
+                - row "unread, Sentry, DIALOGBRAIN-API-DF - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., 2:19 PM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1678] [cursor=pointer]:
+                  - gridcell [ref=e1679]
+                  - gridcell "unread, Sentry, DIALOGBRAIN-API-DF - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., 2:19 PM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1680]:
+                    - checkbox "unread, Sentry, DIALOGBRAIN-API-DF - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., 2:19 PM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1681]
+                  - gridcell "Not starred" [ref=e1682]:
+                    - button "Not starred" [ref=e1683]
+                  - gridcell "Sentry" [ref=e1684]:
+                    - generic [ref=e1686]: Sentry
+                  - gridcell "DIALOGBRAIN-API-DF - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e1687]:
+                    - link "DIALOGBRAIN-API-DF - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e1689]:
+                      - generic [ref=e1690]:
+                        - generic [ref=e1692]: DIALOGBRAIN-API-DF - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec...
+                        - generic:
+                          - generic [ref=e1693]: "-"
+                          - text: New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active
+                  - gridcell [ref=e1694]
+                  - gridcell "Fri, Mar 13, 2026, 2:19 PM" [ref=e1695]:
+                    - generic "Fri, Mar 13, 2026, 2:19 PM" [ref=e1696]: 2:19 PM
+                  - gridcell
+                - row "unread, Sentry, DIALOGBRAIN-API-DE - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., 1:31 PM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1697] [cursor=pointer]:
+                  - gridcell [ref=e1698]
+                  - gridcell "unread, Sentry, DIALOGBRAIN-API-DE - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., 1:31 PM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1699]:
+                    - checkbox "unread, Sentry, DIALOGBRAIN-API-DE - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., 1:31 PM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1700]
+                  - gridcell "Not starred" [ref=e1701]:
+                    - button "Not starred" [ref=e1702]
+                  - gridcell "Sentry" [ref=e1703]:
+                    - generic [ref=e1705]: Sentry
+                  - gridcell "DIALOGBRAIN-API-DE - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e1706]:
+                    - link "DIALOGBRAIN-API-DE - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e1708]:
+                      - generic [ref=e1709]:
+                        - generic [ref=e1711]: DIALOGBRAIN-API-DE - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec...
+                        - generic:
+                          - generic [ref=e1712]: "-"
+                          - text: New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active
+                  - gridcell [ref=e1713]
+                  - gridcell "Fri, Mar 13, 2026, 1:31 PM" [ref=e1714]:
+                    - generic "Fri, Mar 13, 2026, 1:31 PM" [ref=e1715]: 1:31 PM
+                  - gridcell
+                - 'row "unread, Sentry, DIALOGBRAIN-API-DD - ClickHouse query failed: Client error ''400 Bad Request'' for url ''http://clickhouse:8123?default_format=J..., 1:25 PM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1716] [cursor=pointer]':
+                  - gridcell [ref=e1717]
+                  - 'gridcell "unread, Sentry, DIALOGBRAIN-API-DD - ClickHouse query failed: Client error ''400 Bad Request'' for url ''http://clickhouse:8123?default_format=J..., 1:25 PM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1718]':
+                    - 'checkbox "unread, Sentry, DIALOGBRAIN-API-DD - ClickHouse query failed: Client error ''400 Bad Request'' for url ''http://clickhouse:8123?default_format=J..., 1:25 PM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1719]'
+                  - gridcell "Not starred" [ref=e1720]:
+                    - button "Not starred" [ref=e1721]
+                  - gridcell "Sentry" [ref=e1722]:
+                    - generic [ref=e1724]: Sentry
+                  - 'gridcell "DIALOGBRAIN-API-DD - ClickHouse query failed: Client error ''400 Bad Request'' for url ''http://clickhouse:8123?default_format=J... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e1725]':
+                    - 'link "DIALOGBRAIN-API-DD - ClickHouse query failed: Client error ''400 Bad Request'' for url ''http://clickhouse:8123?default_format=J... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e1727]':
+                      - generic [ref=e1728]:
+                        - generic [ref=e1730]: "DIALOGBRAIN-API-DD - ClickHouse query failed: Client error '400 Bad Request' for url 'http://clickhouse:8123?default_format=J..."
+                        - generic:
+                          - generic [ref=e1731]: "-"
+                          - text: New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active
+                  - gridcell [ref=e1732]
+                  - gridcell "Fri, Mar 13, 2026, 1:25 PM" [ref=e1733]:
+                    - generic "Fri, Mar 13, 2026, 1:25 PM" [ref=e1734]: 1:25 PM
+                  - gridcell
+                - row "unread, Sentry, DIALOGBRAIN-API-DC - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., 12:58 PM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1735] [cursor=pointer]:
+                  - gridcell [ref=e1736]
+                  - gridcell "unread, Sentry, DIALOGBRAIN-API-DC - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., 12:58 PM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1737]:
+                    - checkbox "unread, Sentry, DIALOGBRAIN-API-DC - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., 12:58 PM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1738]
+                  - gridcell "Not starred" [ref=e1739]:
+                    - button "Not starred" [ref=e1740]
+                  - gridcell "Sentry" [ref=e1741]:
+                    - generic [ref=e1743]: Sentry
+                  - gridcell "DIALOGBRAIN-API-DC - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e1744]:
+                    - link "DIALOGBRAIN-API-DC - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e1746]:
+                      - generic [ref=e1747]:
+                        - generic [ref=e1749]: DIALOGBRAIN-API-DC - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec...
+                        - generic:
+                          - generic [ref=e1750]: "-"
+                          - text: New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active
+                  - gridcell [ref=e1751]
+                  - gridcell "Fri, Mar 13, 2026, 12:58 PM" [ref=e1752]:
+                    - generic "Fri, Mar 13, 2026, 12:58 PM" [ref=e1753]: 12:58 PM
+                  - gridcell
+                - 'row "unread, Sentry, DIALOGBRAIN-API-DB - Failed to backfill WhatsApp thread 4187753: Chat not found: [email] [not_found], 12:52 PM, New Alert from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New Alert We notified recently active." [ref=e1754] [cursor=pointer]':
+                  - gridcell [ref=e1755]
+                  - 'gridcell "unread, Sentry, DIALOGBRAIN-API-DB - Failed to backfill WhatsApp thread 4187753: Chat not found: [email] [not_found], 12:52 PM, New Alert from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New Alert We notified recently active." [ref=e1756]':
+                    - 'checkbox "unread, Sentry, DIALOGBRAIN-API-DB - Failed to backfill WhatsApp thread 4187753: Chat not found: [email] [not_found], 12:52 PM, New Alert from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New Alert We notified recently active." [ref=e1757]'
+                  - gridcell "Not starred" [ref=e1758]:
+                    - button "Not starred" [ref=e1759]
+                  - gridcell "Sentry" [ref=e1760]:
+                    - generic [ref=e1762]: Sentry
+                  - 'gridcell "DIALOGBRAIN-API-DB - Failed to backfill WhatsApp thread 4187753: Chat not found: [email] [not_found] - New Alert from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New Alert We notified recently active" [ref=e1763]':
+                    - 'link "DIALOGBRAIN-API-DB - Failed to backfill WhatsApp thread 4187753: Chat not found: [email] [not_found] - New Alert from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New Alert We notified recently active" [ref=e1765]':
+                      - generic [ref=e1766]:
+                        - generic [ref=e1768]: "DIALOGBRAIN-API-DB - Failed to backfill WhatsApp thread 4187753: Chat not found: [email] [not_found]"
+                        - generic:
+                          - generic [ref=e1769]: "-"
+                          - text: New Alert from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New Alert We notified recently active
+                  - gridcell [ref=e1770]
+                  - gridcell "Fri, Mar 13, 2026, 12:52 PM" [ref=e1771]:
+                    - generic "Fri, Mar 13, 2026, 12:52 PM" [ref=e1772]: 12:52 PM
+                  - gridcell
+                - row "unread, Sentry, DIALOGBRAIN-API-DA - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., 12:41 PM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1773] [cursor=pointer]:
+                  - gridcell [ref=e1774]
+                  - gridcell "unread, Sentry, DIALOGBRAIN-API-DA - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., 12:41 PM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1775]:
+                    - checkbox "unread, Sentry, DIALOGBRAIN-API-DA - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., 12:41 PM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1776]
+                  - gridcell "Not starred" [ref=e1777]:
+                    - button "Not starred" [ref=e1778]
+                  - gridcell "Sentry" [ref=e1779]:
+                    - generic [ref=e1781]: Sentry
+                  - gridcell "DIALOGBRAIN-API-DA - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e1782]:
+                    - link "DIALOGBRAIN-API-DA - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e1784]:
+                      - generic [ref=e1785]:
+                        - generic [ref=e1787]: DIALOGBRAIN-API-DA - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec...
+                        - generic:
+                          - generic [ref=e1788]: "-"
+                          - text: New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active
+                  - gridcell [ref=e1789]
+                  - gridcell "Fri, Mar 13, 2026, 12:41 PM" [ref=e1790]:
+                    - generic "Fri, Mar 13, 2026, 12:41 PM" [ref=e1791]: 12:41 PM
+                  - gridcell
+                - 'row "unread, Sentry, DIALOGBRAIN-API-D9 - Failed to send draft 3166: Either text or attachments required, 12:36 PM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1792] [cursor=pointer]':
+                  - gridcell [ref=e1793]
+                  - 'gridcell "unread, Sentry, DIALOGBRAIN-API-D9 - Failed to send draft 3166: Either text or attachments required, 12:36 PM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1794]':
+                    - 'checkbox "unread, Sentry, DIALOGBRAIN-API-D9 - Failed to send draft 3166: Either text or attachments required, 12:36 PM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1795]'
+                  - gridcell "Not starred" [ref=e1796]:
+                    - button "Not starred" [ref=e1797]
+                  - gridcell "Sentry" [ref=e1798]:
+                    - generic [ref=e1800]: Sentry
+                  - 'gridcell "DIALOGBRAIN-API-D9 - Failed to send draft 3166: Either text or attachments required - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e1801]':
+                    - 'link "DIALOGBRAIN-API-D9 - Failed to send draft 3166: Either text or attachments required - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e1803]':
+                      - generic [ref=e1804]:
+                        - generic [ref=e1806]: "DIALOGBRAIN-API-D9 - Failed to send draft 3166: Either text or attachments required"
+                        - generic:
+                          - generic [ref=e1807]: "-"
+                          - text: New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active
+                  - gridcell [ref=e1808]
+                  - gridcell "Fri, Mar 13, 2026, 12:36 PM" [ref=e1809]:
+                    - generic "Fri, Mar 13, 2026, 12:36 PM" [ref=e1810]: 12:36 PM
+                  - gridcell
+                - row "unread, Sentry, DIALOGBRAIN-API-D8 - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., 11:59 AM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1811] [cursor=pointer]:
+                  - gridcell [ref=e1812]
+                  - gridcell "unread, Sentry, DIALOGBRAIN-API-D8 - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., 11:59 AM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1813]:
+                    - checkbox "unread, Sentry, DIALOGBRAIN-API-D8 - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., 11:59 AM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1814]
+                  - gridcell "Not starred" [ref=e1815]:
+                    - button "Not starred" [ref=e1816]
+                  - gridcell "Sentry" [ref=e1817]:
+                    - generic [ref=e1819]: Sentry
+                  - gridcell "DIALOGBRAIN-API-D8 - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e1820]:
+                    - link "DIALOGBRAIN-API-D8 - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e1822]:
+                      - generic [ref=e1823]:
+                        - generic [ref=e1825]: DIALOGBRAIN-API-D8 - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec...
+                        - generic:
+                          - generic [ref=e1826]: "-"
+                          - text: New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active
+                  - gridcell [ref=e1827]
+                  - gridcell "Fri, Mar 13, 2026, 11:59 AM" [ref=e1828]:
+                    - generic "Fri, Mar 13, 2026, 11:59 AM" [ref=e1829]: 11:59 AM
+                  - gridcell
+                - 'row "unread, Sentry, DIALOGBRAIN-FRONTEND-16 - Error: Failed to approve all drafts: Not Found, 11:51 AM, New issue from dialogbrain-frontend. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently." [ref=e1830] [cursor=pointer]':
+                  - gridcell [ref=e1831]
+                  - 'gridcell "unread, Sentry, DIALOGBRAIN-FRONTEND-16 - Error: Failed to approve all drafts: Not Found, 11:51 AM, New issue from dialogbrain-frontend. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently." [ref=e1832]':
+                    - 'checkbox "unread, Sentry, DIALOGBRAIN-FRONTEND-16 - Error: Failed to approve all drafts: Not Found, 11:51 AM, New issue from dialogbrain-frontend. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently." [ref=e1833]'
+                  - gridcell "Not starred" [ref=e1834]:
+                    - button "Not starred" [ref=e1835]
+                  - gridcell "Sentry" [ref=e1836]:
+                    - generic [ref=e1838]: Sentry
+                  - 'gridcell "DIALOGBRAIN-FRONTEND-16 - Error: Failed to approve all drafts: Not Found - New issue from dialogbrain-frontend. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently" [ref=e1839]':
+                    - 'link "DIALOGBRAIN-FRONTEND-16 - Error: Failed to approve all drafts: Not Found - New issue from dialogbrain-frontend. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently" [ref=e1841]':
+                      - generic [ref=e1842]:
+                        - generic [ref=e1844]: "DIALOGBRAIN-FRONTEND-16 - Error: Failed to approve all drafts: Not Found"
+                        - generic [ref=e1845]:
+                          - generic [ref=e1846]: "-"
+                          - text: New issue from dialogbrain-frontend. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently
+                  - gridcell [ref=e1847]
+                  - gridcell "Fri, Mar 13, 2026, 11:51 AM" [ref=e1848]:
+                    - generic "Fri, Mar 13, 2026, 11:51 AM" [ref=e1849]: 11:51 AM
+                  - gridcell
+                - 'row "unread, Sentry, DIALOGBRAIN-FRONTEND-15 - ReferenceError: agent is not defined, 10:19 AM, New issue from dialogbrain-frontend. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently." [ref=e1850] [cursor=pointer]':
+                  - gridcell [ref=e1851]
+                  - 'gridcell "unread, Sentry, DIALOGBRAIN-FRONTEND-15 - ReferenceError: agent is not defined, 10:19 AM, New issue from dialogbrain-frontend. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently." [ref=e1852]':
+                    - 'checkbox "unread, Sentry, DIALOGBRAIN-FRONTEND-15 - ReferenceError: agent is not defined, 10:19 AM, New issue from dialogbrain-frontend. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently." [ref=e1853]'
+                  - gridcell "Not starred" [ref=e1854]:
+                    - button "Not starred" [ref=e1855]
+                  - gridcell "Sentry" [ref=e1856]:
+                    - generic [ref=e1858]: Sentry
+                  - 'gridcell "DIALOGBRAIN-FRONTEND-15 - ReferenceError: agent is not defined - New issue from dialogbrain-frontend. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently" [ref=e1859]':
+                    - 'link "DIALOGBRAIN-FRONTEND-15 - ReferenceError: agent is not defined - New issue from dialogbrain-frontend. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently" [ref=e1861]':
+                      - generic [ref=e1862]:
+                        - generic [ref=e1864]: "DIALOGBRAIN-FRONTEND-15 - ReferenceError: agent is not defined"
+                        - generic [ref=e1865]:
+                          - generic [ref=e1866]: "-"
+                          - text: New issue from dialogbrain-frontend. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently
+                  - gridcell [ref=e1867]
+                  - gridcell "Fri, Mar 13, 2026, 10:19 AM" [ref=e1868]:
+                    - generic "Fri, Mar 13, 2026, 10:19 AM" [ref=e1869]: 10:19 AM
+                  - gridcell
+                - 'row "unread, Sentry, DIALOGBRAIN-API-D7 - ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class ''asyncpg.exceptions.U..., 10:03 AM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1870] [cursor=pointer]':
+                  - gridcell [ref=e1871]
+                  - 'gridcell "unread, Sentry, DIALOGBRAIN-API-D7 - ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class ''asyncpg.exceptions.U..., 10:03 AM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1872]':
+                    - 'checkbox "unread, Sentry, DIALOGBRAIN-API-D7 - ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class ''asyncpg.exceptions.U..., 10:03 AM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1873]'
+                  - gridcell "Not starred" [ref=e1874]:
+                    - button "Not starred" [ref=e1875]
+                  - gridcell "Sentry" [ref=e1876]:
+                    - generic [ref=e1878]: Sentry
+                  - 'gridcell "DIALOGBRAIN-API-D7 - ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class ''asyncpg.exceptions.U... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e1879]':
+                    - 'link "DIALOGBRAIN-API-D7 - ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class ''asyncpg.exceptions.U... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e1881]':
+                      - generic [ref=e1882]:
+                        - generic [ref=e1884]: "DIALOGBRAIN-API-D7 - ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.U..."
+                        - generic:
+                          - generic [ref=e1885]: "-"
+                          - text: New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active
+                  - gridcell [ref=e1886]
+                  - gridcell "Fri, Mar 13, 2026, 10:03 AM" [ref=e1887]:
+                    - generic "Fri, Mar 13, 2026, 10:03 AM" [ref=e1888]: 10:03 AM
+                  - gridcell
+                - 'row "unread, Sentry, DIALOGBRAIN-FRONTEND-14 - ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc..., 9:49 AM, New issue from dialogbrain-frontend. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently." [ref=e1889] [cursor=pointer]':
+                  - gridcell [ref=e1890]
+                  - 'gridcell "unread, Sentry, DIALOGBRAIN-FRONTEND-14 - ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc..., 9:49 AM, New issue from dialogbrain-frontend. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently." [ref=e1891]':
+                    - 'checkbox "unread, Sentry, DIALOGBRAIN-FRONTEND-14 - ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc..., 9:49 AM, New issue from dialogbrain-frontend. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently." [ref=e1892]'
+                  - gridcell "Not starred" [ref=e1893]:
+                    - button "Not starred" [ref=e1894]
+                  - gridcell "Sentry" [ref=e1895]:
+                    - generic [ref=e1897]: Sentry
+                  - 'gridcell "DIALOGBRAIN-FRONTEND-14 - ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc... - New issue from dialogbrain-frontend. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently" [ref=e1898]':
+                    - 'link "DIALOGBRAIN-FRONTEND-14 - ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc... - New issue from dialogbrain-frontend. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently" [ref=e1900]':
+                      - generic [ref=e1901]:
+                        - generic [ref=e1903]: "DIALOGBRAIN-FRONTEND-14 - ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc..."
+                        - generic:
+                          - generic [ref=e1904]: "-"
+                          - text: New issue from dialogbrain-frontend. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently
+                  - gridcell [ref=e1905]
+                  - gridcell "Fri, Mar 13, 2026, 9:49 AM" [ref=e1906]:
+                    - generic "Fri, Mar 13, 2026, 9:49 AM" [ref=e1907]: 9:49 AM
+                  - gridcell
+                - row "unread, Sentry, DIALOGBRAIN-API-D6 - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., 9:19 AM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1908] [cursor=pointer]:
+                  - gridcell [ref=e1909]
+                  - gridcell "unread, Sentry, DIALOGBRAIN-API-D6 - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., 9:19 AM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1910]:
+                    - checkbox "unread, Sentry, DIALOGBRAIN-API-D6 - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., 9:19 AM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1911]
+                  - gridcell "Not starred" [ref=e1912]:
+                    - button "Not starred" [ref=e1913]
+                  - gridcell "Sentry" [ref=e1914]:
+                    - generic [ref=e1916]: Sentry
+                  - gridcell "DIALOGBRAIN-API-D6 - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e1917]:
+                    - link "DIALOGBRAIN-API-D6 - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e1919]:
+                      - generic [ref=e1920]:
+                        - generic [ref=e1922]: DIALOGBRAIN-API-D6 - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec...
+                        - generic:
+                          - generic [ref=e1923]: "-"
+                          - text: New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active
+                  - gridcell [ref=e1924]
+                  - gridcell "Fri, Mar 13, 2026, 9:19 AM" [ref=e1925]:
+                    - generic "Fri, Mar 13, 2026, 9:19 AM" [ref=e1926]: 9:19 AM
+                  - gridcell
+                - 'row "unread, Sentry, DIALOGBRAIN-API-D5 - ModuleNotFoundError: No module named ''src.services.auto_reply_staff_adapter'', 7:51 AM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1927] [cursor=pointer]':
+                  - gridcell [ref=e1928]
+                  - 'gridcell "unread, Sentry, DIALOGBRAIN-API-D5 - ModuleNotFoundError: No module named ''src.services.auto_reply_staff_adapter'', 7:51 AM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1929]':
+                    - 'checkbox "unread, Sentry, DIALOGBRAIN-API-D5 - ModuleNotFoundError: No module named ''src.services.auto_reply_staff_adapter'', 7:51 AM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1930]'
+                  - gridcell "Not starred" [ref=e1931]:
+                    - button "Not starred" [ref=e1932]
+                  - gridcell "Sentry" [ref=e1933]:
+                    - generic [ref=e1935]: Sentry
+                  - 'gridcell "DIALOGBRAIN-API-D5 - ModuleNotFoundError: No module named ''src.services.auto_reply_staff_adapter'' - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e1936]':
+                    - 'link "DIALOGBRAIN-API-D5 - ModuleNotFoundError: No module named ''src.services.auto_reply_staff_adapter'' - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e1938]':
+                      - generic [ref=e1939]:
+                        - generic [ref=e1941]: "DIALOGBRAIN-API-D5 - ModuleNotFoundError: No module named 'src.services.auto_reply_staff_adapter'"
+                        - generic:
+                          - generic [ref=e1942]: "-"
+                          - text: New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active
+                  - gridcell [ref=e1943]
+                  - gridcell "Fri, Mar 13, 2026, 7:51 AM" [ref=e1944]:
+                    - generic "Fri, Mar 13, 2026, 7:51 AM" [ref=e1945]: 7:51 AM
+                  - gridcell
+                - row "unread, Ant at Supabase, Supa Update March 2026, 2:28 AM, Everything that happened in the last month at Supabase ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e1946] [cursor=pointer]:
+                  - gridcell [ref=e1947]
+                  - gridcell "unread, Ant at Supabase, Supa Update March 2026, 2:28 AM, Everything that happened in the last month at Supabase ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e1948]:
+                    - checkbox "unread, Ant at Supabase, Supa Update March 2026, 2:28 AM, Everything that happened in the last month at Supabase ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏." [ref=e1949]
+                  - gridcell "Not starred" [ref=e1950]:
+                    - button "Not starred" [ref=e1951]
+                  - gridcell "Ant at Supabase" [ref=e1952]:
+                    - generic [ref=e1954]: Ant at Supabase
+                  - gridcell "Supa Update March 2026 - Everything that happened in the last month at Supabase ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏" [ref=e1955]:
+                    - link "Supa Update March 2026 - Everything that happened in the last month at Supabase ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏" [ref=e1957]:
+                      - generic [ref=e1958]:
+                        - generic [ref=e1960]: Supa Update March 2026
+                        - generic [ref=e1961]:
+                          - generic [ref=e1962]: "-"
+                          - text: Everything that happened in the last month at Supabase ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏
+                  - gridcell [ref=e1963]
+                  - gridcell "Fri, Mar 13, 2026, 2:28 AM" [ref=e1964]:
+                    - generic "Fri, Mar 13, 2026, 2:28 AM" [ref=e1965]: 2:28 AM
+                  - gridcell
+                - 'row "unread, Sentry, DIALOGBRAIN-API-D4 - Failed to edit message: Failed to edit message: {\"message\":\"Cannot PUT /api/v1/chats/SVODBLgSUxKViAAvcGR..., 12:43 AM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1966] [cursor=pointer]':
+                  - gridcell [ref=e1967]
+                  - 'gridcell "unread, Sentry, DIALOGBRAIN-API-D4 - Failed to edit message: Failed to edit message: {\"message\":\"Cannot PUT /api/v1/chats/SVODBLgSUxKViAAvcGR..., 12:43 AM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1968]':
+                    - 'checkbox "unread, Sentry, DIALOGBRAIN-API-D4 - Failed to edit message: Failed to edit message: {\"message\":\"Cannot PUT /api/v1/chats/SVODBLgSUxKViAAvcGR..., 12:43 AM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e1969]'
+                  - gridcell "Not starred" [ref=e1970]:
+                    - button "Not starred" [ref=e1971]
+                  - gridcell "Sentry" [ref=e1972]:
+                    - generic [ref=e1974]: Sentry
+                  - 'gridcell "DIALOGBRAIN-API-D4 - Failed to edit message: Failed to edit message: {\"message\":\"Cannot PUT /api/v1/chats/SVODBLgSUxKViAAvcGR... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e1975]':
+                    - 'link "DIALOGBRAIN-API-D4 - Failed to edit message: Failed to edit message: {\"message\":\"Cannot PUT /api/v1/chats/SVODBLgSUxKViAAvcGR... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e1977]':
+                      - generic [ref=e1978]:
+                        - generic [ref=e1980]: "DIALOGBRAIN-API-D4 - Failed to edit message: Failed to edit message: {\"message\":\"Cannot PUT /api/v1/chats/SVODBLgSUxKViAAvcGR..."
+                        - generic:
+                          - generic [ref=e1981]: "-"
+                          - text: New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active
+                  - gridcell [ref=e1982]
+                  - gridcell "Fri, Mar 13, 2026, 12:43 AM" [ref=e1983]:
+                    - generic "Fri, Mar 13, 2026, 12:43 AM" [ref=e1984]: 12:43 AM
+                  - gridcell
+                - 'row "unread, Sentry, DIALOGBRAIN-FRONTEND-13 - TypeError: Cannot read properties of null (reading ''1''), 12:39 AM, New issue from dialogbrain-frontend. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently." [ref=e1985] [cursor=pointer]':
+                  - gridcell [ref=e1986]
+                  - 'gridcell "unread, Sentry, DIALOGBRAIN-FRONTEND-13 - TypeError: Cannot read properties of null (reading ''1''), 12:39 AM, New issue from dialogbrain-frontend. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently." [ref=e1987]':
+                    - 'checkbox "unread, Sentry, DIALOGBRAIN-FRONTEND-13 - TypeError: Cannot read properties of null (reading ''1''), 12:39 AM, New issue from dialogbrain-frontend. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently." [ref=e1988]'
+                  - gridcell "Not starred" [ref=e1989]:
+                    - button "Not starred" [ref=e1990]
+                  - gridcell "Sentry" [ref=e1991]:
+                    - generic [ref=e1993]: Sentry
+                  - 'gridcell "DIALOGBRAIN-FRONTEND-13 - TypeError: Cannot read properties of null (reading ''1'') - New issue from dialogbrain-frontend. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently" [ref=e1994]':
+                    - 'link "DIALOGBRAIN-FRONTEND-13 - TypeError: Cannot read properties of null (reading ''1'') - New issue from dialogbrain-frontend. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently" [ref=e1996]':
+                      - generic [ref=e1997]:
+                        - generic [ref=e1999]: "DIALOGBRAIN-FRONTEND-13 - TypeError: Cannot read properties of null (reading '1')"
+                        - generic:
+                          - generic [ref=e2000]: "-"
+                          - text: New issue from dialogbrain-frontend. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently
+                  - gridcell [ref=e2001]
+                  - gridcell "Fri, Mar 13, 2026, 12:39 AM" [ref=e2002]:
+                    - generic "Fri, Mar 13, 2026, 12:39 AM" [ref=e2003]: 12:39 AM
+                  - gridcell
+                - row "unread, Sentry, DIALOGBRAIN-API-D3 - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., 12:19 AM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e2004] [cursor=pointer]:
+                  - gridcell [ref=e2005]
+                  - gridcell "unread, Sentry, DIALOGBRAIN-API-D3 - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., 12:19 AM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e2006]:
+                    - checkbox "unread, Sentry, DIALOGBRAIN-API-D3 - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., 12:19 AM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e2007]
+                  - gridcell "Not starred" [ref=e2008]:
+                    - button "Not starred" [ref=e2009]
+                  - gridcell "Sentry" [ref=e2010]:
+                    - generic [ref=e2012]: Sentry
+                  - gridcell "DIALOGBRAIN-API-D3 - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e2013]:
+                    - link "DIALOGBRAIN-API-D3 - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e2015]:
+                      - generic [ref=e2016]:
+                        - generic [ref=e2018]: DIALOGBRAIN-API-D3 - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec...
+                        - generic:
+                          - generic [ref=e2019]: "-"
+                          - text: New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active
+                  - gridcell [ref=e2020]
+                  - gridcell "Fri, Mar 13, 2026, 12:19 AM" [ref=e2021]:
+                    - generic "Fri, Mar 13, 2026, 12:19 AM" [ref=e2022]: 12:19 AM
+                  - gridcell
+                - 'row "unread, Sentry, DIALOGBRAIN-API-D2 - Exception: parameter `response` must be an instance of starlette.responses.Response, 12:11 AM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e2023] [cursor=pointer]':
+                  - gridcell [ref=e2024]
+                  - 'gridcell "unread, Sentry, DIALOGBRAIN-API-D2 - Exception: parameter `response` must be an instance of starlette.responses.Response, 12:11 AM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e2025]':
+                    - 'checkbox "unread, Sentry, DIALOGBRAIN-API-D2 - Exception: parameter `response` must be an instance of starlette.responses.Response, 12:11 AM, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e2026]'
+                  - gridcell "Not starred" [ref=e2027]:
+                    - button "Not starred" [ref=e2028]
+                  - gridcell "Sentry" [ref=e2029]:
+                    - generic [ref=e2031]: Sentry
+                  - 'gridcell "DIALOGBRAIN-API-D2 - Exception: parameter `response` must be an instance of starlette.responses.Response - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e2032]':
+                    - 'link "DIALOGBRAIN-API-D2 - Exception: parameter `response` must be an instance of starlette.responses.Response - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e2034]':
+                      - generic [ref=e2035]:
+                        - generic [ref=e2037]: "DIALOGBRAIN-API-D2 - Exception: parameter `response` must be an instance of starlette.responses.Response"
+                        - generic:
+                          - generic [ref=e2038]: "-"
+                          - text: New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active
+                  - gridcell [ref=e2039]
+                  - gridcell "Fri, Mar 13, 2026, 12:11 AM" [ref=e2040]:
+                    - generic "Fri, Mar 13, 2026, 12:11 AM" [ref=e2041]: 12:11 AM
+                  - gridcell
+                - 'row "unread, The Sentry Team, Trial ending: Error limits will apply, Mar 12, Your trial is ending soon. We wish you had unlimited events forever, but unfortunately our finance team exists. So here''s what to expect: What happens after the trial? Your organization will move." [ref=e2042] [cursor=pointer]':
+                  - gridcell [ref=e2043]
+                  - 'gridcell "unread, The Sentry Team, Trial ending: Error limits will apply, Mar 12, Your trial is ending soon. We wish you had unlimited events forever, but unfortunately our finance team exists. So here''s what to expect: What happens after the trial? Your organization will move." [ref=e2044]':
+                    - 'checkbox "unread, The Sentry Team, Trial ending: Error limits will apply, Mar 12, Your trial is ending soon. We wish you had unlimited events forever, but unfortunately our finance team exists. So here''s what to expect: What happens after the trial? Your organization will move." [ref=e2045]'
+                  - gridcell "Not starred" [ref=e2046]:
+                    - button "Not starred" [ref=e2047]
+                  - gridcell "The Sentry Team" [ref=e2048]:
+                    - generic [ref=e2050]: The Sentry Team
+                  - 'gridcell "Trial ending: Error limits will apply - Your trial is ending soon. We wish you had unlimited events forever, but unfortunately our finance team exists. So here''s what to expect: What happens after the trial? Your organization will move" [ref=e2051]':
+                    - 'link "Trial ending: Error limits will apply - Your trial is ending soon. We wish you had unlimited events forever, but unfortunately our finance team exists. So here''s what to expect: What happens after the trial? Your organization will move" [ref=e2052]':
+                      - generic [ref=e2053]:
+                        - generic [ref=e2055]: "Trial ending: Error limits will apply"
+                        - generic [ref=e2056]:
+                          - generic [ref=e2057]: "-"
+                          - text: "Your trial is ending soon. We wish you had unlimited events forever, but unfortunately our finance team exists. So here's what to expect: What happens after the trial? Your organization will move"
+                  - gridcell [ref=e2058]
+                  - gridcell "Thu, Mar 12, 2026, 11:55 PM" [ref=e2059]:
+                    - generic "Thu, Mar 12, 2026, 11:55 PM" [ref=e2060]: Mar 12
+                  - gridcell
+                - row "unread, Sentry, DIALOGBRAIN-API-D1 - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., Mar 12, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e2061] [cursor=pointer]:
+                  - gridcell [ref=e2062]
+                  - gridcell "unread, Sentry, DIALOGBRAIN-API-D1 - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., Mar 12, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e2063]:
+                    - checkbox "unread, Sentry, DIALOGBRAIN-API-D1 - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., Mar 12, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e2064]
+                  - gridcell "Not starred" [ref=e2065]:
+                    - button "Not starred" [ref=e2066]
+                  - gridcell "Sentry" [ref=e2067]:
+                    - generic [ref=e2069]: Sentry
+                  - gridcell "DIALOGBRAIN-API-D1 - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e2070]:
+                    - link "DIALOGBRAIN-API-D1 - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e2072]:
+                      - generic [ref=e2073]:
+                        - generic [ref=e2075]: DIALOGBRAIN-API-D1 - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec...
+                        - generic:
+                          - generic [ref=e2076]: "-"
+                          - text: New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active
+                  - gridcell [ref=e2077]
+                  - gridcell "Thu, Mar 12, 2026, 9:20 PM" [ref=e2078]:
+                    - generic "Thu, Mar 12, 2026, 9:20 PM" [ref=e2079]: Mar 12
+                  - gridcell
+                - 'row "unread, Sentry, DIALOGBRAIN-API-D0 - TimeoutError: Timeout reading from redis:6379, Mar 12, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e2080] [cursor=pointer]':
+                  - gridcell [ref=e2081]
+                  - 'gridcell "unread, Sentry, DIALOGBRAIN-API-D0 - TimeoutError: Timeout reading from redis:6379, Mar 12, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e2082]':
+                    - 'checkbox "unread, Sentry, DIALOGBRAIN-API-D0 - TimeoutError: Timeout reading from redis:6379, Mar 12, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e2083]'
+                  - gridcell "Not starred" [ref=e2084]:
+                    - button "Not starred" [ref=e2085]
+                  - gridcell "Sentry" [ref=e2086]:
+                    - generic [ref=e2088]: Sentry
+                  - 'gridcell "DIALOGBRAIN-API-D0 - TimeoutError: Timeout reading from redis:6379 - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e2089]':
+                    - 'link "DIALOGBRAIN-API-D0 - TimeoutError: Timeout reading from redis:6379 - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e2091]':
+                      - generic [ref=e2092]:
+                        - generic [ref=e2094]: "DIALOGBRAIN-API-D0 - TimeoutError: Timeout reading from redis:6379"
+                        - generic [ref=e2095]:
+                          - generic [ref=e2096]: "-"
+                          - text: New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active
+                  - gridcell [ref=e2097]
+                  - gridcell "Thu, Mar 12, 2026, 9:01 PM" [ref=e2098]:
+                    - generic "Thu, Mar 12, 2026, 9:01 PM" [ref=e2099]: Mar 12
+                  - gridcell
+                - 'row "unread, Sentry 2, Re: DIALOGBRAIN-FRONTEND-10 - APIError: Invalid or expired token, Mar 12, APIError /oauth/authorize Invalid or expired token Sentry View on Sentry Regression Sentry marked DIALOGBRAIN-FRONTEND-10 as a regression in e700dd01 On this issue Level APIError /oauth/authorize." [ref=e2100] [cursor=pointer]':
+                  - gridcell [ref=e2101]
+                  - 'gridcell "unread, Sentry 2, Re: DIALOGBRAIN-FRONTEND-10 - APIError: Invalid or expired token, Mar 12, APIError /oauth/authorize Invalid or expired token Sentry View on Sentry Regression Sentry marked DIALOGBRAIN-FRONTEND-10 as a regression in e700dd01 On this issue Level APIError /oauth/authorize." [ref=e2102]':
+                    - 'checkbox "unread, Sentry 2, Re: DIALOGBRAIN-FRONTEND-10 - APIError: Invalid or expired token, Mar 12, APIError /oauth/authorize Invalid or expired token Sentry View on Sentry Regression Sentry marked DIALOGBRAIN-FRONTEND-10 as a regression in e700dd01 On this issue Level APIError /oauth/authorize." [ref=e2103]'
+                  - gridcell "Not starred" [ref=e2104]:
+                    - button "Not starred" [ref=e2105]
+                  - gridcell "Sentry 2" [ref=e2106]:
+                    - generic [ref=e2107]:
+                      - generic [ref=e2108]: Sentry
+                      - generic [ref=e2109]: "2"
+                  - 'gridcell "Re: DIALOGBRAIN-FRONTEND-10 - APIError: Invalid or expired token - APIError /oauth/authorize Invalid or expired token Sentry View on Sentry Regression Sentry marked DIALOGBRAIN-FRONTEND-10 as a regression in e700dd01 On this issue Level APIError /oauth/authorize" [ref=e2110]':
+                    - 'link "Re: DIALOGBRAIN-FRONTEND-10 - APIError: Invalid or expired token - APIError /oauth/authorize Invalid or expired token Sentry View on Sentry Regression Sentry marked DIALOGBRAIN-FRONTEND-10 as a regression in e700dd01 On this issue Level APIError /oauth/authorize" [ref=e2111]':
+                      - generic [ref=e2112]:
+                        - generic [ref=e2114]: "Re: DIALOGBRAIN-FRONTEND-10 - APIError: Invalid or expired token"
+                        - generic [ref=e2115]:
+                          - generic [ref=e2116]: "-"
+                          - text: APIError /oauth/authorize Invalid or expired token Sentry View on Sentry Regression Sentry marked DIALOGBRAIN-FRONTEND-10 as a regression in e700dd01 On this issue Level APIError /oauth/authorize
+                  - gridcell [ref=e2117]
+                  - gridcell "Thu, Mar 12, 2026, 7:35 PM" [ref=e2118]:
+                    - generic "Thu, Mar 12, 2026, 7:35 PM" [ref=e2119]: Mar 12
+                  - gridcell
+                - row "unread, Sentry, DIALOGBRAIN-API-CZ - 4 new alerts since March 12, 2026, 7:09 p.m. +07, Mar 12, Sentry Set up in Slack 4 new alerts from dialogbrain-api March 12, 2026, 7:09 pm +07 Mute this alert This email was triggered by Send a notification for high priority issues Issue error RuntimeError." [ref=e2120] [cursor=pointer]:
+                  - gridcell [ref=e2121]
+                  - gridcell "unread, Sentry, DIALOGBRAIN-API-CZ - 4 new alerts since March 12, 2026, 7:09 p.m. +07, Mar 12, Sentry Set up in Slack 4 new alerts from dialogbrain-api March 12, 2026, 7:09 pm +07 Mute this alert This email was triggered by Send a notification for high priority issues Issue error RuntimeError." [ref=e2122]:
+                    - checkbox "unread, Sentry, DIALOGBRAIN-API-CZ - 4 new alerts since March 12, 2026, 7:09 p.m. +07, Mar 12, Sentry Set up in Slack 4 new alerts from dialogbrain-api March 12, 2026, 7:09 pm +07 Mute this alert This email was triggered by Send a notification for high priority issues Issue error RuntimeError." [ref=e2123]
+                  - gridcell "Not starred" [ref=e2124]:
+                    - button "Not starred" [ref=e2125]
+                  - gridcell "Sentry" [ref=e2126]:
+                    - generic [ref=e2128]: Sentry
+                  - gridcell "DIALOGBRAIN-API-CZ - 4 new alerts since March 12, 2026, 7:09 p.m. +07 - Sentry Set up in Slack 4 new alerts from dialogbrain-api March 12, 2026, 7:09 pm +07 Mute this alert This email was triggered by Send a notification for high priority issues Issue error RuntimeError" [ref=e2129]:
+                    - link "DIALOGBRAIN-API-CZ - 4 new alerts since March 12, 2026, 7:09 p.m. +07 - Sentry Set up in Slack 4 new alerts from dialogbrain-api March 12, 2026, 7:09 pm +07 Mute this alert This email was triggered by Send a notification for high priority issues Issue error RuntimeError" [ref=e2130]:
+                      - generic [ref=e2131]:
+                        - generic [ref=e2133]: DIALOGBRAIN-API-CZ - 4 new alerts since March 12, 2026, 7:09 p.m. +07
+                        - generic [ref=e2134]:
+                          - generic [ref=e2135]: "-"
+                          - text: Sentry Set up in Slack 4 new alerts from dialogbrain-api March 12, 2026, 7:09 pm +07 Mute this alert This email was triggered by Send a notification for high priority issues Issue error RuntimeError
+                  - gridcell [ref=e2136]
+                  - gridcell "Thu, Mar 12, 2026, 7:16 PM" [ref=e2137]:
+                    - generic "Thu, Mar 12, 2026, 7:16 PM" [ref=e2138]: Mar 12
+                  - gridcell
+                - 'row "unread, Sentry, DIALOGBRAIN-API-CV - [PushListener] Error getting user_id from channel_account: QueuePool limit of size 4 overflow 4 reached,..., Mar 12, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e2139] [cursor=pointer]':
+                  - gridcell [ref=e2140]
+                  - 'gridcell "unread, Sentry, DIALOGBRAIN-API-CV - [PushListener] Error getting user_id from channel_account: QueuePool limit of size 4 overflow 4 reached,..., Mar 12, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e2141]':
+                    - 'checkbox "unread, Sentry, DIALOGBRAIN-API-CV - [PushListener] Error getting user_id from channel_account: QueuePool limit of size 4 overflow 4 reached,..., Mar 12, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e2142]'
+                  - gridcell "Not starred" [ref=e2143]:
+                    - button "Not starred" [ref=e2144]
+                  - gridcell "Sentry" [ref=e2145]:
+                    - generic [ref=e2147]: Sentry
+                  - 'gridcell "DIALOGBRAIN-API-CV - [PushListener] Error getting user_id from channel_account: QueuePool limit of size 4 overflow 4 reached,... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e2148]':
+                    - 'link "DIALOGBRAIN-API-CV - [PushListener] Error getting user_id from channel_account: QueuePool limit of size 4 overflow 4 reached,... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e2150]':
+                      - generic [ref=e2151]:
+                        - generic [ref=e2153]: "DIALOGBRAIN-API-CV - [PushListener] Error getting user_id from channel_account: QueuePool limit of size 4 overflow 4 reached,..."
+                        - generic:
+                          - generic [ref=e2154]: "-"
+                          - text: New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active
+                  - gridcell [ref=e2155]
+                  - gridcell "Thu, Mar 12, 2026, 7:08 PM" [ref=e2156]:
+                    - generic "Thu, Mar 12, 2026, 7:08 PM" [ref=e2157]: Mar 12
+                  - gridcell
+                - row "unread, Sentry, DIALOGBRAIN-API-CT - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., Mar 12, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e2158] [cursor=pointer]:
+                  - gridcell [ref=e2159]
+                  - gridcell "unread, Sentry, DIALOGBRAIN-API-CT - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., Mar 12, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e2160]:
+                    - checkbox "unread, Sentry, DIALOGBRAIN-API-CT - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., Mar 12, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e2161]
+                  - gridcell "Not starred" [ref=e2162]:
+                    - button "Not starred" [ref=e2163]
+                  - gridcell "Sentry" [ref=e2164]:
+                    - generic [ref=e2166]: Sentry
+                  - gridcell "DIALOGBRAIN-API-CT - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e2167]:
+                    - link "DIALOGBRAIN-API-CT - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e2169]:
+                      - generic [ref=e2170]:
+                        - generic [ref=e2172]: DIALOGBRAIN-API-CT - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec...
+                        - generic:
+                          - generic [ref=e2173]: "-"
+                          - text: New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active
+                  - gridcell [ref=e2174]
+                  - gridcell "Thu, Mar 12, 2026, 6:54 PM" [ref=e2175]:
+                    - generic "Thu, Mar 12, 2026, 6:54 PM" [ref=e2176]: Mar 12
+                  - gridcell
+                - row "unread, Sentry, DIALOGBRAIN-API-CS - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., Mar 12, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e2177] [cursor=pointer]:
+                  - gridcell [ref=e2178]
+                  - gridcell "unread, Sentry, DIALOGBRAIN-API-CS - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., Mar 12, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e2179]:
+                    - checkbox "unread, Sentry, DIALOGBRAIN-API-CS - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec..., Mar 12, New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active." [ref=e2180]
+                  - gridcell "Not starred" [ref=e2181]:
+                    - button "Not starred" [ref=e2182]
+                  - gridcell "Sentry" [ref=e2183]:
+                    - generic [ref=e2185]: Sentry
+                  - gridcell "DIALOGBRAIN-API-CS - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e2186]:
+                    - link "DIALOGBRAIN-API-CS - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec... - New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active" [ref=e2188]:
+                      - generic [ref=e2189]:
+                        - generic [ref=e2191]: DIALOGBRAIN-API-CS - The garbage collector is trying to clean up non-checked-in connection <AdaptedConnection <asyncpg.connec...
+                        - generic:
+                          - generic [ref=e2192]: "-"
+                          - text: New issue from dialogbrain-api. Sentry Set up in Slack View on Sentry Errors are half the story. Start tracking latency across your application. Set up Performance New issue We notified recently active
+                  - gridcell [ref=e2193]
+                  - gridcell "Thu, Mar 12, 2026, 6:48 PM" [ref=e2194]:
+                    - generic "Thu, Mar 12, 2026, 6:48 PM" [ref=e2195]: Mar 12
+                  - gridcell
+                - 'row "unread, Sentry, Re: DIALOGBRAIN-API-CF - Unipile send failed: 404 - {\"status\":404,\"type\":\"errors/resource_not_found\",\"title\":\"Resource not found.\",\"detail\":\"The requested resource were not found.\\nChat not found\"}, Mar 12, Unipile send failed: 404 - {\"status\":... /api/channels/{channel}/accounts... Sentry View on Sentry Regression Sentry marked DIALOGBRAIN-API-CF as a regression in efa50b56 On this issue Level." [ref=e2196] [cursor=pointer]':
+                  - gridcell [ref=e2197]
+                  - 'gridcell "unread, Sentry, Re: DIALOGBRAIN-API-CF - Unipile send failed: 404 - {\"status\":404,\"type\":\"errors/resource_not_found\",\"title\":\"Resource not found.\",\"detail\":\"The requested resource were not found.\\nChat not found\"}, Mar 12, Unipile send failed: 404 - {\"status\":... /api/channels/{channel}/accounts... Sentry View on Sentry Regression Sentry marked DIALOGBRAIN-API-CF as a regression in efa50b56 On this issue Level." [ref=e2198]':
+                    - 'checkbox "unread, Sentry, Re: DIALOGBRAIN-API-CF - Unipile send failed: 404 - {\"status\":404,\"type\":\"errors/resource_not_found\",\"title\":\"Resource not found.\",\"detail\":\"The requested resource were not found.\\nChat not found\"}, Mar 12, Unipile send failed: 404 - {\"status\":... /api/channels/{channel}/accounts... Sentry View on Sentry Regression Sentry marked DIALOGBRAIN-API-CF as a regression in efa50b56 On this issue Level." [ref=e2199]'
+                  - gridcell "Not starred" [ref=e2200]:
+                    - button "Not starred" [ref=e2201]
+                  - gridcell "Sentry" [ref=e2202]:
+                    - generic [ref=e2204]: Sentry
+                  - 'gridcell "Re: DIALOGBRAIN-API-CF - Unipile send failed: 404 - {\"status\":404,\"type\":\"errors/resource_not_found\",\"title\":\"Resource not found.\",\"detail\":\"The requested resource were not found.\\nChat not found\"} - Unipile send failed: 404 - {\"status\":... /api/channels/{channel}/accounts... Sentry View on Sentry Regression Sentry marked DIALOGBRAIN-API-CF as a regression in efa50b56 On this issue Level" [ref=e2205]':
+                    - 'link "Re: DIALOGBRAIN-API-CF - Unipile send failed: 404 - {\"status\":404,\"type\":\"errors/resource_not_found\",\"title\":\"Resource not found.\",\"detail\":\"The requested resource were not found.\\nChat not found\"} - Unipile send failed: 404 - {\"status\":... /api/channels/{channel}/accounts... Sentry View on Sentry Regression Sentry marked DIALOGBRAIN-API-CF as a regression in efa50b56 On this issue Level" [ref=e2206]':
+                      - generic [ref=e2207]:
+                        - generic [ref=e2209]: "Re: DIALOGBRAIN-API-CF - Unipile send failed: 404 - {\"status\":404,\"type\":\"errors/resource_not_found\",\"title\":\"Resource not found.\",\"detail\":\"The requested resource were not found.\\nChat not found\"}"
+                        - generic:
+                          - generic [ref=e2210]: "-"
+                          - text: "Unipile send failed: 404 - {\"status\":... /api/channels/{channel}/accounts... Sentry View on Sentry Regression Sentry marked DIALOGBRAIN-API-CF as a regression in efa50b56 On this issue Level"
+                  - gridcell [ref=e2211]
+                  - gridcell "Thu, Mar 12, 2026, 6:46 PM" [ref=e2212]:
+                    - generic "Thu, Mar 12, 2026, 6:46 PM" [ref=e2213]: Mar 12
+                  - gridcell
+                - 'row "unread, Sentry, Re: DIALOGBRAIN-API-AM - Unipile send failed: 401 - {\"status\":401,\"type\":\"errors/disconnected_account\",\"title\":\"Disconnected account\",\"detail\":\"The account appears to be disconnected from the provider service.\"}, Mar 12, Unipile send failed: 401 - {\"status\":... http://172.18.0.2:8000/mcp/mcp/ Sentry View on Sentry Regression Sentry marked DIALOGBRAIN-API-AM as a regression in efa50b56 On this issue Level." [ref=e2214] [cursor=pointer]':
+                  - gridcell [ref=e2215]
+                  - 'gridcell "unread, Sentry, Re: DIALOGBRAIN-API-AM - Unipile send failed: 401 - {\"status\":401,\"type\":\"errors/disconnected_account\",\"title\":\"Disconnected account\",\"detail\":\"The account appears to be disconnected from the provider service.\"}, Mar 12, Unipile send failed: 401 - {\"status\":... http://172.18.0.2:8000/mcp/mcp/ Sentry View on Sentry Regression Sentry marked DIALOGBRAIN-API-AM as a regression in efa50b56 On this issue Level." [ref=e2216]':
+                    - 'checkbox "unread, Sentry, Re: DIALOGBRAIN-API-AM - Unipile send failed: 401 - {\"status\":401,\"type\":\"errors/disconnected_account\",\"title\":\"Disconnected account\",\"detail\":\"The account appears to be disconnected from the provider service.\"}, Mar 12, Unipile send failed: 401 - {\"status\":... http://172.18.0.2:8000/mcp/mcp/ Sentry View on Sentry Regression Sentry marked DIALOGBRAIN-API-AM as a regression in efa50b56 On this issue Level." [ref=e2217]'
+                  - gridcell "Not starred" [ref=e2218]:
+                    - button "Not starred" [ref=e2219]
+                  - gridcell "Sentry" [ref=e2220]:
+                    - generic [ref=e2222]: Sentry
+                  - 'gridcell "Re: DIALOGBRAIN-API-AM - Unipile send failed: 401 - {\"status\":401,\"type\":\"errors/disconnected_account\",\"title\":\"Disconnected account\",\"detail\":\"The account appears to be disconnected from the provider service.\"} - Unipile send failed: 401 - {\"status\":... http://172.18.0.2:8000/mcp/mcp/ Sentry View on Sentry Regression Sentry marked DIALOGBRAIN-API-AM as a regression in efa50b56 On this issue Level" [ref=e2223]':
+                    - 'link "Re: DIALOGBRAIN-API-AM - Unipile send failed: 401 - {\"status\":401,\"type\":\"errors/disconnected_account\",\"title\":\"Disconnected account\",\"detail\":\"The account appears to be disconnected from the provider service.\"} - Unipile send failed: 401 - {\"status\":... http://172.18.0.2:8000/mcp/mcp/ Sentry View on Sentry Regression Sentry marked DIALOGBRAIN-API-AM as a regression in efa50b56 On this issue Level" [ref=e2224]':
+                      - generic [ref=e2225]:
+                        - generic [ref=e2227]: "Re: DIALOGBRAIN-API-AM - Unipile send failed: 401 - {\"status\":401,\"type\":\"errors/disconnected_account\",\"title\":\"Disconnected account\",\"detail\":\"The account appears to be disconnected from the provider service.\"}"
+                        - generic:
+                          - generic [ref=e2228]: "-"
+                          - text: "Unipile send failed: 401 - {\"status\":... http://172.18.0.2:8000/mcp/mcp/ Sentry View on Sentry Regression Sentry marked DIALOGBRAIN-API-AM as a regression in efa50b56 On this issue Level"
+                  - gridcell [ref=e2229]
+                  - gridcell "Thu, Mar 12, 2026, 6:46 PM" [ref=e2230]:
+                    - generic "Thu, Mar 12, 2026, 6:46 PM" [ref=e2231]: Mar 12
+                  - gridcell
+          - contentinfo [ref=e1193]:
+            - generic [ref=e1200]:
+              - link "Program Policies" [ref=e1201] [cursor=pointer]:
+                - /url: https://www.google.com/gmail/about/policy/
+              - generic [ref=e1202]:
+                - text: Powered by
+                - link "Google" [ref=e1203] [cursor=pointer]:
+                  - /url: https://www.google.com/
+                  - generic [ref=e1204]: Google
+            - generic [ref=e2232]:
+              - generic [ref=e2233]: "Last account activity: 32 minutes ago"
+              - link "Details" [ref=e2234] [cursor=pointer]
+      - generic [ref=e1212]:
+        - complementary "Side panel" [ref=e1213]:
+          - tablist [ref=e2235]:
+            - tab "Calendar"
+            - tab "Keep"
+            - tab "Tasks"
+            - tab "Contacts"
+            - separator [disabled] [ref=e2236]
+            - tab "Get Add-ons"
+        - generic:
+          - button "Hide side panel":
+            - img [ref=e2239] [cursor=pointer]
+  - generic [ref=e2242]: Suggestions updated

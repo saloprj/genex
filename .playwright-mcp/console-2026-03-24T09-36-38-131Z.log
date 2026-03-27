@@ -1,0 +1,5 @@
+[   92256ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://genexpep.com/api/checkout/stripe:0
+[  150047ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://genexpep.com/api/shipping-address:0
+[  234300ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://genexpep.com/api/shipping-address:0
+[  250963ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://genexpep.com/api/shipping-address:0
+[  319372ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://genexpep.com/api/shipping-address:0

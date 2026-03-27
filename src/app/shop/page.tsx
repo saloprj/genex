@@ -28,7 +28,7 @@ async function ProductsSection({ searchParams }: { searchParams: { category?: st
 
   const products = await prisma.product.findMany({
     where: {
-      ...(category && { category }),
+      ...(category && { categories: { has: category } }),
       ...(q && {
         OR: [
           { name: { contains: q, mode: 'insensitive' as const } },

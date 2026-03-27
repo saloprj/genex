@@ -1,0 +1,17 @@
+[ 8175079ms] [ERROR] Failed to fetch RSC payload for https://genexpep.com/shop. Falling back to browser navigation. TypeError: Failed to fetch
+    at f (https://genexpep.com/_next/static/chunks/117-9ff39f6f4b5ead36.js:1:45433)
+    at https://genexpep.com/_next/static/chunks/117-9ff39f6f4b5ead36.js:1:58959
+    at Object.u [as task] (https://genexpep.com/_next/static/chunks/117-9ff39f6f4b5ead36.js:1:31834)
+    at c.s (https://genexpep.com/_next/static/chunks/117-9ff39f6f4b5ead36.js:1:32539)
+    at c.enqueue (https://genexpep.com/_next/static/chunks/117-9ff39f6f4b5ead36.js:1:31964)
+    at s (https://genexpep.com/_next/static/chunks/117-9ff39f6f4b5ead36.js:1:58922)
+    at i (https://genexpep.com/_next/static/chunks/117-9ff39f6f4b5ead36.js:1:58462)
+    at a (https://genexpep.com/_next/static/chunks/117-9ff39f6f4b5ead36.js:1:65251)
+    at f (https://genexpep.com/_next/static/chunks/117-9ff39f6f4b5ead36.js:1:75111)
+    at Object.action (https://genexpep.com/_next/static/chunks/117-9ff39f6f4b5ead36.js:2:7082) @ https://genexpep.com/_next/static/chunks/117-9ff39f6f4b5ead36.js:0
+[ 8175430ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://genexpep.com/_next/image?url=%2Flogo.png&w=640&q=75:0
+[ 8175736ms] [ERROR] Error: An error occurred in the Server Components render. The specific message is omitted in production builds to avoid leaking sensitive details. A digest property is included on this error instance which may provide additional details about the nature of the error. @ https://genexpep.com/_next/static/chunks/117-9ff39f6f4b5ead36.js:0
+[ 8176458ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://genexpep.com/favicon-32x32.png:0
+[ 8178764ms] [ERROR] Error: An error occurred in the Server Components render. The specific message is omitted in production builds to avoid leaking sensitive details. A digest property is included on this error instance which may provide additional details about the nature of the error. @ https://genexpep.com/_next/static/chunks/117-9ff39f6f4b5ead36.js:0
+[ 8178817ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://genexpep.com/_next/image?url=%2Flogo.png&w=640&q=75:0
+[ 8179233ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://genexpep.com/bg-galaxy.png:0

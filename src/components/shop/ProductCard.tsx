@@ -154,7 +154,7 @@ export function ProductCard({ product }: ProductCardProps) {
         <div className="p-4 flex flex-col flex-1">
           <div className="flex items-start justify-between gap-2 mb-2">
             <h3 className="font-semibold text-sm leading-tight">{product.name}</h3>
-            <Badge variant="teal" className="shrink-0">{product.category}</Badge>
+            <div className="flex flex-wrap gap-1 justify-end">{product.categories.slice(0, 2).map(c => <Badge key={c} variant="teal" className="shrink-0">{c}</Badge>)}</div>
           </div>
           {product.dosage && (
             <p className="text-xs text-brand-subtle mb-2">{product.dosage}</p>

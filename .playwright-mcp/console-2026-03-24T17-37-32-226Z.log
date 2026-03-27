@@ -1,0 +1,2 @@
+[     305ms] [ERROR] Error: An error occurred in the Server Components render. The specific message is omitted in production builds to avoid leaking sensitive details. A digest property is included on this error instance which may provide additional details about the nature of the error. @ https://genexpep.com/_next/static/chunks/117-9ff39f6f4b5ead36.js:0
+[     507ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://genexpep.com/_next/image?url=%2Flogo.png&w=640&q=75:0

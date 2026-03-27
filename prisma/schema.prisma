@@ -20,7 +20,7 @@ model Product {
   name          String
   slug          String           @unique
   description   String
-  category      String
+  categories    String[]
   price         Decimal          @db.Decimal(10, 2)
   dosage        String?
   image         String?
@@ -32,8 +32,6 @@ model Product {
   updatedAt     DateTime         @updatedAt
   orderItems    OrderItem[]
   variants      ProductVariant[]
-
-  @@index([category])
   @@index([inStock])
 }
 
