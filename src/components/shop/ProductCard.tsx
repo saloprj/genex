@@ -36,7 +36,7 @@ export function ProductCard({ product }: ProductCardProps) {
     if (allImages.length <= 1) return
     intervalRef.current = setInterval(() => {
       setActiveIdx((prev) => (prev + 1) % allImages.length)
-    }, 2500)
+    }, 1000)
   }
 
   // Stop cycling when card scrolls out of view (mobile fix)
