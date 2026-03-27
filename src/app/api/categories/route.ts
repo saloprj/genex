@@ -40,7 +40,7 @@ export async function DELETE(req: NextRequest) {
   if (!id) return NextResponse.json({ error: 'id is required' }, { status: 400 })
   const cat = await prisma.category.findUnique({ where: { id } })
   if (!cat) return NextResponse.json({ error: 'Not found' }, { status: 404 })
-  const productCount = await prisma.product.count({ where: { category: cat.slug } })
+  const productCount = await prisma.product.count({ where: { categories: { has: cat.slug } } })
   if (productCount > 0) {
     return NextResponse.json({ error: `Cannot delete: ${productCount} product(s) use this category` }, { status: 400 })
   }
